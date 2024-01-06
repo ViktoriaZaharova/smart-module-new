@@ -1,0 +1,210 @@
+.about-section h1 {
+  max-width: 1100px;
+}
+
+.products-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 58px 0 0;
+}
+.products-list__link {
+  text-align: center;
+  color: #222;
+  line-height: 1.33;
+  font-size: 18px;
+  width: 25%;
+  margin: 0 auto 45px;
+}
+.products-list__link-img {
+  max-width: 210px;
+  height: 210px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto 24px;
+  padding: 8px;
+}
+.products-list__link-img.active img {
+  -webkit-box-shadow: 0px 5px 8px 0px rgb(80, 114, 152);
+          box-shadow: 0px 5px 8px 0px rgb(80, 114, 152);
+}
+.products-list__link-img-hover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #fff;
+  border: 2px solid #53749a;
+  z-index: -1;
+}
+.products-list__link-img-hover::before, .products-list__link-img-hover::after {
+  content: "";
+  position: absolute;
+  margin: auto;
+  background-color: #fff;
+}
+.products-list__link-img-hover::before {
+  left: 0;
+  right: 0;
+  top: -2px;
+  bottom: -2px;
+  width: 70%;
+}
+.products-list__link-img-hover::after {
+  top: 0;
+  bottom: 0;
+  left: -2px;
+  right: -2px;
+  height: 70%;
+}
+.products-list__link-title {
+  display: block;
+}
+.products-list__link:hover .products-list__link-title {
+  text-decoration: underline;
+  color: #53749a;
+}
+.products-list__link:hover .products-list__link-img-hover {
+  opacity: 1;
+}
+.products-list__link:hover .products-list__link-img img {
+  -webkit-box-shadow: 0px 5px 8px 0px rgb(80, 114, 152);
+          box-shadow: 0px 5px 8px 0px rgb(80, 114, 152);
+}
+
+.projects {
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.materials {
+  margin: 90px 0 0;
+}
+
+.reviews-slider .slick-list,
+.materials-slider .slick-list {
+  margin: 0 -15px;
+}
+
+.reviews-slider .slick-slide,
+.materials-slider .slick-slide {
+  padding: 0 15px;
+}
+
+.materials-card {
+  width: 100%;
+}
+.materials-card__image {
+  width: 100%;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.materials-card__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.materials-card__body {
+  padding: 18px 0 0;
+}
+.materials-card__name {
+  color: #222;
+  font-size: 16px;
+  font-weight: normal;
+  margin: 10px 0 0;
+  line-height: 1.5;
+}
+.materials-card__name:hover {
+  color: #6989ad;
+  text-decoration: underline;
+}
+.materials-card-list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #b8b8b8;
+  font-size: 14px;
+}
+.materials-card-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 20px 8px 0;
+}
+.materials-card-list img, .materials-card-list svg {
+  width: 15px;
+  height: 16px;
+  margin: 0 7px 0 0;
+  fill: #b8b8b8;
+}
+
+.clients {
+  margin: 110px 0 88px;
+}
+.clients h2 {
+  margin: 0 0 55px;
+}
+
+.clients-slider .slick-slide {
+  margin: 0 39px;
+}
+
+.clients-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 57px;
+}
+.clients-box img {
+  max-height: 100%;
+}

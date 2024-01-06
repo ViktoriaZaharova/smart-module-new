@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Esqadero";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Esqadero/EsqaderoRegular.eot");
+  src: url("../fonts/Esqadero/EsqaderoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Esqadero/EsqaderoRegular.woff") format("woff"), url("../fonts/Esqadero/EsqaderoRegular.ttf") format("truetype");
+}

@@ -1,0 +1,146 @@
+footer {
+  background: #3e3e3e;
+  color: #fff;
+  padding: 60px 0 0;
+  font-size: 14px;
+}
+footer .logo {
+  margin: 0 0 24px;
+  max-width: 201px;
+}
+footer .phone {
+  font-size: 18px;
+  color: #fff;
+}
+footer .phone:hover {
+  color: #6989ad;
+}
+footer .schedule {
+  margin: 13px 0 29px;
+  color: #b9b9b9;
+  font-size: 16px;
+}
+footer .link-page {
+  margin: 26px 0 0;
+}
+
+.footer-fixed {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  -webkit-transition-timing-function: cubic-bezier(0, 0, 0, 1);
+          transition-timing-function: cubic-bezier(0, 0, 0, 1);
+  z-index: 1;
+}
+
+.footer-top {
+  margin: 0 0 67px;
+}
+
+.link-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.link-page svg {
+  width: 13px;
+  height: 8px;
+  margin: 0 0 0 9px;
+}
+
+.footer-column {
+  margin: 0 auto 0 0;
+}
+.footer-column:last-child {
+  margin: 0;
+}
+.footer-column:last-child .footer-column__title:not(:first-child) {
+  margin: 0 0 10px;
+}
+.footer-column__description {
+  max-width: 270px;
+}
+.footer-column__title {
+  margin: 0 0 25px;
+  color: #fff;
+  font-size: 18px;
+}
+.footer-column__title:hover {
+  color: #6989ad;
+}
+
+.footer-menu {
+  font-size: 16px;
+  margin: 0 0 50px;
+}
+.footer-menu:last-child {
+  margin: 0;
+}
+.footer-menu li {
+  margin: 0 0 12px;
+}
+.footer-menu li:last-child {
+  margin: 0;
+}
+.footer-menu li a {
+  color: #fff;
+  padding: 0 0 0 28px;
+  position: relative;
+  z-index: 1;
+}
+.footer-menu li a:hover {
+  color: #6989ad;
+}
+.footer-menu li a:hover::after {
+  display: block;
+}
+.footer-menu li a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  background: url("../img/sq-transp-new.png") no-repeat center;
+  background-size: 100%;
+}
+.footer-menu li a::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  top: 9.5px;
+  left: 5.5px;
+  display: none;
+}
+
+.footer-bottom {
+  font-size: 14px;
+  padding: 33px 0 37px;
+  position: relative;
+  color: #b9b9b9;
+  z-index: 1;
+}
+.footer-bottom::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  height: 1px;
+  max-width: 1156px;
+  width: 100%;
+  background: #b9b9b9;
+  border-radius: 0.5px;
+}
