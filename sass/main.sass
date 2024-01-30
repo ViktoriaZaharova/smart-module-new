@@ -225,6 +225,14 @@ a.contacts-box__link
 		line-height: 1.33
 		letter-spacing: 0.45px
 
+.form-callback-contacts
+	input
+		font-size: 14px
+		letter-spacing: 0.98px
+		&::placeholder
+			color: #757575
+
+
 // page industry
 .industry-card
 	width: 20%
@@ -363,3 +371,36 @@ a.contacts-box__link
 			font-size: 10px
 			color: #afafaf
 			max-width: 295px
+
+// page services
+.services-card
+	width: 50%
+	.industry-card__img
+		height: 320px
+
+// page certificates
+.certificates-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.certificate-box
+	width: 20%
+	max-width: 212px
+	@include d-flex
+	margin: 0 24px 20px 0
+	&:last-child
+		margin: 0 0 20px
+
+// page requisites
+.requisites-box
+	width: 100%
+	margin: 0 0 60px
+	&:last-child
+		margin: 0
+	&__title
+		color: $accent
+		margin: 0 0 20px
+		font-size: 18px
+		font-weight: bold				

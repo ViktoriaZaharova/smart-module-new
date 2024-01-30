@@ -92,3 +92,8 @@ $('.btn-search').on('click', function () {
 	$('.search-wrapper').fadeToggle();
 	$('.search-wrapper input').focus();
 });
+
+
+Fancybox.bind("[data-fancybox]", {
+	// Your custom options
+});

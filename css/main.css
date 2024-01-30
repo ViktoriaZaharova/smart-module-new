@@ -309,6 +309,26 @@ a.contacts-box__link:hover {
   letter-spacing: 0.45px;
 }
 
+.form-callback-contacts input {
+  font-size: 14px;
+  letter-spacing: 0.98px;
+}
+.form-callback-contacts input::-webkit-input-placeholder {
+  color: #757575;
+}
+.form-callback-contacts input::-moz-placeholder {
+  color: #757575;
+}
+.form-callback-contacts input:-ms-input-placeholder {
+  color: #757575;
+}
+.form-callback-contacts input::-ms-input-placeholder {
+  color: #757575;
+}
+.form-callback-contacts input::placeholder {
+  color: #757575;
+}
+
 .industry-card {
   width: 20%;
   padding: 8px 8px 18px;
@@ -498,4 +518,55 @@ a.contacts-box__link:hover {
   font-size: 10px;
   color: #afafaf;
   max-width: 295px;
+}
+
+.services-card {
+  width: 50%;
+}
+.services-card .industry-card__img {
+  height: 320px;
+}
+
+.certificates-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.certificate-box {
+  width: 20%;
+  max-width: 212px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 24px 20px 0;
+}
+.certificate-box:last-child {
+  margin: 0 0 20px;
+}
+
+.requisites-box {
+  width: 100%;
+  margin: 0 0 60px;
+}
+.requisites-box:last-child {
+  margin: 0;
+}
+.requisites-box__title {
+  color: #6989ad;
+  margin: 0 0 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
