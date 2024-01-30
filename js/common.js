@@ -86,3 +86,9 @@ $(document).ready(function () {
 		target: $('.footer-wrapper')
 	});
 })
+
+// btn search click
+$('.btn-search').on('click', function () {
+	$('.search-wrapper').fadeToggle();
+	$('.search-wrapper input').focus();
+});

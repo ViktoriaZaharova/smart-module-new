@@ -1,7 +1,209 @@
-@font-face {
-  font-family: "Esqadero";
-  font-weight: 400;
+header {
+  background: #fff;
+  -webkit-box-shadow: 0px 4px 8px 0 rgba(41, 41, 41, 0.2);
+          box-shadow: 0px 4px 8px 0 rgba(41, 41, 41, 0.2);
+  z-index: 5;
+  position: relative;
+}
+
+.header-top {
+  padding: 26px 0 17px;
+}
+.header-top__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.phone {
+  font-size: 14px;
+  color: #333;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+  margin: 13px 0 0;
+}
+
+.mail {
+  font-size: 13px;
+  color: #333;
+}
+.mail:hover {
+  color: #6989ad;
+}
+
+.header-box {
+  color: #333;
+}
+.header-box a {
+  margin: 7px 0 0;
+  color: #333;
+}
+.header-box a:hover {
+  color: #6989ad;
+}
+.header-box a i {
+  color: #6989ad;
+  font-size: 14px;
+  margin: 0 5px 0 0;
+}
+.header-box span {
+  color: #666;
+  font-size: 12px;
+}
+.header-box .btn-location {
+  margin: 0;
+}
+
+.location-box {
+  font-size: 12px;
+}
+
+.btn-location {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.btn-location::after {
+  content: "\f0d7";
+  font-family: FontAwesome;
   font-style: normal;
-  src: url("../fonts/Esqadero/EsqaderoRegular.eot");
-  src: url("../fonts/Esqadero/EsqaderoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Esqadero/EsqaderoRegular.woff") format("woff"), url("../fonts/Esqadero/EsqaderoRegular.ttf") format("truetype");
+  font-weight: normal;
+  color: #000;
+  font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list-social__item {
+  margin: 0 18px 0 0;
+}
+.list-social__item:last-child {
+  margin: 0;
+}
+.list-social a.list-social__link {
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  color: rgba(153, 153, 153, 0.6);
+  border: solid 1px #959595;
+  border-radius: 50%;
+  line-height: 3.13;
+  letter-spacing: 1.12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.list-social a.list-social__link:hover {
+  color: #6989ad;
+  border: solid 1px #6989ad;
+  -webkit-box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0 0 42px;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  cursor: pointer;
+}
+
+.nav-menu {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 -8px 7px -9px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 -8px 7px -9px rgba(0, 0, 0, 0.5);
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 0 0;
+  font-size: 15px;
+  font-family: "Esqadero";
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.menu .nav-link {
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #222;
+  padding: 18px 0;
+}
+.menu .nav-link:hover {
+  color: #6989ad;
+}
+.menu .nav-link.dropdown-toggle::after {
+  display: none;
+}
+
+.search-wrapper {
+  background: #e1e6ec;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  z-index: 2;
+}
+
+.form-search {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.form-search label {
+  margin: 0 20px 0 0;
 }

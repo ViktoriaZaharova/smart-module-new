@@ -24,19 +24,25 @@
 </head>
 
 <body>
-
-	<header>
+<header>
+	<div class="header-top">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<div class="header-top">
+				<div class="col-12 d-flex">
+					<div class="header-top__wrapper">
 						<a href="index.html" class="logo"><img src="img/header-logo.png" alt=""></a>
 						<div class="header-box">
-							<a href="tel:+78129071459" class="phone">8 (812) 907-14-59</a>
+							<div class="location-box">
+								<a href="#" class="btn-location" data-bs-toggle="modal"
+									data-bs-target="#locationModal">Санкт-Петербург</a>
+							</div>
+							<a href="tel:+78129071459" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>8 (812)
+								907-14-59</a>
 						</div>
 						<div class="header-box">
 							<span>Email поддержка:</span>
-							<a href="mailto:spb1@smart-module.ru" class="mail">spb1@smart-module.ru</a>
+							<a href="mailto:spb1@smart-module.ru" class="mail"><i class="fa fa-envelope-o"
+									aria-hidden="true"></i>spb1@smart-module.ru</a>
 						</div>
 						<ul class="list-social my-ul">
 							<li class="list-social__item">
@@ -54,32 +60,58 @@
 						<a href="#" class="btn btn-accent btn-callback" data-bs-toggle="modal"
 							data-bs-target="#callbackModal">Получить консультацию</a>
 					</div>
-					<div class="header-bottom">
-						<nav class="nav nav-menu">
-							<ul class="menu my-ul">
-								<li class="dropdown"><a href="#" class="dropdown-toggle">каталог</a>
-									<div class="dropdown-menu">
-										q
-									</div>
-								</li>
-								<li><a href="projects.html">проекты</a></li>
-								<li><a href="services.html">услуги</a></li>
-								<li><a href="technology.html">технология</a></li>
-								<li><a href="industry.html">отрасли</a></li>
-								<li><a href="blog.html">блог</a></li>
-								<li><a href="about.html">о нас</a></li>
-								<li><a href="contacts.html">контакты</a></li>
-							</ul>
-							<div class="btn-search"><svg class="svg-icon">
-									<use xlink:href="img/sprite.svg#search"></use>
-								</svg>
-							</div>
-						</nav>
-					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="header-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<nav class="nav nav-menu">
+						<ul class="menu my-ul">
+							<li class="dropdown nav-item"><a href="#" class="dropdown-toggle nav-link">каталог</a>
+								<div class="dropdown-menu">
+									1
+								</div>
+							</li>
+							<li class="nav-item"><a href="projects.html" class="nav-link">проекты</a></li>
+							<li class="nav-item"><a href="services.html" class="nav-link">услуги</a></li>
+							<li class="nav-item"><a href="technology.html" class="nav-link">технология</a></li>
+							<li class="nav-item"><a href="industry.html" class="nav-link">отрасли</a></li>
+							<li class="nav-item"><a href="blog.html" class="nav-link">блог</a></li>
+							<li class="nav-item"><a href="about.html" class="nav-link">о нас</a></li>
+							<li class="nav-item"><a href="contacts.html" class="nav-link">контакты</a></li>
+						</ul>
+						<div class="btn-search"><svg class="svg-icon">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg>
+						</div>
+					</nav>
 				</div>
 			</div>
 		</div>
-	</header>
+
+	</div>
+
+	<div class="search-wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<form method="post" class="form-search">
+						<label>
+							<input type="search" class="search-field" placeholder="" value="" name="search" autocomplete="off">
+						</label>
+						<button class="btn btn-accent search-submit" type="submit"><span>Поиск</span></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
 	<div class="content-wrapper">
 
 		<main class="home">
@@ -212,7 +244,7 @@
 					<div class="materials-slider">
 						<div class="slide">
 							<div class="materials-card">
-								<a href="#" class="materials-card__image"><img src="img/7529e3347d4421c14647b371bc2add77.jpeg"
+								<a href="#" class="materials-card__image"><img src="img/material-img1.jpeg"
 										alt="Выбираем тип электрической проводки для бытовки"></a>
 								<div class="materials-card__body">
 									<div class="materials-card-list">
@@ -241,7 +273,7 @@
 						</div>
 						<div class="slide">
 							<div class="materials-card">
-								<a href="#" class="materials-card__image"><img src="img/31f1709ad480c8903e1049d1a3f50658.jpeg"
+								<a href="#" class="materials-card__image"><img src="img/material-img2.jpeg"
 										alt="Как купить морской контейнер б/у – выбор без последствий"></a>
 								<div class="materials-card__body">
 									<div class="materials-card-list">
@@ -270,7 +302,7 @@
 						</div>
 						<div class="slide">
 							<div class="materials-card">
-								<a href="#" class="materials-card__image"><img src="img/d99a1e15db56a062078b455c399f17b7.jpeg"
+								<a href="#" class="materials-card__image"><img src="img/material-img3.jpeg"
 										alt="Бетонные блоки как основа под бытовку"></a>
 								<div class="materials-card__body">
 									<div class="materials-card-list">
@@ -299,7 +331,7 @@
 						</div>
 						<div class="slide">
 							<div class="materials-card">
-								<a href="#" class="materials-card__image"><img src="img/ccad359bd89e6ad19854631c4442565c.jpeg"
+								<a href="#" class="materials-card__image"><img src="img/material-img4.jpeg"
 										alt="Теплая бытовка – варианты обогрева"></a>
 								<div class="materials-card__body">
 									<div class="materials-card-list">
@@ -328,7 +360,7 @@
 						</div>
 						<div class="slide">
 							<div class="materials-card">
-								<a href="#" class="materials-card__image"><img src="img/99ce66d05f61a69d338794296b865b59.jpeg"
+								<a href="#" class="materials-card__image"><img src="img/material-img5.jpeg"
 										alt="Перспективы быстровозводимых сооружений в торговле"></a>
 								<div class="materials-card__body">
 									<div class="materials-card-list">
@@ -357,7 +389,7 @@
 						</div>
 						<div class="slide">
 							<div class="materials-card">
-								<a href="#" class="materials-card__image"><img src="img/2797b9c09f5b7734fb036f933b20fa84.jpeg"
+								<a href="#" class="materials-card__image"><img src="img/material-img6.jpeg"
 										alt="Что выбрать – сборно-разборную бытовку или готовый вагончик"></a>
 								<div class="materials-card__body">
 									<div class="materials-card-list">

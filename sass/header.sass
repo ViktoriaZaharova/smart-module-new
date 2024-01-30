@@ -1,3 +1,134 @@
-@import "fonts"
 @import "vars"
+
+header
+	background: #fff
+	box-shadow: 0px 4px 8px 0 rgba(41, 41, 41, 0.2)
+	z-index: 5
+	position: relative
+
+.header-top
+	padding: 26px 0 17px
+	&__wrapper
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+
+.phone
+	font-size: 14px
+	color: #333
+	font-weight: 800
+	letter-spacing: 0.07em
+	margin: 13px 0 0
+
+.mail
+	font-size: 13px
+	color: #333
+	&:hover
+		color: $accent
+
+.header-box
+	color: #333
+	a
+		margin: 7px 0 0
+		color: #333
+		&:hover
+			color: $accent
+		i
+			color: #6989ad
+			font-size: 14px
+			margin: 0 5px 0 0
+	span
+		color: #666
+		font-size: 12px
+	.btn-location
+		margin: 0
+
+.location-box
+	font-size: 12px
+
+.btn-location
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	&::after
+		content: "\f0d7"
+		font-family: FontAwesome
+		font-style: normal
+		font-weight: normal
+		color: #000
+		font-size: 13px
+		@include d-flex
+		
+
+.list-social
+	&__item
+		margin: 0 18px 0 0
+		&:last-child
+			margin: 0
+	a.list-social__link
+		width: 38px
+		height: 38px
+		min-width: 38px
+		color: rgba(153, 153, 153, 0.6)
+		border: solid 1px #959595
+		border-radius: 50%
+		line-height: 3.13
+		letter-spacing: 1.12px
+		@include d-flex
+		&:hover
+			color: #6989ad
+			border: solid 1px #6989ad
+			box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.5)
+
+.btn-search
+	@include d-flex
+	margin: 0 0 0 42px
+	width: 24px
+	height: 24px
+	min-width: 24px
+	cursor: pointer
+
+.nav-menu
+	flex-wrap: nowrap
+	align-items: center
+	box-shadow: 0 -8px 7px -9px rgba(0, 0, 0, 0.5)
+
+.menu
+	display: flex
+	align-items: center
+	margin: 0 auto 0 0
+	font-size: 15px
+	font-family: $default-font
+	width: 100%
+	justify-content: space-between
+	.nav-link
+		text-transform: uppercase
+		font-weight: 800
+		color: #222
+		padding: 18px 0
+		&:hover
+			color: $accent
+		&.dropdown-toggle
+			&::after
+				display: none
+
+.search-wrapper
+	background: #e1e6ec
+	position: absolute
+	left: 0
+	top: 100%
+	width: 100%
+	padding: 10px 0
+	display: none
+	z-index: 2
+
+.form-search
+	width: 100%
+	display: flex
+	align-items: start
+	label
+		margin: 0 20px 0 0
 
