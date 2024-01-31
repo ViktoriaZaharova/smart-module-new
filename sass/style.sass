@@ -212,6 +212,7 @@ h1
 	width: 100%
 	margin: 0 0 25px
 	font-size: 32px
+	font-weight: bold
 	line-height: 1.25
 
 h2
@@ -243,8 +244,14 @@ h4, .h4
 		&:last-child
 			margin: 0
 
+.mt-30
+	margin-top: 30px			
+
 .mb-20
 	margin-bottom: 20px
+
+.mb-30
+	margin-bottom: 30px	
 
 .mb-40
 	margin-bottom: 40px
@@ -271,9 +278,9 @@ a.color-accent
 	svg
 		fill: $accent
 	&:hover
-		color: #fff
+		color: $grey
 		svg
-			fill: #fff
+			fill: $grey
 
 .content-wrapper
 	position: relative
@@ -376,7 +383,7 @@ a.color-accent
 .page
 	padding: 20px 0 90px
 
-.nav-breadcrumbs
+.nav-breadcrumb
 	width: 100%
 	margin: 0 0 32px
 
@@ -384,6 +391,7 @@ a.color-accent
 	font-size: 10px
 	font-family: $default-font
 	color: #7c7b7e
+	margin: 0
 	a
 		color: #7c7b7e
 		&:hover
@@ -435,6 +443,25 @@ a.color-accent
 			&::before
 				width: 100%
 
+.nav-tabs-v2
+	justify-content: flex-start
+	border: none
+	letter-spacing: 1.12px
+	font-size: 16px
+	.nav-item
+		margin: 0 10px 10px 0
+		&:last-child
+			margin: 0 0 10px
+	.nav-link
+		padding: 15px 25px
+		background: #e5e5e5
+		color: #222
+		&.active, &:hover
+			color: #fff
+			background: $accent
+		&::before
+			display: none						
+
 .tab-content
 	width: 100%
 	margin: 50px 0 0
@@ -467,3 +494,56 @@ table
 	border: solid 1px #ddd
 	table-layout: auto
 	width: 100%
+
+.nav-pagination
+	margin: 0
+	justify-content: end
+
+.pagination
+	font-size: 16px
+	.nav-item
+		margin: 0 14px 0 0
+		position: relative
+		z-index: 1
+		&:last-child
+			margin: 0
+		&.active
+			.nav-link
+				color: #383838
+			.company-border
+				display: block	
+	.nav-link
+		letter-spacing: 0.4px
+		color: #383838
+		width: 32px
+		height: 32px
+		min-width: 32px
+		padding: 0
+		border: solid 2px #bbb
+		background-color: #fff
+		position: relative
+		z-index: 1
+		@include d-flex
+		i
+			font-size: 20px
+			letter-spacing: 0.5px
+			color: #222
+		&:hover
+			color: #383838
+	.company-border
+		left: 50%
+		top: 50%
+		transform: translate(-50%,-50%)
+		width: calc(100% + 8px)		
+		height: calc(100% + 8px)	
+		// border-width: 1px	
+		background: #fff
+		display: none
+		&::before, &:after
+			background: #fff
+		&::before
+			width: 65%
+		&:after
+			height: 65%		
+			
+			

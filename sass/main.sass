@@ -232,7 +232,6 @@ a.contacts-box__link
 		&::placeholder
 			color: #757575
 
-
 // page industry
 .industry-card
 	width: 20%
@@ -403,4 +402,132 @@ a.contacts-box__link
 		color: $accent
 		margin: 0 0 20px
 		font-size: 18px
-		font-weight: bold				
+		font-weight: bold
+
+// page result search
+.page-search-result
+	.form-search
+		position: relative
+		label
+			margin: 0
+		input
+			font-size: 15px
+			border: solid 1px #e5e5e5
+			background-color: #fff
+			padding: 0 120px 0 20px
+		[type='submit']
+			position: absolute
+			right: 0
+			top: 0
+
+.search-result-value
+	font-size: 15px
+
+.result-card
+	width: 100%
+	padding: 30px 0
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	font-size: 15px
+	border-bottom: 1px solid #e5e5e5
+	&__photo
+		@include d-flex
+		max-width: 190px
+		width: 100%
+	&__body
+		width: calc(100% - 190px)
+		padding: 0 0 0 30px
+	&__title
+		color: $accent
+		margin: 0 0 30px
+		width: 100%
+		display: block
+		&:hover
+			color: #222
+	.nav-breadcrumb
+		margin: 30px 0 0
+
+// page catalog2
+.category-card
+	width: 25%
+	.industry-card__img
+		height: 180px
+
+// page blog
+.blog-card
+	width: 100%
+	height: 100%
+	border: solid 1px #dadada
+	background-color: #fff
+	font-size: 12px
+	&__img
+		@include d-flex
+		width: 100%
+		height: 233px
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+	&__body
+		width: 100%
+		padding: 18px 23px 23px
+	&__title
+		margin: 0 0 20px
+		color: #383838
+		letter-spacing: 0.45px
+		font-size: 18px
+		&:hover
+			color: $accent
+	.box-text
+		line-height: 1.67
+		letter-spacing: 0.84px
+		color: #656565
+	.date
+		margin: 0 0 18px
+		letter-spacing: 0.84px
+		color: #507298
+		i
+			margin: 0 10px 0 0
+	&__link
+		margin: 28px 0 0
+		&:hover
+			color: #222
+
+.subscribe-box
+	width: 100%
+	border: solid 1px #dadada
+	background-color: #fff
+	padding: 30px
+	&__title
+		width: 100%
+		margin: 0 0 20px
+		color: #222
+		font-weight: bold
+
+.form-subscribe
+	width: 100%
+	.label-checkbox
+		margin: 20px 0 0
+	[type='submit']	
+		position: absolute
+		right: 0
+		top: 0
+		width: 40px
+		height: 40px
+		fill: #fff
+		padding: 10px
+	input
+		height: 40px
+		background: #f5f5f5
+		border: none
+		padding: 0 40px 0 20px
+		font-size: 14px
+		color: #222
+		&::placeholder
+			color: #222	
+
+.form-group
+	position: relative
+	margin: 0
+	width: 100%
