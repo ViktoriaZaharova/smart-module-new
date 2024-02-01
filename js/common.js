@@ -99,10 +99,40 @@ $('.certificates-slider').slick({
 		settings: {
 			slidesToShow: 2,
 		}
-	}
-	]
+	}]
 })
 
+$('.reviews-pride-slider').slick({
+	slidesToShow: 3,
+	dots: true,
+	appendDots: '.reviews-pride-slider-nav',
+	appendArrows: '.reviews-pride-slider-nav',
+	prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-right"></use></svg></button>',
+	responsive: [{
+		breakpoint: 768,
+		settings: {
+			slidesToShow: 2,
+		}
+	},
+	{
+		breakpoint: 576,
+		settings: {
+			slidesToShow: 1,
+		}
+	}]
+});
+
+// показать скрытые блоки видео
+$('.btn-load-video').on('click', function (e) {
+	e.preventDefault();
+	$(this).prev('.video-wrapper').find('.video-frame:hidden').slice(0, 2).fadeIn();
+
+	var onBlock = $(this).prev('.video-wrapper').find('.video-frame:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
+});
 
 // fixed footer 
 $(document).ready(function () {

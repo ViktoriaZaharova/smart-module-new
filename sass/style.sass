@@ -180,6 +180,17 @@ button, .btn
 		box-shadow: 0 1px 30px 5px rgba(72, 195, 101, 0.3)
 		transition: box-shadow 0.3s ease-in-out
 
+.btn-grey
+	background: #f4f4f6
+	color: #222
+	&::before
+		background: linear-gradient(-90deg, #cacacc 1%, #cacacc 100%)
+	&:hover
+		background: #f4f4f6
+		color: #222
+		box-shadow: 0 1px 30px 5px rgba($grey, 0.3)
+		transition: box-shadow 0.3s ease-in-out
+
 .svg-icon
 	display: inline-block
 	width: 100%
@@ -270,12 +281,11 @@ h4, .h4
 		&:last-child
 			margin: 0
 
-
 .mt-30
 	margin-top: 30px
 
 .mb-25
-	margin-bottom: 25px	
+	margin-bottom: 25px
 
 .mb-20
 	margin-bottom: 20px
@@ -312,6 +322,9 @@ a.color-accent
 		svg
 			fill: $grey
 
+.color-accent
+	color: $accent
+
 .content-wrapper
 	position: relative
 	z-index: 2
@@ -338,6 +351,30 @@ a.color-accent
 
 .slick-slide
 	outline: none
+
+.slick-dots
+	list-style: none
+	padding: 0
+	display: flex
+	align-items: center
+	justify-content: center
+	bottom: 0
+	position: relative
+	li
+		cursor: pointer
+		transition: .3s ease
+		width: 10px
+		height: 10px
+		margin: 0 16px 0 0
+		border-radius: 50%
+		background: #d1d1d1
+		&:last-child
+			margin: 0
+		&.slick-active
+			background: #222	
+		button
+			display: none
+
 
 .slick-arrow
 	display: flex
@@ -366,7 +403,7 @@ a.color-accent
 		margin: 0 0 0 30px
 
 .slider-nav-end
-	justify-content: flex-end	
+	justify-content: flex-end
 
 //checkbox my
 .label-checkbox
