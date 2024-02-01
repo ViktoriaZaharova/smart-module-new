@@ -77,6 +77,31 @@ $('.reviews-slider').slick({
 	]
 });
 
+$('.certificates-slider').slick({
+	slidesToShow: 5,
+	appendArrows: '.certificates-slider-nav',
+	prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-right"></use></svg></button>',
+	responsive: [{
+		breakpoint: 992,
+		settings: {
+			slidesToShow: 4,
+		}
+	},
+	{
+		breakpoint: 768,
+		settings: {
+			slidesToShow: 3,
+		}
+	},
+	{
+		breakpoint: 480,
+		settings: {
+			slidesToShow: 2,
+		}
+	}
+	]
+})
 
 
 // fixed footer 

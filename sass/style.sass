@@ -199,6 +199,32 @@ ul, ol
 .list-dots
 	list-style-type: disc
 
+.list-cube
+	li
+		padding: 0 0 0 24px
+		position: relative
+		z-index: 1
+		margin: 0 0 15px
+		&:last-child
+			margin: 0
+		&::before
+			content: ''
+			position: absolute
+			left: 0
+			top: 3px
+			width: 14px
+			height: 14px
+			border: solid 1px #dadada
+			background-color: #fff
+		&::after
+			content: ''
+			position: absolute
+			width: 6px
+			height: 6px
+			top: 7px
+			left: 4px
+			background: $accent
+
 .container
 	max-width: 1200px
 	padding: 0 15px
@@ -240,18 +266,22 @@ h4, .h4
 .box-text
 	line-height: 1.5
 	p
-		margin: 0 0 30px
+		margin: 0 0 25px
 		&:last-child
 			margin: 0
 
+
 .mt-30
-	margin-top: 30px			
+	margin-top: 30px
+
+.mb-25
+	margin-bottom: 25px	
 
 .mb-20
 	margin-bottom: 20px
 
 .mb-30
-	margin-bottom: 30px	
+	margin-bottom: 30px
 
 .mb-40
 	margin-bottom: 40px
@@ -334,6 +364,9 @@ a.color-accent
 	align-items: center
 	.slick-next
 		margin: 0 0 0 30px
+
+.slider-nav-end
+	justify-content: flex-end	
 
 //checkbox my
 .label-checkbox
@@ -460,7 +493,7 @@ a.color-accent
 			color: #fff
 			background: $accent
 		&::before
-			display: none						
+			display: none
 
 .tab-content
 	width: 100%
@@ -499,6 +532,10 @@ table
 	margin: 0
 	justify-content: end
 
+.nav-pagination-v2
+	justify-content: center
+	margin: 20px auto 0
+
 .pagination
 	font-size: 16px
 	.nav-item
@@ -511,7 +548,7 @@ table
 			.nav-link
 				color: #383838
 			.company-border
-				display: block	
+				display: block
 	.nav-link
 		letter-spacing: 0.4px
 		color: #383838
@@ -534,9 +571,8 @@ table
 		left: 50%
 		top: 50%
 		transform: translate(-50%,-50%)
-		width: calc(100% + 8px)		
-		height: calc(100% + 8px)	
-		// border-width: 1px	
+		width: calc(100% + 8px)
+		height: calc(100% + 8px)
 		background: #fff
 		display: none
 		&::before, &:after
@@ -544,6 +580,4 @@ table
 		&::before
 			width: 65%
 		&:after
-			height: 65%		
-			
-			
+			height: 65%
