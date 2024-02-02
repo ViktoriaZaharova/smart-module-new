@@ -231,6 +231,10 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   color: #fff;
 }
 
+.btn-accent-black {
+  background: #6989ad;
+}
+
 .btn-green {
   color: #fff;
   background: #48c365;
@@ -267,6 +271,25 @@ button:hover, button:focus, .btn:hover, .btn:focus {
   transition: -webkit-box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out;
   transition: box-shadow 0.3s ease-in-out, -webkit-box-shadow 0.3s ease-in-out;
+}
+
+.btn-icon-arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #557497;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  fill: #fff;
+  padding: 11px 9px;
+  margin: 0 0 0 15px;
 }
 
 .svg-icon {
@@ -382,16 +405,20 @@ h4, .h4 {
   margin-top: 30px;
 }
 
-.mb-25 {
-  margin-bottom: 25px;
-}
-
 .mb-20 {
   margin-bottom: 20px;
 }
 
+.mb-25 {
+  margin-bottom: 25px;
+}
+
 .mb-30 {
   margin-bottom: 30px;
+}
+
+.mb-35 {
+  margin-bottom: 35px;
 }
 
 .mb-40 {
@@ -846,4 +873,15 @@ table {
 }
 .pagination .company-border:after {
   height: 65%;
+}
+
+.panel_heading {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.panel_heading .block_hover {
+  display: none;
+}
+.panel_heading .block_title {
+  cursor: pointer;
 }

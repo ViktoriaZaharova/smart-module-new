@@ -134,6 +134,16 @@ $('.btn-load-video').on('click', function (e) {
 	}
 });
 
+$('.btn-load-projects').on('click', function (e) {
+	e.preventDefault();
+	$(this).parents('.block_hover').find('.projects-card-col:hidden').slice(0, 3).fadeIn();
+
+	var onBlock = $(this).parents('.block_hover').find('.projects-card-col:hidden').length;
+	if (onBlock <= 0) {
+		$(this).hide();
+	}
+});
+
 // fixed footer 
 $(document).ready(function () {
 	$('.footer-wrapper').before('<div class="block-footer-height"></div>');
@@ -152,3 +162,18 @@ $('.btn-search').on('click', function () {
 Fancybox.bind("[data-fancybox]", {
 	// Your custom options
 });
+
+// accordeon
+function accordeon() {
+	var panel = $('.panel_heading');
+
+	if (panel.hasClass('in')) {
+		$('.in').find('.block_hover').slideDown();
+	}
+
+	$('.panel_heading .block_title').on('click', function () {
+		$(this).parent().toggleClass('in').find('.block_hover').slideToggle();
+	});
+}
+
+accordeon();
