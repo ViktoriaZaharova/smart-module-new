@@ -1386,3 +1386,12 @@ a.contacts-box__link:hover {
 .projects-card-col:nth-child(-n+3) {
   display: block;
 }
+
+.project-location {
+  width: 100%;
+  height: 345px;
+}
+.project-location iframe {
+  width: 100%;
+  height: 100%;
+}
