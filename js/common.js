@@ -123,6 +123,22 @@ $('.reviews-pride-slider').slick({
 	}]
 });
 
+$('.projects-slider-preview').slick({
+	slidesToShow: 3,
+	vertical: true,
+	arrows: false,
+	focusOnSelect: true,
+	asNavFor: '.projects-slider-max'
+});
+
+$('.projects-slider-max').slick({
+	slidesToShow: 1,
+	fade: true,
+	asNavFor: '.projects-slider-preview',
+	prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></button>',
+});
+
 // показать скрытые блоки видео
 $('.btn-load-video').on('click', function (e) {
 	e.preventDefault();
