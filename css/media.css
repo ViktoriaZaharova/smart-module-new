@@ -1,2 +1,26 @@
-/*==========  Desktop First  ==========*/
+/*==========	Desktop First	==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1500px) {
+  .slider-main-item__img {
+    position: absolute;
+    bottom: 0px;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .screen-box-eee {
+    background: aqua;
+    height: 300px !important;
+  }
+  .screen-box-text {
+    font-size: 14px;
+  }
+  .par-text {
+    top: 0px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .screen-box-text {
+    font-size: 12px;
+  }
+}

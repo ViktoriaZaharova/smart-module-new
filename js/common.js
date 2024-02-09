@@ -1,3 +1,67 @@
+function setPositionNav() {
+	if (window.innerWidth < 768) return;
+	setTimeout(() => {
+		const right = document.querySelector('.home-section .slick-active .main-ee-img').classList.contains('right')
+		const nav = document.querySelector('.home-section .slider-main-nav')
+		if (right) {
+			nav.style.justifyContent = 'end'
+		} else {
+			nav.style.justifyContent = ''
+		}
+	}, 100)
+}
+
+$('.slider-main').slick({
+	lazyLoad: 'ondemand',
+	slidesToShow: 1,
+	arrows: true,
+	dots: true,
+	fade: true,
+	appendDots: '.slider-main-nav',
+	appendArrows: '.slider-main-nav',
+	prevArrow: '<button type="button" class="slick-prev slick-arrow slick-arrow-my" onclick="setPositionNav()"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow slick-arrow-my" onclick="setPositionNav()"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-right"></use></svg></button>',
+})
+
+if ($(window).width() > 500) {
+
+	var parFoneMobileArr = document.querySelectorAll(".slider-main-item__img-mobile");
+	var parFonePcArr = document.querySelectorAll(".slider-main-item__img-pc");
+
+	var parTextArr = document.querySelectorAll(".slider-main .par-text");
+	var parNavArr = document.querySelectorAll(".slider-main-nav");
+
+
+	function setTranslate(xPos, yPos, el) {
+		el.style.transform = "translate3d(" + xPos + ", " + yPos + "px, 0)";
+		el.style.transition = 'transform 0.1s linear'
+	}
+
+	window.addEventListener("DOMContentLoaded", scrollLoop, false);
+
+	let xScrollPosition;
+	let yScrollPosition;
+
+	function scrollLoop() {
+		xScrollPosition = window.scrollX;
+		yScrollPosition = window.scrollY;
+
+		let heightHeaderBottom = document.querySelector('.header-bottom').getBoundingClientRect().height;
+		if (yScrollPosition >= (heightHeaderBottom + heightHeaderBottom * 0.5)) {
+			yScrollPosition = yScrollPosition * 0.2
+		} else {
+			yScrollPosition = 0
+		}
+
+		parFoneMobileArr.forEach(item => setTranslate(0, yScrollPosition, item))
+		parFonePcArr.forEach(item => setTranslate(0, yScrollPosition, item))
+		parTextArr.forEach(item => setTranslate(0, yScrollPosition, item))
+		parNavArr.forEach(item => setTranslate('-50%', yScrollPosition, item))
+
+		requestAnimationFrame(scrollLoop);
+	}
+}
+
 
 $('.clients-slider').slick({
 	slidesToShow: 1,
