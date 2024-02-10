@@ -20,7 +20,7 @@
 	width: 100%
 	display: flex
 	flex-direction: column
-	max-width: 525px
+	max-width: 535px
 
 .screen-box-text
 	color: #222
@@ -748,10 +748,6 @@ a.contacts-box__link
 	.box-text
 		color: #000
 		font-size: 15px
-		.list-cube
-			color: #656565
-			font-size: 13px
-			margin: 0 0 30px
 
 .manufacture-age
 	width: 100%
@@ -774,6 +770,11 @@ a.contacts-box__link
 	align-items: flex-start
 	flex-wrap: wrap
 	justify-content: space-between
+	&.justify-content-start
+		.list-cube
+			margin-right: 20px
+			&:last-child
+				margin-right: 0
 
 .manufacture-photo
 	width: 100%
@@ -1330,6 +1331,10 @@ a.contacts-box__link
 		p
 			line-height: normal
 
+.callback-order-wrapper
+	.h2
+		max-width: 700px
+
 .phone-call
 	width: 100%
 	display: flex
@@ -1343,3 +1348,146 @@ a.contacts-box__link
 	img
 		width: 36px
 		margin: 0 20px 0 0
+
+// page rent
+.page-rent
+	.box-text
+		font-size: 15px
+
+.rent-image
+	padding: 20px
+	img
+		box-shadow: -18px -18px 0px 0px rgba(228, 240, 254, 1)
+
+.rent-image-v2
+	img
+		box-shadow: 18px 18px 0px 0px rgba(228, 240, 254, 1)
+
+.callback-question
+	width: 100%
+	background: $accent
+	padding: 17px 20px 10px
+	.h3
+		color: #fff
+		font-size: 20px
+		margin: 0 0 10px
+		&:last-child
+			margin: 0
+	form
+		margin: 20px 0 0
+	.label-checkbox
+		font-size: 10px
+		color: #ffffff
+		a
+			color: #afafaf
+		&__custom
+			border-color: #fff
+			&::before
+				background: #fff
+
+.rent-advantages
+	width: 100%
+	margin: 16px 0 0
+	background: #f5f5f5
+	padding: 20px 20px 0
+	color: #000
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	&-box
+		width: 25%
+		text-align: center
+		margin: 0 0 20px
+		font-size: 14px
+		&__icon
+			margin: 0 auto 8px
+			@include d-flex
+			height: 54px
+			img
+				max-height: 100%
+
+.recommendation-rent
+	margin: 0 0 54px
+	h2
+		margin: 0 auto 55px
+
+.recommendation-rent-box
+	display: flex
+	align-items: center
+	margin: 20px 0 0
+	font-size: 14px
+	&__icon
+		width: 41px
+		min-width: 41px
+		margin: 0 11px 0 0
+		@include d-flex
+
+.calculate-section
+	padding: 0 0 80px
+	h2
+		margin: 0 auto 55px
+
+.calculate-wrapper
+	background: $accent
+	padding: 50px 55px 65px
+	color: #fff
+
+.slider-range-box
+	width: 100%
+	&__head
+		width: 100%
+		display: flex
+		align-items: center
+		margin: 0 0 24px
+	&__input
+		text-align: center
+		padding: 0
+		width: 36px
+		height: 36px
+		margin: 0 0 0 auto
+		border: none
+		color: #222
+		font-size: 14px
+		letter-spacing: 0.98px
+		cursor: inherit
+		&::placeholder
+			color: #222
+
+.slider-range
+	border: none
+	height: 4px
+	&.ui-widget.ui-widget-content
+		border: none
+		border-radius: 0
+	.ui-slider-range
+		border-radius: 0
+		background: #222
+	.ui-slider-handle
+		width: 15px
+		height: 15px
+		border: none
+		border-radius: 0
+		cursor: pointer
+		outline: none
+		box-shadow: none
+		background: #222
+
+.slider-range-values
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin: 15px 0 0
+	font-size: 14px
+	letter-spacing: 0.98px
+
+.form-calculate
+	font-size: 14px
+	[type='submit']
+		text-transform: uppercase
+		padding: 10px
+		width: 100%
+	&__image
+		display: flex
+		align-items: center
+		justify-content: flex-end
