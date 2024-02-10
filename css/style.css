@@ -672,6 +672,15 @@ a.color-accent:hover svg {
   padding: 20px 0 90px;
 }
 
+.breadcrumb-wrapper {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  padding: 29px 0 0;
+  top: 0;
+  left: 0;
+}
+
 .nav-breadcrumb {
   width: 100%;
   margin: 0 0 32px;
@@ -906,4 +915,13 @@ table {
 }
 .panel_heading .block_title {
   cursor: pointer;
+}
+
+.js-tab-content {
+  display: none;
+}
+.js-tab-content.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
