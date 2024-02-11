@@ -206,6 +206,23 @@ $('.projects-slider-max').slick({
 	nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-link"></use></svg></button>',
 });
 
+$('.recommended-products-slider').slick({
+	slidesToShow: 4,
+	appendArrows: '.recommended-products-slider-nav',
+	prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-right"></use></svg></button>',
+});
+
+$('.recommended-products-image-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	arrows: false
+});
+
+// $('.recommended-products-card__info').hover(function () {
+// 	$(this).parents('.recommended-products-card').find('.recommended-products-card__hidden').fadeToggle();
+// });
+
 // показать скрытые блоки видео
 $('.btn-load-video').on('click', function (e) {
 	e.preventDefault();
@@ -312,3 +329,25 @@ $(".slider-range2").slider({
 });
 
 $(".dec2").val($(".slider-range2").slider("values", 0));
+
+
+$(document).ready(function () {
+	$(".js-tab-trigger").click(function () {
+		var id = $(this).attr('data-tab'),
+			content = $(this).parents('.tabs').find('.js-tab-content[data-tab="' + id + '"]');
+
+		// $(this).parents('.tabs').find('.js-tab-trigger.active').removeClass('active'); // 1
+		// $(this).addClass('active'); // 2
+
+		$(this).parents('.tabs').find('.js-tab-content.active').removeClass('active'); // 3
+		content.addClass('active'); // 4
+	});
+
+});
+
+$('.advantages-events-box__hidden .advantages-events-box, .advantages-events-box__close').on('click', function () {
+	$(this).parents('.advantages-events-box__hidden').removeClass('active');
+});
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))

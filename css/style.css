@@ -455,6 +455,10 @@ h4, .h4 {
   margin-bottom: 75px;
 }
 
+.p-100 {
+  padding: 100px 0;
+}
+
 .font-700 {
   font-weight: 700;
 }
@@ -924,4 +928,14 @@ table {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.custom-tooltip {
+  font-family: "Esqadero";
+  font-size: 12px;
+  border-radius: 0;
+}
+
+.tooltip-inner {
+  border-radius: 0;
 }
