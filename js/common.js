@@ -255,7 +255,7 @@ $(document).ready(function () {
 // header fixed
 $(window).scroll(function () {
 	var headerHeight = $('header').height();
-	if ($(this).scrollTop() > headerHeight) {
+	if ($(this).scrollTop() > headerHeight + 100) {
 		$('.header-fixed').addClass('active');
 	} else {
 		$('.header-fixed').removeClass('active');
@@ -351,3 +351,41 @@ $('.advantages-events-box__hidden .advantages-events-box, .advantages-events-box
 
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+
+
+// новый блог ->
+// содержание
+$('.article-menu__head').on('click', function () {
+	$(this).closest('.article-menu').toggleClass('open');
+	$(this)
+		.closest('.article-menu')
+		.find('.article-menu__body')
+		.slideToggle(300);
+});
+
+$('.article-menu__toggle').on('click', function (e) {
+	e.preventDefault();
+
+	let parent = $(this).closest('.article-menu');
+
+	if (parent.hasClass('full')) {
+		$(this).text('Показать полностью');
+		parent.removeClass('full');
+		parent.find('.article-menu__head').trigger('click');
+	} else {
+		$(this).text('Скрыть');
+		parent.addClass('full');
+	}
+});
+
+// animate scroll
+$(document).ready(function () { //плавный скролл
+	$(".go_to").on("click", function (event) {
+		event.preventDefault();
+		var id = $(this).attr('href'),
+			top = $(id).offset().top;
+		var headerHeight = $('header').height();
+		$('body, html').animate({ scrollTop: top - headerHeight }, 500);
+	});
+});

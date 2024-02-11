@@ -256,6 +256,41 @@ ul, ol
 			left: 4px
 			background: $accent
 
+.list-number
+	counter-reset: item
+	li
+		counter-increment: item
+		display: flex
+		align-items: flex-start
+		// padding-left: 35px
+		&::before
+			content: counters(item, ".") "."
+			margin-right: 12px
+			color: #fff
+			background: $accent
+			width: 28px
+			height: 28px
+			min-width: 28px
+			border-radius: 50%
+			display: inline-flex
+			align-items: center
+			justify-content: center
+
+.list-checked
+	li
+		display: flex
+		align-items: flex-start
+		&::before
+			content: ''
+			@include d-flex
+			width: 24px
+			height: 24px
+			min-width: 24px
+			margin: 0 16px 0 0
+			border: solid 1px #222
+			background: url('../img/check.svg') no-repeat center
+			background-size: 16px
+
 .container
 	max-width: 1200px
 	padding: 0 15px
@@ -497,7 +532,7 @@ a.color-accent
 
 .nav-breadcrumb
 	width: 100%
-	margin: 0 0 32px
+	margin: 0 0 30px
 
 .breadcrumb
 	font-size: 10px
@@ -681,3 +716,24 @@ table
 
 .tooltip-inner
 	border-radius: 0
+
+.path-link
+	position: relative
+	z-index: 1
+	&::after
+		content: ""
+		display: block
+		width: 0%
+		height: 1px
+		background-color: #7c7b7e
+		position: absolute
+		bottom: -1px
+		left: 50%
+		transition: 0.3s all
+		-webkit-transition: 0.3s all
+		-moz-transition: 0.3s all
+		font-weight: 100 !important
+	&:hover
+		&::after
+			width: 100%
+			left: 0

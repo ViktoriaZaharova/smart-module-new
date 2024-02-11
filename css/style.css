@@ -355,6 +355,66 @@ ul, ol {
   background: #6989ad;
 }
 
+.list-number {
+  counter-reset: item;
+}
+.list-number li {
+  counter-increment: item;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.list-number li::before {
+  content: counters(item, ".") ".";
+  margin-right: 12px;
+  color: #fff;
+  background: #6989ad;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.list-checked li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.list-checked li::before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 24px;
+  height: 24px;
+  min-width: 24px;
+  margin: 0 16px 0 0;
+  border: solid 1px #222;
+  background: url("../img/check.svg") no-repeat center;
+  background-size: 16px;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 15px;
@@ -687,7 +747,7 @@ a.color-accent:hover svg {
 
 .nav-breadcrumb {
   width: 100%;
-  margin: 0 0 32px;
+  margin: 0 0 30px;
 }
 
 .breadcrumb {
@@ -938,4 +998,27 @@ table {
 
 .tooltip-inner {
   border-radius: 0;
+}
+
+.path-link {
+  position: relative;
+  z-index: 1;
+}
+.path-link::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #7c7b7e;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  font-weight: 100 !important;
+}
+.path-link:hover::after {
+  width: 100%;
+  left: 0;
 }
