@@ -336,8 +336,8 @@ $(document).ready(function () {
 		var id = $(this).attr('data-tab'),
 			content = $(this).parents('.tabs').find('.js-tab-content[data-tab="' + id + '"]');
 
-		// $(this).parents('.tabs').find('.js-tab-trigger.active').removeClass('active'); // 1
-		// $(this).addClass('active'); // 2
+		$(this).parents('.tabs').find('.js-tab-trigger.active').removeClass('active'); // 1
+		$(this).addClass('active'); // 2
 
 		$(this).parents('.tabs').find('.js-tab-content.active').removeClass('active'); // 3
 		content.addClass('active'); // 4
@@ -349,6 +349,7 @@ $('.advantages-events-box__hidden .advantages-events-box, .advantages-events-box
 	$(this).parents('.advantages-events-box__hidden').removeClass('active');
 });
 
+// tooltip
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
 
@@ -388,4 +389,161 @@ $(document).ready(function () { //плавный скролл
 		var headerHeight = $('header').height();
 		$('body, html').animate({ scrollTop: top - headerHeight }, 500);
 	});
+});
+
+
+// product slider
+
+$(document).ready(function () {
+	var ranger = $('.product-detail-page .product-image input[type="range"]');
+	var ranger2 = $('.big_range');
+	var loop_change = false; //Стоп зацикливанию
+	/**
+	* 3D модель товара
+	*/
+	$('a.js-fullscreen').click(function (e) {
+		e.preventDefault();
+		$('.spritespinBig').spritespin('api').requestFullscreen();
+	});
+
+	//next slide
+	$('#nextSlide').click(function (e) {
+		e.preventDefault();
+		$('.spritespinBig').spritespin('api').nextFrame();
+		setTimeout(function () { $('.spritespinBig').spritespin('api').nextFrame(); }, 50);
+		setTimeout(function () { $('.spritespinBig').spritespin('api').nextFrame(); }, 100);
+		setTimeout(function () { $('.spritespinBig').spritespin('api').nextFrame(); }, 150);
+		setTimeout(function () { $('.spritespinBig').spritespin('api').nextFrame(); }, 200);
+		setTimeout(function () { $('.spritespinBig').spritespin('api').nextFrame(); }, 250);
+		setTimeout(function () { $('.spritespinBig').spritespin('api').nextFrame(); }, 300);
+	});
+
+	//prew slide
+	$('#prewSlide').click(function (e) {
+		e.preventDefault();
+		$('.spritespinBig').spritespin('api').prevFrame();
+		setTimeout(function () { $('.spritespinBig').spritespin('api').prevFrame(); }, 50);
+		setTimeout(function () { $('.spritespinBig').spritespin('api').prevFrame(); }, 100);
+		setTimeout(function () { $('.spritespinBig').spritespin('api').prevFrame(); }, 150);
+		setTimeout(function () { $('.spritespinBig').spritespin('api').prevFrame(); }, 200);
+		setTimeout(function () { $('.spritespinBig').spritespin('api').prevFrame(); }, 250);
+		setTimeout(function () { $('.spritespinBig').spritespin('api').prevFrame(); }, 300);
+	});
+
+	$('.spritespin').spritespin({
+		source: '/upload/iblock/d10/d10f40b680488f97e72be1d985058c93.jpg',
+		width: 600,
+		height: 400,
+		frames: 30,
+		framesX: 5,
+		sense: -1,
+		frameTime: 160,
+		animate: false,
+		reverse: false,
+		loop: false,
+		responsive: true,
+		onLoad: function () {
+			/**
+			 * Слайдер положения 3Д картинки на странице товара
+			 * Doc: http://rangeslider.js.org/
+			 */
+			ranger.rangeslider({
+				polyfill: false,
+				onSlide: function (position, value) {
+					var api = $('.spritespin').spritespin('api');
+					api.stopAnimation();
+					api.updateFrame(value);
+					loop_change = false;
+				}
+			});
+		},
+		onFrame: function (e, data) {
+			ranger.val(data.frame);
+			if (!loop_change) {
+				loop_change = true;
+				ranger.change();
+			}
+		}
+	});
+	$('.spritespinBig').spritespin({
+		source: '/upload/iblock/e6d/e6d7ff175ae9cd157db782d196b899d9.jpg',
+		width: 600,
+		height: 400,
+		frames: 30,
+		framesX: 5,
+		sense: -1,
+		frameTime: 160,
+		animate: false,
+		reverse: false,
+		loop: false,
+		responsive: true,
+		onLoad: function () {
+
+			/**
+			 * Слайдер положения 3Д картинки на странице товара
+			 * Doc: http://rangeslider.js.org/
+			 */
+
+			$('.spritespinBig').css('display', 'block');
+			$('.spritespinBig').append('<a href="#callback-fb" class="h-callback neiros__open-lead-catch h-callback_new h-callback_in_sprite">Получить консультацию</a>');
+			$('.spritespinBig').append('<ion-icon name="close" class="exit_fs"></ion-icon>');
+			/*$('.spritespinBig').append('<div id="container_for_button"><div id="prewSlide"></div><input class="big_range" type="range" min="0" max="29" step="1" value="0" data-orientation="horizontal" /><div id="nextSlide"></div></div>');*/
+			$('.h-callback_new').click(function () {
+				document.exitFullscreen();
+			});
+			$('.exit_fs').click(function () {
+				document.exitFullscreen();
+			});
+
+			ranger2.rangeslider({
+				polyfill: false,
+				onSlide: function (position, value) {
+					var api = $('.spritespinBig').spritespin('api');
+					api.stopAnimation();
+					api.updateFrame(value);
+					loop_change = false;
+				}
+			});
+		},
+		onFrame: function (e, data) {
+			ranger2.val(data.frame);
+			if (!loop_change) {
+				loop_change = true;
+				ranger2.change();
+			}
+		}
+
+		//$('.spritespinBig').html($('.spritespinBig').html()+'<a href="#callback-fb" class="h-callback h-callback_in_sprite">Получить консультацию</a><a href="#" class="close_in_sprite">X</a>');
+
+
+	});
+
+
+	/*
+	document.addEventListener('fullscreenchange', exitHandler);
+	document.addEventListener('webkitfullscreenchange', exitHandler);
+	document.addEventListener('mozfullscreenchange', exitHandler);
+	document.addEventListener('MSFullscreenChange', exitHandler);
+
+	function exitHandler() {
+		if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+			$('.spritespinBig').css('cssText', 'display: none !important');
+		}
+	} */
+});
+
+// amount
+$('.down').on("click", function () {
+	let $input = $(this).parent().find('input');
+	let count = parseInt($input.val()) - 1;
+	count = count < 1 ? 1 : count;
+	$input.val(count);
+	$input.change();
+	return false;
+});
+$('.up').on("click", function () {
+	let $input = $(this).parent().find('input');
+	$input.val(parseInt($input.val()) + 1);
+	$input.change();
+	return false;
 });

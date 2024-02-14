@@ -709,13 +709,13 @@ table
 	&.active
 		display: flex
 
-.custom-tooltip
+.custom-tooltip.tooltip
 	font-family: $default-font
-	font-size: 12px
-	border-radius: 0
+	font-size: 14px
+	border-radius: 4px
 
-.tooltip-inner
-	border-radius: 0
+	.tooltip-inner
+		border-radius: 4px
 
 .path-link
 	position: relative
@@ -737,3 +737,38 @@ table
 		&::after
 			width: 100%
 			left: 0
+
+.rangeslider
+	background: #e6e6e6
+	position: relative
+
+.amount
+	display: flex
+	align-items: center
+	input
+		padding: 0
+		text-align: center
+		border: solid 1px #507298
+		background-color: #fff
+		width: 28px
+		min-width: 28px
+		height: 28px
+		margin: 0 4px
+		color: #2a2a2a
+		font-size: 13px
+
+	span
+		cursor: pointer
+		@include d-flex
+		color: #2a2a2a
+		font-size: 13px
+		border: solid 1px #507298
+		background: #f9f9f9
+		width: 28px
+		height: 28px
+		min-width: 28px
+		transition: .3s ease
+		&:hover
+			background: #507298
+			color: #fff
+	  

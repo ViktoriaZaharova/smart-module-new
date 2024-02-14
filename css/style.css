@@ -990,14 +990,13 @@ table {
   display: flex;
 }
 
-.custom-tooltip {
+.custom-tooltip.tooltip {
   font-family: "Esqadero";
-  font-size: 12px;
-  border-radius: 0;
+  font-size: 14px;
+  border-radius: 4px;
 }
-
-.tooltip-inner {
-  border-radius: 0;
+.custom-tooltip.tooltip .tooltip-inner {
+  border-radius: 4px;
 }
 
 .path-link {
@@ -1021,4 +1020,55 @@ table {
 .path-link:hover::after {
   width: 100%;
   left: 0;
+}
+
+.rangeslider {
+  background: #e6e6e6;
+  position: relative;
+}
+
+.amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.amount input {
+  padding: 0;
+  text-align: center;
+  border: solid 1px #507298;
+  background-color: #fff;
+  width: 28px;
+  min-width: 28px;
+  height: 28px;
+  margin: 0 4px;
+  color: #2a2a2a;
+  font-size: 13px;
+}
+.amount span {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #2a2a2a;
+  font-size: 13px;
+  border: solid 1px #507298;
+  background: #f9f9f9;
+  width: 28px;
+  height: 28px;
+  min-width: 28px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.amount span:hover {
+  background: #507298;
+  color: #fff;
 }

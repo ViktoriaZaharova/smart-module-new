@@ -1600,7 +1600,7 @@ a.contacts-box__link
 		justify-content: flex-end
 		margin: 15px 0 9px
 		position: relative
-		z-index: 1
+		z-index: 2
 	&__info
 		margin: 0 4px 0 0
 		&:hover
@@ -1684,11 +1684,11 @@ a.contacts-box__link
 		box-shadow: 0px 3px 13px 0 rgba(0, 0, 0, 0.13)
 		border: none
 
-// .article-sidebar-fixed
-// 	width: 100%
-// 	position: sticky
-// 	top: 90px
-// 	left: 0
+.article-sidebar-fixed
+	width: 100%
+	position: sticky
+	top: 90px
+	left: 0
 
 .article-box
 	box-shadow: 0px 3px 13px 0 rgba(0, 0, 0, 0.13)
@@ -1925,3 +1925,184 @@ a.contacts-box__link
 
 .comment-section
 	margin: 50px 0 0
+
+// page	product
+.product-information
+	font-size: 14px
+	width: 100%
+	&__footer
+		width: 100%
+		display: flex
+		align-items: center
+	&__btn
+		margin: 0 0 0 auto
+		padding: 12.5px 35px
+	.price
+		color: #3f3f3f
+		strong
+			display: inline-block
+			margin: 0 5px 0 0
+
+.product-information-advantages
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+
+.product-information-advantages-item
+	width: 50px
+	height: 50px
+	min-width: 50px
+	margin: 0 12px 12px 0
+	@include d-flex
+	transition: .3s ease
+	cursor: pointer
+
+	&:last-child
+		margin-right: 0
+	img
+		width: 100%
+		height: 100%
+		object-fit: cover
+		transition: .3s ease
+	.img-hover
+		display: none
+	&:hover
+		.img-default
+			display: none
+		.img-hover
+			display: block
+
+.product-information-characteristics
+	width: 100%
+	margin: 25px 0 20px
+	li
+		border: solid 1px #dcdcdc
+		background-color: #e4e4e4
+		padding: 12px 15px
+		&:nth-child(even)
+			background: #f9f9f9
+		span
+			margin: 0 0 0 5px
+			display: inline-block
+
+.nav-tabs-products
+	justify-content: flex-start
+	border: none
+	.nav-link
+		padding: 0 0 38px
+		margin: 0 130px 0 0
+		&:last-child
+			margin: 0
+		&.active
+			&::before
+				display: block
+				width: 26px
+		&::before
+			content: ''
+			position: absolute
+			background: url('../img/tab-tri.png') no-repeat center
+			background-size: 100%
+			width: 26px
+			height: 12px
+			left: 50%
+			bottom: -1px
+			transform: translate(-50%,0)
+			transition: .3s ease
+			box-shadow: none
+			display: none
+
+.tab-content-product
+	margin: 0
+
+.section-tabs-content
+	background: #f7f7f7
+	border-top: 1px solid #507298
+	border-bottom: 1px solid #507298
+	padding: 50px 0
+	.box-text
+		font-size: 15px
+
+.tab-content-product-wrapper
+	width: 100%
+	display: flex
+	align-items: stretch
+	flex-wrap: wrap
+
+.tab-product-category
+	max-width: 320px
+	width: 100%
+	&__col
+		border: solid 1px #e2e2e2
+		background-color: #f0f0f0
+		width: 100%
+		position: sticky
+		top: 75px
+		left: 0
+
+.tab-product-category-item
+	width: 100%
+	display: flex
+	align-items: center
+	cursor: pointer
+	transition: .3s ease
+	padding: 12px 23px
+	letter-spacing: 1.44px
+	font-size: 16px
+	font-family: "Arial", sans-serif
+	&:hover
+		text-decoration: underline
+	&__icon
+		@include d-flex
+		width: 22px
+		min-width: 22px
+		margin: 0 20px 0 0
+	&.active
+		color: #fff
+		background: #507298
+		.tab-product-category-item__icon
+			filter: brightness(0) invert(1)
+
+.tab-product-category-content
+	width: calc(100% - 320px)
+	padding: 0 0 0 55px
+	.js-tab-content
+		flex-wrap: wrap
+
+.product-component-row
+	width: 100%
+	display: flex
+	align-items: center
+	padding: 0 0 24px
+	margin: 0 0 24px
+	border-bottom: 1px solid rgba(#c9c9c9, .4)
+	color: #2a2a2a
+	font-size: 13px
+	&:last-child
+		margin: 0
+	&__img
+		width: 52px
+		min-width: 52px
+		@include d-flex
+		margin: 0 18px 0 0
+	&__name
+		max-width: 200px
+		margin: 0 auto 0 0
+		color: #2a2a2a
+		&:hover
+			color: $accent
+	.price-wrapper
+		margin: 0 40px 0 0
+		p
+			color: #808080
+			margin: 0 0 10px
+			font-size: 11px
+	.btn-add-card
+		margin: 0 15px 0 0
+
+.btn-add-card
+	padding: 5px 22px
+	font-size: 12px
+	.fa
+		font-size: 15px
+		margin: 0 10px 0 0
