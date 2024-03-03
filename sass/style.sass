@@ -711,11 +711,12 @@ table
 
 .custom-tooltip.tooltip
 	font-family: $default-font
-	font-size: 14px
+	font-size: 12px
 	border-radius: 4px
 
 	.tooltip-inner
 		border-radius: 4px
+		font-size: 12px
 
 .path-link
 	position: relative
@@ -741,6 +742,36 @@ table
 .rangeslider
 	background: #e6e6e6
 	position: relative
+
+#container_for_button
+	width: 100%
+
+.product-detail-page .product-image .rangeslider
+	height: 6px
+	margin: 5px 0
+	border-radius: 0
+	background: #dcdcdc
+	box-shadow: none
+	&__fill
+		background: #507298
+		border-radius: 0
+	&__handle
+		width: 18px
+		height: 18px
+		background: #353535
+		border: 0
+		top: -7px
+		border-radius: 0
+		box-shadow: none
+
+		&::after
+			content: '< >'
+			border-radius: 0
+			color: #ccc
+			font-size: 9px
+			display: flex
+			align-items: center
+			justify-content: center
 
 .amount
 	display: flex
@@ -771,4 +802,3 @@ table
 		&:hover
 			background: #507298
 			color: #fff
-	  

@@ -992,11 +992,12 @@ table {
 
 .custom-tooltip.tooltip {
   font-family: "Esqadero";
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 4px;
 }
 .custom-tooltip.tooltip .tooltip-inner {
   border-radius: 4px;
+  font-size: 12px;
 }
 
 .path-link {
@@ -1025,6 +1026,48 @@ table {
 .rangeslider {
   background: #e6e6e6;
   position: relative;
+}
+
+#container_for_button {
+  width: 100%;
+}
+
+.product-detail-page .product-image .rangeslider {
+  height: 6px;
+  margin: 5px 0;
+  border-radius: 0;
+  background: #dcdcdc;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.product-detail-page .product-image .rangeslider__fill {
+  background: #507298;
+  border-radius: 0;
+}
+.product-detail-page .product-image .rangeslider__handle {
+  width: 18px;
+  height: 18px;
+  background: #353535;
+  border: 0;
+  top: -7px;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.product-detail-page .product-image .rangeslider__handle::after {
+  content: "< >";
+  border-radius: 0;
+  color: #ccc;
+  font-size: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .amount {

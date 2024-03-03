@@ -391,6 +391,36 @@ $(document).ready(function () { //плавный скролл
 	});
 });
 
+$('.additional').slick({
+	infinite: false,
+	slidesToShow: 1,
+	slidesToScroll: 1,
+	arrows: true,
+	dots: false,
+	vertical: true,
+	variableWidth: false,
+	prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-right"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 1920,
+			settings: {
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				vertical: true
+			}
+		},
+		{
+			breakpoint: 769,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2,
+				vertical: false
+			}
+		}
+	]
+
+});
 
 // product slider
 
@@ -431,8 +461,8 @@ $(document).ready(function () {
 	});
 
 	$('.spritespin').spritespin({
-		source: '/upload/iblock/d10/d10f40b680488f97e72be1d985058c93.jpg',
-		width: 600,
+		source: 'img/d10f40b680488f97e72be1d985058c93.jpeg',
+		width: 550,
 		height: 400,
 		frames: 30,
 		framesX: 5,
@@ -466,7 +496,7 @@ $(document).ready(function () {
 		}
 	});
 	$('.spritespinBig').spritespin({
-		source: '/upload/iblock/e6d/e6d7ff175ae9cd157db782d196b899d9.jpg',
+		source: 'img/e6d7ff175ae9cd157db782d196b899d9.jpeg',
 		width: 600,
 		height: 400,
 		frames: 30,
@@ -485,10 +515,11 @@ $(document).ready(function () {
 			 */
 
 			$('.spritespinBig').css('display', 'block');
-			$('.spritespinBig').append('<a href="#callback-fb" class="h-callback neiros__open-lead-catch h-callback_new h-callback_in_sprite">Получить консультацию</a>');
+			$('.spritespinBig').append('<a href="#" class="h-callback neiros__open-lead-catch h-callback_new h-callback_in_sprite btn btn-green" data-bs-toggle="modal" data-bs-target="#callbackModal">Получить консультацию</a>');
 			$('.spritespinBig').append('<ion-icon name="close" class="exit_fs"></ion-icon>');
 			/*$('.spritespinBig').append('<div id="container_for_button"><div id="prewSlide"></div><input class="big_range" type="range" min="0" max="29" step="1" value="0" data-orientation="horizontal" /><div id="nextSlide"></div></div>');*/
-			$('.h-callback_new').click(function () {
+			$('.h-callback_new').click(function (e) {
+				e.preventDefault();
 				document.exitFullscreen();
 			});
 			$('.exit_fs').click(function () {
@@ -531,6 +562,8 @@ $(document).ready(function () {
 		}
 	} */
 });
+
+
 
 // amount
 $('.down').on("click", function () {

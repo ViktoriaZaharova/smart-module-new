@@ -3074,3 +3074,110 @@ a.contacts-box__link:hover {
   font-size: 15px;
   margin: 0 10px 0 0;
 }
+
+.product-detail-page h1 {
+  margin: 0 auto 70px;
+}
+.product-detail-page .product-image {
+  overflow: hidden;
+  width: calc(100% - 97px);
+  padding: 0 50px 0 56px;
+  min-height: 150px;
+  position: relative;
+  z-index: 1;
+}
+
+.js-fullscreen {
+  position: absolute;
+  z-index: 1;
+  right: 20px;
+  top: 0;
+  color: #000;
+}
+
+.additional {
+  max-width: 97px;
+  width: 100%;
+}
+.additional a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1%;
+  margin: 7px 0;
+  position: relative;
+}
+.additional a:hover .image-border {
+  opacity: 1;
+}
+.additional a:hover img {
+  opacity: 1;
+}
+.additional .image-border {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: #fff;
+  border: 2px solid #65809e;
+}
+.additional img {
+  opacity: 0.6;
+  position: relative;
+  z-index: 1;
+}
+.additional .slick-arrow {
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  fill: rgba(34, 34, 34, 0.3);
+}
+.additional .slick-arrow:hover {
+  fill: #6989ad;
+}
+.additional .slick-arrow svg {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.additional.slick-vertical.slick-initialized.slick-slider {
+  height: 100%;
+}
+
+.spritespinBig {
+  display: none !important;
+}
+.spritespinBig:-webkit-full-screen {
+  display: block !important;
+}
+.spritespinBig:-ms-fullscreen {
+  display: block !important;
+}
+.spritespinBig:fullscreen {
+  display: block !important;
+}
+.spritespinBig .h-callback {
+  display: none;
+}
+.spritespinBig .h-callback:first-of-type {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.h-callback_in_sprite {
+  position: absolute;
+  left: 15%;
+  top: 5%;
+  margin-right: 0 !important;
+}
