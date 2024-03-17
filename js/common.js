@@ -167,7 +167,14 @@ $('.certificates-slider').slick({
 			slidesToShow: 2,
 		}
 	}]
-})
+});
+
+$('.certificates-sidebar-slider').slick({
+	slidesToShow: 1,
+	fade: true,
+	prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-right"></use></svg></button>',
+});
 
 $('.reviews-pride-slider').slick({
 	slidesToShow: 3,
@@ -216,8 +223,20 @@ $('.recommended-products-slider').slick({
 $('.recommended-products-image-slider').slick({
 	slidesToShow: 1,
 	fade: true,
-	arrows: false
+	arrows: false,
+	// dots: true,
 });
+
+function paginationImageMouseEnter(element, notSlickGoTo = false) {
+	if (!element || !$) return
+	//console.log(element)
+	const index = $(element).attr('data-index');
+	const parent = $(element).closest('.product-slider')
+	if (!notSlickGoTo) parent.find('.recommended-products-image-slider').slick('slickGoTo', index, true);
+	parent.find('.product-pagination-image a').removeClass('active');
+	$(element).addClass('active');
+}
+
 
 // $('.recommended-products-card__info').hover(function () {
 // 	$(this).parents('.recommended-products-card').find('.recommended-products-card__hidden').fadeToggle();
@@ -330,6 +349,18 @@ $(".slider-range2").slider({
 
 $(".dec2").val($(".slider-range2").slider("values", 0));
 
+$(".slider-range3").slider({
+	min: 0,
+	max: 20,
+	value: 6,
+	animate: "fast",
+	range: "min",
+	slide: function (event, ui) {
+		$(".dec3").val(ui.value);
+	}
+});
+
+$(".dec3").val($(".slider-range3").slider("values", 0));
 
 $(document).ready(function () {
 	$(".js-tab-trigger").click(function () {

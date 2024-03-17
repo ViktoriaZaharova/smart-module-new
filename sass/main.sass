@@ -1424,8 +1424,13 @@ a.contacts-box__link
 	&__icon
 		width: 41px
 		min-width: 41px
-		margin: 0 11px 0 0
+		margin: 0 15px 0 0
 		@include d-flex
+	.box-text
+		p
+			margin: 0 0 5px
+			&:last-child
+				margin: 0
 
 .calculate-section
 	padding: 0 0 80px
@@ -1476,6 +1481,7 @@ a.contacts-box__link
 		outline: none
 		box-shadow: none
 		background: #222
+		top: -6px
 
 .slider-range-values
 	width: 100%
@@ -1496,6 +1502,11 @@ a.contacts-box__link
 		display: flex
 		align-items: center
 		justify-content: flex-end
+	.label-checkbox
+		&__custom
+			width: 14px
+			height: 14px
+			min-width: 14px
 
 // page events
 .page-events
@@ -1584,6 +1595,8 @@ a.contacts-box__link
 	overflow: hidden
 	&:hover
 		box-shadow: -1px 0px 10px 0 rgba(3, 3, 3, 0.17)
+		.product-pagination-image
+			opacity: 1
 	&__show
 		position: relative
 		width: 100%
@@ -2181,5 +2194,297 @@ a.contacts-box__link
 	position: absolute
 	left: 15%
 	top: 5%
-	// padding: 0px 15px !important
 	margin-right: 0 !important
+
+// catalog page
+.catalog-content
+	width: calc(100% - 285px)
+	padding: 0 0 0 45px
+
+.manager-callback
+	width: 100%
+	margin: 0 0 30px
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	padding: 25px
+	background: #f5f5f5
+
+.manager-callback-wrapper
+	width: 170px
+
+.manager-callback-photo
+	position: relative
+	width: 100%
+	height: 170px
+	z-index: 1
+	padding: 10px
+	&:hover
+		.img-default
+			display: none
+		.img-hover
+			display: block
+	img
+		transition: .3s ease
+	.company-border::before
+		width: 89%
+
+.img-hover
+	display: none
+
+.manager-callback-content
+	width: calc(100% - 170px)
+	padding: 10px 0 0 30px
+
+.manager-callback__title
+	margin: 0 0 20px
+	font-weight: bold
+
+.manager-callback-name
+	margin: 20px 0 0
+
+.manager-name
+	font-size: 12px
+	font-weight: bold
+
+.manager-position
+	color: #666
+	margin: 2px 0 0
+	font-size: 11px
+
+.sidebar
+	max-width: 285px
+	width: 100%
+	.advantages-events
+		flex-wrap: wrap
+		border: solid 1px #dadada
+		padding: 30px
+		margin: 30px 0
+	.advantages-events-box
+		width: 100%
+		padding: 0 0 25px
+		margin: 0 0 25px
+		border-bottom: 1px solid #f5f5f5
+		cursor: inherit
+		&__icon
+			img
+				transition: 0.5s all
+		&:last-child
+			margin: 0
+			padding: 0
+			border: none
+		&:hover
+			color: inherit
+			.advantages-events-box__icon
+				img
+					transform: rotateY(180deg)
+	.panel_heading
+		&.in
+			.block_title
+				&::after
+					transform: rotate(180deg)
+	.block_title
+		padding: 16px
+		display: flex
+		align-items: center
+		color: #383838
+		h4, .h4
+			font-size: 14px
+			letter-spacing: 0.35px
+		&::after
+			content: '\f107'
+			@include d-flex
+			color: #656565
+			font-size: 13px
+			font-family: 'FontAwesome', sans-serif
+			letter-spacing: 0.91px
+	.block_hover
+		padding: 11px 25px 30px
+	.label-checkbox
+		color: #656565
+		&__custom
+			width: 14px
+			height: 14px
+			min-width: 14px
+		.val
+			margin: 0 0 0 5px
+	.list-checkbox
+		max-height: 400px
+		overflow-y: auto
+
+.sidebar-head
+	margin: 0 0 30px
+	width: 100%
+	padding: 0 0 16px
+	position: relative
+	z-index: 1
+	border-bottom: 2px solid #e5e5e5
+	&::before
+		content: ''
+		position: absolute
+		left: 0
+		bottom: -2px
+		height: 2px
+		width: 50px
+		background: #507298
+.sidebar-title
+	h3
+		font-size: 22px
+
+.sidebar-body
+	width: 100%
+	margin: 0 0 30px
+
+.sidebar-box
+	width: 100%
+	margin: 0 0 30px
+	border: solid 1px #dadada
+	background-color: #fff
+	&:last-child
+		margin: 0
+
+.sidebar-card
+	width: 100%
+	border: solid 1px #dadada
+	background-color: #fff
+	margin: 0 0 -1px
+	&__footer
+		padding: 16px
+		.btn-group
+			justify-content: space-between
+		.btn
+			font-size: 14px
+			padding: 10px 20px
+			flex: none
+.list-checkbox
+	width: 100%
+	li
+		margin: 0 0 18px
+		&:last-child
+			margin: 0
+
+.sales-sidebar
+	position: sticky
+	z-index: 2
+	top: 90px
+	left: 0
+	box-shadow: 0px 9px 13px 0 rgba(105, 137, 173, 0.18)
+	border: solid 1px #dadada
+	background-color: #fff
+	padding: 25px 12px
+	&__title
+		margin: 0 0 20px
+		color: #383838
+		width: 100%
+		font-size: 16px
+
+.form-sales
+	input
+		text-align: center
+	[type='submit']
+		padding: 10px 20px
+		width: 100%
+		margin: 15px 0
+
+.certificates-sidebar
+	padding: 22px 0 28px
+
+.certificates-sidebar
+	.slick-arrow
+		position: absolute
+		top: 50%
+		transform: translate(0,-50%)
+		&:hover
+			fill: $accent
+	.slick-prev
+		left: 7px
+	.slick-next
+		right: 7px
+		left: auto
+
+.certificates-sidebar-slider
+	.certificate-box
+		width: 100%
+		max-width: none
+		margin: 0
+
+.product-pagination-image
+	padding-top: 10px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	opacity: 0
+	transition: opacity 0.2s ease
+	a
+		margin-right: 3px
+		height: 2px
+		background-color: #cdcdcd
+		cursor: pointer
+		width: 100%
+		position: relative
+		display: block
+		&::before
+			content: ""
+			cursor: pointer
+			position: absolute
+			bottom: 0
+			left: 0
+			min-height: 190px
+			width: 100%
+			opacity: 0
+		&.active
+			background: $accent
+
+.btn-loader
+	margin: 10px auto 30px
+
+.prices-catalog
+	padding: 86px 0 96px
+	.callback-order-wrapper
+		margin: 40px auto 0
+
+.description-catalog
+	margin: 70px 0 80px
+
+.description-catalog-wrapper
+	width: 100%
+	display: flex
+	align-items: flex-start
+	flex-wrap: wrap
+	margin: 40px 0 0
+
+.description-catalog-box
+	flex: 1
+	text-align: center
+	color: #000
+	margin: 0 0 40px
+	font-size: 13px
+	&:hover
+		color: $accent
+	&__icon
+		margin: 0 auto 30px
+		@include d-flex
+		height: 110px
+		img
+			max-height: 100%
+
+.calculate-catalog
+	.calculate-wrapper
+		background: #f5f5f5
+		color: #333
+		.label-checkbox
+			font-size: 14px
+			&__custom
+				background: #fff
+	h3
+		margin: 0 0 20px
+	.slider-range-box
+		margin: 80px 0 0
+		&__head
+			font-size: 20px
+			input
+				font-size: 20px
+				margin: 0 0 0 5px
+				background: transparent
+	.slider-range .ui-slider-range
+		background: $accent
