@@ -618,4 +618,140 @@ $(document).ready(function () {
 
 
 
+$('#map-search').on('keyup', function () {
 
+	$.ajax({
+		type: "POST",
+		url: "ajax/search.php",
+		data: {
+			city: $(this).val()
+		},
+		success: function (html) {
+			$('#container').css('display', 'none');
+			$('.city-block').css('display', 'block');
+			$('.city-block').html(html);
+		}
+	});
+	$('#select-city-fo-map .p-popup__title span').html('Выберите свой город');
+	$('#select-city-fo-map .back-to-map').css('display', 'block');
+
+})
+
+
+$(document).on('click', '.all-region-mobile span', function () {
+
+	$.ajax({
+		type: "POST",
+		url: "ajax/search.php",
+		data: {
+			region: $(this).html()
+		},
+		success: function (html) {
+			$('#container').css('display', 'none');
+			$('.city-block').css('display', 'block');
+			$('.city-block').html(html);
+			$('#select-city-fo-map .p-popup__title span').html('Выберите свой город');
+			$('#select-city-fo-map .back-to-map').css('display', 'block');
+		}
+	});
+
+})
+
+
+$('.back-to-map').on('click', function () {
+	$('.city-block').css('display', 'none');
+	$('#select-city-fo-map .p-popup__title span').html('Выберите свой регион на карте');
+	$('#container').css('display', 'block');
+	$('#select-city-fo-map .back-to-map').css('display', 'none');
+
+})
+scale = 600;
+if ($(window).width() <= 768) {
+	$('#select-city-fo-map .p-popup__title span').html('Выберите свой регион');
+	$('.back-to-map').html('К выбору региона');
+	$.ajax({
+		type: "POST",
+		url: "ajax/search.php",
+		data: {
+			allregion: ''
+		},
+		success: function (html) {
+			$('#container').html(html);
+		}
+	});
+}
+
+function start_map() {
+
+	if ($(window).width() >= 1024) {
+		console.log($('#container').html());
+		if ($('#container').html() === '') {
+			var width = $('#container').width(),
+				height = $('#container').height();
+
+			//basic map config with custom fills, mercator projection
+			var map = new Datamap({
+				scope: 'rus',
+				element: document.getElementById('container'),
+				responsive: true,
+				setProjection: function (element) {
+					var projection = d3.geo.albers()
+						.rotate([-105, 0])
+						.center([-10, 65])
+						.parallels([52, 64])
+						.scale(scale)
+						.translate([width / 2, height / 2]);
+					var path = d3.geo.path()
+						.projection(projection);
+
+					return {
+						path: path,
+						projection: projection
+					};
+				},
+				fills: {
+					defaultFill: '#E0E0E0',
+					lt50: 'rgba(0,244,244,0.9)',
+					gt50: 'red'
+				},
+
+				data: {
+					'071': {
+						fillKey: 'lt50'
+					},
+					'001': {
+						fillKey: 'gt50'
+					}
+				},
+				geographyConfig: {
+					highlightFillColor: '#638FC1',
+					highlightBorderColor: 'rgba(245, 245, 245, 0.2)'
+				},
+				done: function (datamap) {
+					datamap.svg.selectAll('.datamaps-subunit').on('click', function (geography) {
+						//geography.properties.name
+
+						$.ajax({
+							type: "POST",
+							url: "/include/ajax/search.php",
+							data: {
+								region: geography.properties.name
+							},
+							success: function (html) {
+								$('#container').css('display', 'none');
+								$('.city-block').css('display', 'block');
+								$('.city-block').html(html);
+								$('#select-city-fo-map .p-popup__title span').html('Выберите свой город');
+								$('#select-city-fo-map .back-to-map').css('display', 'block');
+							}
+						});
+					});
+				}
+			});
+
+			window.addEventListener('resize', function (event) {
+				map.resize();
+			});
+		}
+	}
+}

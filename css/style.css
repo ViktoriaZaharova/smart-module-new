@@ -55,6 +55,10 @@ body {
   color: #222;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
