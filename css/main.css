@@ -3685,3 +3685,7 @@ a.contacts-box__link:hover {
 .catalog-menu__submenu a:hover {
   color: #383838;
 }
+
+.timer_block {
+  margin: 25px 0;
+}

@@ -1559,7 +1559,78 @@
                     До конца акции осталось:
                   </div>
 
-                  <div class="timer"></div>
+                  <div class="timer_block">
+                    <script data-skip-moving="true">
+                      (function () {
+                        var _id = "6cd91e0e0899178fc878278f6dbfc92b";
+                        while (document.getElementById("timer" + _id))
+                          _id = _id + "0";
+                        document.write(
+                          "<div id='timer" +
+                            _id +
+                            "' style='min-width:222px;height:56px;'></div>"
+                        );
+                        var _t = document.createElement("script");
+                        _t.src = "https://megatimer.ru/timer/timer.min.js";
+                        var _f = function (_k) {
+                          var l = new MegaTimer(_id, {
+                            view: [1, 1, 1, 1],
+                            type: {
+                              currentType: "2",
+                              params: {
+                                startByFirst: true,
+                                days: "1",
+                                hours: "16",
+                                minutes: "48",
+                                seconds: "25",
+                                utc: 0,
+                              },
+                            },
+                            design: {
+                              type: "circle",
+                              params: {
+                                width: "2",
+                                radius: "29",
+                                line: "solid",
+                                "line-color": "#6989ad",
+                                background: "solid",
+                                "background-color": "#dadada",
+                                direction: "direct",
+                                "number-font-family": {
+                                  family: "Esqadero",
+                                  <!-- link: "<link href='//fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic' rel='stylesheet'>", -->
+                                },
+                                "number-font-size": "15",
+                                "number-font-color": "#383838",
+                                "separator-margin": "0",
+                                "separator-on": false,
+                                "separator-text": ":",
+                                "text-on": true,
+                                "text-font-family": {
+                                  family: "Esqadero",
+                                },
+                                "text-font-size": "10",
+                                "text-font-color": "#383838",
+                              },
+                            },
+                            designId: 7,
+                            theme: "white",
+                            width: 56,
+                            height: 56,
+                          });
+                          if (_k != null) l.run();
+                        };
+                        _t.onload = _f;
+                        _t.onreadystatechange = function () {
+                          if (_t.readyState == "loaded") _f(1);
+                        };
+                        var _h =
+                          document.head ||
+                          document.getElementsByTagName("head")[0];
+                        _h.appendChild(_t);
+                      }).call(this);
+                    </script>
+                  </div>
 
                   <form method="post" class="form-sales">
                     <label
