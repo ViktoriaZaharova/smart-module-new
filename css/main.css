@@ -2195,6 +2195,9 @@ a.contacts-box__link:hover {
   height: 14px;
   min-width: 14px;
 }
+.form-calculate .label-checkbox__text {
+  width: calc(100% - 14px);
+}
 
 .page-events {
   padding: 70px 0 125px;
@@ -3576,6 +3579,13 @@ a.contacts-box__link:hover {
   max-height: 100%;
 }
 
+.calculate-catalog .form-calculate [type=submit] {
+  margin: 0 auto;
+  padding: 10px 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
 .calculate-catalog .calculate-wrapper {
   background: #f5f5f5;
   color: #333;
@@ -3585,6 +3595,9 @@ a.contacts-box__link:hover {
 }
 .calculate-catalog .calculate-wrapper .label-checkbox__custom {
   background: #fff;
+}
+.calculate-catalog .calculate-wrapper .btn-toolip-default {
+  margin-top: -5px;
 }
 .calculate-catalog h3 {
   margin: 0 0 20px;
@@ -3602,4 +3615,73 @@ a.contacts-box__link:hover {
 }
 .calculate-catalog .slider-range .ui-slider-range {
   background: #6989ad;
+}
+
+.sidebar-menu {
+  margin: 0 0 50px;
+}
+
+.catalog-menu {
+  font-size: 14px;
+  letter-spacing: 0.35px;
+  width: 100%;
+}
+.catalog-menu__list {
+  width: 100%;
+  position: relative;
+  margin: 0 0 24px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.catalog-menu__list:last-child {
+  margin: 0;
+}
+.catalog-menu__link {
+  padding: 0 0 0 18px;
+  position: relative;
+  z-index: 1;
+  color: #383838;
+}
+.catalog-menu__link::before {
+  content: "\f105";
+  font-family: "FontAwesome", sans-serif;
+  left: 0;
+  top: 0;
+  position: absolute;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.catalog-menu__link.active {
+  color: #507298;
+  font-weight: bold;
+}
+.catalog-menu__link.active::before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+.catalog-menu__dropdown {
+  width: 100%;
+  margin: 23px 0 39px;
+  padding: 0 0 0 18px;
+  border-left: 4px solid rgba(80, 114, 152, 0.5);
+  font-size: 12px;
+  display: none;
+}
+.catalog-menu__dropdown.active {
+  display: block;
+}
+.catalog-menu__submenu {
+  letter-spacing: 0.3px;
+}
+.catalog-menu__submenu li {
+  margin: 0 0 20px;
+}
+.catalog-menu__submenu li:last-child {
+  margin: 0;
+}
+.catalog-menu__submenu a {
+  color: #999999;
+}
+.catalog-menu__submenu a:hover {
+  color: #383838;
 }

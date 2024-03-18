@@ -494,6 +494,7 @@ a.color-accent
 	position: relative
 	display: flex
 	align-items: flex-start
+	flex-wrap: wrap
 	color: #383838
 	font-size: 12px
 	cursor: pointer
@@ -506,9 +507,11 @@ a.color-accent
 			~ .label-checkbox__custom
 				&::before
 					display: block
+			~ .label-checkbox__image
+				border-color: $accent		
 
 	&__custom
-		margin: 0 8px 0 0
+		margin: 0
 		position: relative
 		border-radius: 0
 		border: solid 1px #c9c9c9
@@ -531,6 +534,20 @@ a.color-accent
 			z-index: -1
 			display: none
 			transition: .3s ease
+	&__text
+		width: calc(100% - 18px)
+		padding: 0 0 0 8px
+	&__image
+		margin: 25px 0 0
+		max-width: 211px
+		width: 100%
+		height: 131px
+		border: solid 2px #ddd
+		transition: .3s ease
+		background: #fff
+		@include d-flex
+		img
+			max-height: 100%
 
 //checkbox my end
 
@@ -733,6 +750,22 @@ table
 		border-radius: 4px
 		font-size: 12px
 
+.btn-toolip-default
+	background: #ddd
+	width: 23px
+	height: 23px
+	min-width: 23px
+	border-radius: 50%
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	color: #fff
+	font-size: 14px
+	margin: 0 0 0 10px
+	&:hover
+		background: $accent
+		color: #fff
+
 .path-link
 	position: relative
 	z-index: 1
@@ -817,3 +850,5 @@ table
 		&:hover
 			background: #507298
 			color: #fff
+
+	

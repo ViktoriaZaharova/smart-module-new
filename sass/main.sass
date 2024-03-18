@@ -1507,6 +1507,8 @@ a.contacts-box__link
 			width: 14px
 			height: 14px
 			min-width: 14px
+		&__text
+			width: calc(100% - 14px)
 
 // page events
 .page-events
@@ -2469,6 +2471,11 @@ a.contacts-box__link
 			max-height: 100%
 
 .calculate-catalog
+	.form-calculate
+		[type='submit']
+			margin: 0 auto
+			padding: 10px 50px
+			width: fit-content
 	.calculate-wrapper
 		background: #f5f5f5
 		color: #333
@@ -2476,6 +2483,8 @@ a.contacts-box__link
 			font-size: 14px
 			&__custom
 				background: #fff
+		.btn-toolip-default
+			margin-top: -5px
 	h3
 		margin: 0 0 20px
 	.slider-range-box
@@ -2488,3 +2497,55 @@ a.contacts-box__link
 				background: transparent
 	.slider-range .ui-slider-range
 		background: $accent
+
+.sidebar-menu
+	margin: 0 0 50px
+
+.catalog-menu
+	font-size: 14px
+	letter-spacing: 0.35px
+	width: 100%
+	&__list
+		width: 100%
+		position: relative
+		margin: 0 0 24px
+		transition: .3s
+		&:last-child
+			margin: 0
+	&__link
+		padding: 0 0 0 18px
+		position: relative
+		z-index: 1
+		color: #383838
+		&::before
+			content: '\f105'
+			font-family: 'FontAwesome', sans-serif
+			left: 0
+			top: 0
+			position: absolute
+			transition: .3s
+
+		&.active
+			color: #507298
+			font-weight: bold
+			&::before
+				transform: rotate(90deg)
+	&__dropdown
+		width: 100%
+		margin: 23px 0 39px
+		padding: 0 0 0 18px
+		border-left: 4px solid rgba(#507298, .5)
+		font-size: 12px
+		display: none
+		&.active
+			display: block
+	&__submenu
+		letter-spacing: 0.3px
+		li
+			margin: 0 0 20px
+			&:last-child
+				margin: 0
+		a
+			color: #999999
+			&:hover
+				color: #383838

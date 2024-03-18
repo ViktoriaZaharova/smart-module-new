@@ -714,6 +714,8 @@ a.color-accent:hover svg {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   color: #383838;
   font-size: 12px;
   cursor: pointer;
@@ -726,8 +728,11 @@ a.color-accent:hover svg {
 .label-checkbox input:checked ~ .label-checkbox__custom::before {
   display: block;
 }
+.label-checkbox input:checked ~ .label-checkbox__image {
+  border-color: #6989ad;
+}
 .label-checkbox__custom {
-  margin: 0 8px 0 0;
+  margin: 0;
   position: relative;
   border-radius: 0;
   border: solid 1px #c9c9c9;
@@ -753,6 +758,32 @@ a.color-accent:hover svg {
   display: none;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+}
+.label-checkbox__text {
+  width: calc(100% - 18px);
+  padding: 0 0 0 8px;
+}
+.label-checkbox__image {
+  margin: 25px 0 0;
+  max-width: 211px;
+  width: 100%;
+  height: 131px;
+  border: solid 2px #ddd;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.label-checkbox__image img {
+  max-height: 100%;
 }
 
 .page {
@@ -1021,6 +1052,30 @@ table {
 .custom-tooltip.tooltip .tooltip-inner {
   border-radius: 4px;
   font-size: 12px;
+}
+
+.btn-toolip-default {
+  background: #ddd;
+  width: 23px;
+  height: 23px;
+  min-width: 23px;
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 14px;
+  margin: 0 0 0 10px;
+}
+.btn-toolip-default:hover {
+  background: #6989ad;
+  color: #fff;
 }
 
 .path-link {
