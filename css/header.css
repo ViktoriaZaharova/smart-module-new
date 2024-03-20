@@ -130,12 +130,74 @@ header.fixed .btn-search {
   margin: 0 24px 0 0;
 }
 
+.btn-burger-mobile {
+  width: 24px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+.btn-burger-mobile span {
+  width: 24px;
+  height: 3px;
+  border-radius: 4px;
+  background: #333;
+  display: block;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+.btn-burger-mobile.click span {
+  position: absolute;
+  left: 0;
+  top: 9px;
+}
+.btn-burger-mobile.click span:first-child {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.btn-burger-mobile.click span:last-child {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.btn-burger-mobile.click span:nth-child(2) {
+  width: 0;
+}
+
 .phone {
   font-size: 14px;
   color: #333;
   font-weight: 800;
   letter-spacing: 0.07em;
   margin: 13px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.phone i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .mail {

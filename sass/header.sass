@@ -44,7 +44,7 @@ header
 				margin: 0 20px 0 0
 				&:last-child
 					margin: 0
-	.btn-search				
+	.btn-search
 		margin: 0	0 0 20px
 
 .logo
@@ -82,12 +82,44 @@ header
 .dropdown-burger
 	margin: 0 24px 0 0
 
+.btn-burger-mobile
+	width: 24px
+	height: 20px
+	display: flex
+	align-items: center
+	justify-content: space-between
+	flex-direction: column
+	position: relative
+	cursor: pointer
+	span
+		width: 24px
+		height: 3px
+		border-radius: 4px
+		background: #333
+		display: block
+		transition: .3s ease
+	&.click
+		span
+			position: absolute
+			left: 0
+			top: 9px
+			&:first-child
+				transform: rotate(45deg)
+			&:last-child
+				transform: rotate(135deg)	
+			&:nth-child(2)
+				width: 0
+
 .phone
 	font-size: 14px
 	color: #333
 	font-weight: 800
 	letter-spacing: 0.07em
 	margin: 13px 0 0
+	display: flex
+	align-items: center
+	i
+		@include d-flex
 
 .mail
 	font-size: 13px

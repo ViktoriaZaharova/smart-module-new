@@ -1,5 +1,17 @@
 $('[name="phone"]').mask('+7 (999)999-99-99');
 
+// mobile menu
+$('.btn-burger-mobile').on('click', function (e) {
+	e.preventDefault();
+	$(this).toggleClass('click');
+	$('.header-bottom').fadeToggle();
+});
+
+$(window).on('load resize', function () {
+	if ($(window).width() < 768) {
+		$(".dropdown-menu-catalog .dropdown-item").one("click", false);
+	}
+});
 
 function setPositionNav() {
 	if (window.innerWidth < 768) return;
@@ -224,7 +236,6 @@ $('.recommended-products-image-slider').slick({
 	slidesToShow: 1,
 	fade: true,
 	arrows: false,
-	// dots: true,
 });
 
 function paginationImageMouseEnter(element, notSlickGoTo = false) {
@@ -283,10 +294,10 @@ $(window).scroll(function () {
 
 
 // btn search click
-$('.header-bottom .btn-search').on('click', function () {
+$('.header-bottom .btn-search, .header-top .btn-search').on('click', function () {
 	$(this).toggleClass('active');
-	$(this).parents('.header-bottom').find('.search-wrapper').fadeToggle();
-	$(this).parents('.header-bottom').find('.search-wrapper input').focus();
+	$(this).parents('header').find('.search-wrapper').fadeToggle();
+	$(this).parents('header').find('.search-wrapper input').focus();
 });
 
 $('.header-fixed .btn-search').on('click', function () {
