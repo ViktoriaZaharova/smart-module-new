@@ -120,6 +120,18 @@
   font-weight: normal;
 }
 
+.about-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .products-list {
   width: 100%;
   display: -webkit-box;
@@ -732,7 +744,6 @@ a.contacts-box__link:hover {
   background: #f5f5f5;
   position: relative;
   padding: 10px 18px;
-  margin: 5px;
   z-index: 1;
   overflow: hidden;
   display: -webkit-box;
@@ -1261,7 +1272,6 @@ a.contacts-box__link:hover {
   display: block;
   background: #f5f5f5;
   padding: 15px 15px 15px 70px;
-  margin: 5px;
   z-index: 1;
 }
 .company-block-advantages-info-card p {
@@ -1452,6 +1462,7 @@ a.contacts-box__link:hover {
   font-weight: bold;
 }
 .reviews-pride-item__photo {
+  width: 100%;
   position: relative;
   z-index: 1;
   background: #f4f4f6;
@@ -1488,6 +1499,9 @@ a.contacts-box__link:hover {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   opacity: 0;
+}
+.reviews-pride-item__photo img {
+  width: 100%;
 }
 
 .reviews-pride-slider-nav {
@@ -1958,6 +1972,15 @@ a.contacts-box__link:hover {
 }
 
 .rent-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 20px;
 }
 .rent-image img {
@@ -2036,6 +2059,9 @@ a.contacts-box__link:hover {
 }
 .rent-advantages-box__icon img {
   max-height: 100%;
+}
+.rent-advantages-box .box-text {
+  font-size: 14px;
 }
 
 .recommendation-rent {

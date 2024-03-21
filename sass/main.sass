@@ -83,6 +83,9 @@
 		max-width: 1100px
 		font-weight: normal
 
+.about-image
+	@include d-flex
+
 .products-list
 	width: 100%
 	display: flex
@@ -517,7 +520,7 @@ a.contacts-box__link
 			background: #f5f5f5
 			position: relative
 			padding: 10px 18px
-			margin: 5px
+			// margin: 5px
 			z-index: 1
 			overflow: hidden
 			display: flex
@@ -867,7 +870,7 @@ a.contacts-box__link
 	display: block
 	background: #f5f5f5
 	padding: 15px 15px 15px 70px
-	margin: 5px
+	// margin: 5px
 	z-index: 1
 	p
 		max-width: 934px
@@ -1004,6 +1007,7 @@ a.contacts-box__link
 	&__name
 		font-weight: bold
 	&__photo
+		width: 100%
 		position: relative
 		z-index: 1
 		background: #f4f4f6
@@ -1035,6 +1039,8 @@ a.contacts-box__link
 			z-index: 1
 			transition: .3s ease
 			opacity: 0
+		img
+			width: 100%
 
 .reviews-pride-slider-nav
 	margin: 40px 0 0
@@ -1360,6 +1366,7 @@ a.contacts-box__link
 		font-size: 15px
 
 .rent-image
+	@include d-flex
 	padding: 20px
 	img
 		box-shadow: -18px -18px 0px 0px rgba(228, 240, 254, 1)
@@ -1410,6 +1417,8 @@ a.contacts-box__link
 			height: 54px
 			img
 				max-height: 100%
+		.box-text
+			font-size: 14px
 
 .recommendation-rent
 	margin: 0 0 54px
