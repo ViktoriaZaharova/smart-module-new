@@ -33,13 +33,16 @@
 				<div class="row">
 					<div class="col-12 d-flex">
 						<div class="header-top__wrapper">
-
-
-							<a href="index.html" class="logo">
-								<img src="img/header-logo.png" alt="">
+							<a href="#" class="btn-burger-mobile">
+								<span></span>
+								<span></span>
+								<span></span>
 							</a>
-							<div class="header-box">
-								<div class="location-box header-box-phone">
+							<a href="index.html" class="logo">
+								<img src="img/header-logo.png" alt="" />
+							</a>
+							<div class="header-box header-box-phone">
+								<div class="location-box">
 									<a href="#" class="btn-location" data-bs-toggle="modal"
 										data-bs-target="#locationModal">Санкт-Петербург</a>
 								</div>
@@ -51,8 +54,6 @@
 								<a href="mailto:spb1@smart-module.ru" class="mail"><i class="fa fa-envelope-o"
 										aria-hidden="true"></i>spb1@smart-module.ru</a>
 							</div>
-
-
 
 							<ul class="list-social my-ul">
 								<li class="list-social__item">
@@ -67,12 +68,65 @@
 									</a>
 								</li>
 							</ul>
+
 							<a href="#" class="btn btn-accent btn-callback" data-bs-toggle="modal"
 								data-bs-target="#callbackModal">Получить консультацию</a>
-
+							<div class="btn-search d-flex d-md-none">
+								<svg class="svg-icon svg-icon-search">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+								<svg class="svg-icon svg-icon-close">
+									<use xlink:href="img/sprite.svg#close-icon"></use>
+								</svg>
+							</div>
 						</div>
 					</div>
-
+				</div>
+			</div>
+		</div>
+		<div class="search-wrapper">
+			<div class="search-wrapper-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<form method="post" class="form-search">
+								<label>
+									<input type="search" class="search-field" placeholder="" value="" name="search" autocomplete="off" />
+								</label>
+								<button class="btn btn-accent search-submit" type="submit">
+									<span>Поиск</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search-wrapper-result">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<a href="product.html" class="search-wrapper-result-item">
+								<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+								<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
+									школа CONTAINEX</span>
+							</a>
+							<a href="product.html" class="search-wrapper-result-item">
+								<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+								<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
+									школа CONTAINEX</span>
+							</a>
+							<a href="product.html" class="search-wrapper-result-item">
+								<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+								<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
+									школа CONTAINEX</span>
+							</a>
+							<a href="product.html" class="search-wrapper-result-item">
+								<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+								<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
+									школа CONTAINEX</span>
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -82,14 +136,18 @@
 				<div class="row">
 					<div class="col-12">
 						<nav class="nav nav-menu">
+							<div class="location-box d-flex d-md-none">
+								<a href="#" class="btn-location" data-bs-toggle="modal"
+									data-bs-target="#locationModal">Санкт-Петербург</a>
+							</div>
 							<ul class="menu my-ul">
-								<li class="dropdown nav-item"><a href="#" class="dropdown-toggle nav-link"
-										data-bs-toggle="dropdown">каталог</a>
+								<li class="dropdown nav-item">
+									<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">каталог</a>
 									<div class="dropdown-menu">
 										<ul class="dropdown-menu-catalog my-ul">
 											<li>
 												<a href="catalog-category.html" class="dropdown-item">
-													<span class="dropdown-menu-catalog__icon"><img src="img/category1.svg" alt=""></span>
+													<span class="dropdown-menu-catalog__icon"><img src="img/category1.svg" alt="" /></span>
 													<span class="dropdown-menu-catalog__text">Металлические бытовки</span>
 												</a>
 												<ul class="dropdown-submenu my-ul">
@@ -109,7 +167,7 @@
 											</li>
 											<li>
 												<a href="catalog-category.html" class="dropdown-item">
-													<span class="dropdown-menu-catalog__icon"><img src="img/category2.svg" alt=""></span>
+													<span class="dropdown-menu-catalog__icon"><img src="img/category2.svg" alt="" /></span>
 													<span class="dropdown-menu-catalog__text">Блок-контейнеры</span>
 												</a>
 												<ul class="dropdown-submenu my-ul">
@@ -129,7 +187,7 @@
 											</li>
 											<li>
 												<a href="catalog-category.html" class="dropdown-item">
-													<span class="dropdown-menu-catalog__icon"><img src="img/category3.svg" alt=""></span>
+													<span class="dropdown-menu-catalog__icon"><img src="img/category3.svg" alt="" /></span>
 													<span class="dropdown-menu-catalog__text">Металлические контейнеры</span>
 												</a>
 												<ul class="dropdown-submenu my-ul">
@@ -149,7 +207,7 @@
 											</li>
 											<li>
 												<a href="catalog-category.html" class="dropdown-item">
-													<span class="dropdown-menu-catalog__icon"><img src="img/category4.svg" alt=""></span>
+													<span class="dropdown-menu-catalog__icon"><img src="img/category4.svg" alt="" /></span>
 													<span class="dropdown-menu-catalog__text">Модульные здания</span>
 												</a>
 												<ul class="dropdown-submenu my-ul">
@@ -169,7 +227,7 @@
 											</li>
 											<li>
 												<a href="catalog-category.html" class="dropdown-item">
-													<span class="dropdown-menu-catalog__icon"><img src="img/category5.svg" alt=""></span>
+													<span class="dropdown-menu-catalog__icon"><img src="img/category5.svg" alt="" /></span>
 													<span class="dropdown-menu-catalog__text">Переоборудование контейнеров</span>
 												</a>
 												<ul class="dropdown-submenu my-ul">
@@ -189,7 +247,7 @@
 											</li>
 											<li>
 												<a href="catalog-category.html" class="dropdown-item">
-													<span class="dropdown-menu-catalog__icon"><img src="img/category6.svg" alt=""></span>
+													<span class="dropdown-menu-catalog__icon"><img src="img/category6.svg" alt="" /></span>
 													<span class="dropdown-menu-catalog__text">Модульные станции</span>
 												</a>
 												<ul class="dropdown-submenu my-ul">
@@ -209,22 +267,24 @@
 											</li>
 											<li>
 												<a href="catalog-category.html" class="dropdown-item">
-													<span class="dropdown-menu-catalog__icon"><img src="img/category7.svg" alt=""></span>
+													<span class="dropdown-menu-catalog__icon"><img src="img/category7.svg" alt="" /></span>
 													<span class="dropdown-menu-catalog__text">Торговые павильоны</span>
 												</a>
 											</li>
 											<li>
 												<a href="catalog-category.html" class="dropdown-item">
-													<span class="dropdown-menu-catalog__icon"><img src="img/category8.svg" alt=""></span>
+													<span class="dropdown-menu-catalog__icon"><img src="img/category8.svg" alt="" /></span>
 													<span class="dropdown-menu-catalog__text">Быстровозводимые здания</span>
 												</a>
 											</li>
 										</ul>
 									</div>
 								</li>
-								<li class="nav-item"><a href="projects.html" class="nav-link">проекты</a></li>
-								<li class="nav-item dropdown"><a href="services.html" class="nav-link dropdown-toggle"
-										data-bs-toggle="dropdown">услуги</a>
+								<li class="nav-item">
+									<a href="projects.html" class="nav-link">проекты</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a href="services.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">услуги</a>
 									<div class="dropdown-menu">
 										<ul class="dropdown-submenu my-ul">
 											<li>
@@ -236,9 +296,11 @@
 										</ul>
 									</div>
 								</li>
-								<li class="nav-item"><a href="technology.html" class="nav-link">технология</a></li>
-								<li class="nav-item dropdown"><a href="industry.html" class="nav-link dropdown-toggle"
-										data-bs-toggle="dropdown">отрасли</a>
+								<li class="nav-item">
+									<a href="technology.html" class="nav-link">технология</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a href="industry.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">отрасли</a>
 									<div class="dropdown-menu">
 										<ul class="dropdown-submenu my-ul">
 											<li>
@@ -274,9 +336,11 @@
 										</ul>
 									</div>
 								</li>
-								<li class="nav-item"><a href="blog.html" class="nav-link">блог</a></li>
-								<li class="nav-item dropdown"><a href="about.html" class="nav-link dropdown-toggle"
-										data-bs-toggle="dropdown">о нас</a>
+								<li class="nav-item">
+									<a href="blog.html" class="nav-link">блог</a>
+								</li>
+								<li class="nav-item dropdown">
+									<a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">о нас</a>
 									<div class="dropdown-menu">
 										<ul class="dropdown-submenu my-ul">
 											<li>
@@ -300,9 +364,17 @@
 										</ul>
 									</div>
 								</li>
-								<li class="nav-item"><a href="contacts.html" class="nav-link">контакты</a></li>
+								<li class="nav-item">
+									<a href="contacts.html" class="nav-link">контакты</a>
+								</li>
 							</ul>
-							<div class="btn-search">
+							<a href="tel:+78129071459" class="phone d-flex d-md-none"><i class="fa fa-phone" aria-hidden="true"></i>8
+								(812)
+								907-14-59</a>
+							<a href="#" class="btn btn-accent btn-callback d-flex d-md-none" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Получить
+								консультацию</a>
+							<div class="btn-search d-none d-md-flex">
 								<svg class="svg-icon svg-icon-search">
 									<use xlink:href="img/sprite.svg#search"></use>
 								</svg>
@@ -310,58 +382,13 @@
 									<use xlink:href="img/sprite.svg#close-icon"></use>
 								</svg>
 							</div>
+							<a href="mailto:spb1@smart-module.ru" class="mail d-block d-md-none"><i class="fa fa-envelope-o"
+									aria-hidden="true"></i>spb1@smart-module.ru</a>
 						</nav>
 					</div>
 				</div>
 			</div>
-			<div class="search-wrapper">
-				<div class="search-wrapper-content">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<form method="post" class="form-search">
-									<label>
-										<input type="search" class="search-field" placeholder="" value="" name="search" autocomplete="off">
-									</label>
-									<button class="btn btn-accent search-submit" type="submit"><span>Поиск</span></button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="search-wrapper-result">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt=""></span>
-									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа
-										CONTAINEX</span>
-								</a>
-								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt=""></span>
-									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа
-										CONTAINEX</span>
-								</a>
-								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt=""></span>
-									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа
-										CONTAINEX</span>
-								</a>
-								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt=""></span>
-									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа
-										CONTAINEX</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+
 		</div>
 
 		<div class="header-fixed">
@@ -377,7 +404,7 @@
 									<ul class="dropdown-menu-catalog my-ul">
 										<li>
 											<a href="catalog-category.html" class="dropdown-item">
-												<span class="dropdown-menu-catalog__icon"><img src="img/category1.svg" alt=""></span>
+												<span class="dropdown-menu-catalog__icon"><img src="img/category1.svg" alt="" /></span>
 												<span class="dropdown-menu-catalog__text">Металлические бытовки</span>
 											</a>
 											<ul class="dropdown-submenu my-ul">
@@ -397,7 +424,7 @@
 										</li>
 										<li>
 											<a href="catalog-category.html" class="dropdown-item">
-												<span class="dropdown-menu-catalog__icon"><img src="img/category2.svg" alt=""></span>
+												<span class="dropdown-menu-catalog__icon"><img src="img/category2.svg" alt="" /></span>
 												<span class="dropdown-menu-catalog__text">Блок-контейнеры</span>
 											</a>
 											<ul class="dropdown-submenu my-ul">
@@ -417,7 +444,7 @@
 										</li>
 										<li>
 											<a href="catalog-category.html" class="dropdown-item">
-												<span class="dropdown-menu-catalog__icon"><img src="img/category3.svg" alt=""></span>
+												<span class="dropdown-menu-catalog__icon"><img src="img/category3.svg" alt="" /></span>
 												<span class="dropdown-menu-catalog__text">Металлические контейнеры</span>
 											</a>
 											<ul class="dropdown-submenu my-ul">
@@ -437,7 +464,7 @@
 										</li>
 										<li>
 											<a href="catalog-category.html" class="dropdown-item">
-												<span class="dropdown-menu-catalog__icon"><img src="img/category4.svg" alt=""></span>
+												<span class="dropdown-menu-catalog__icon"><img src="img/category4.svg" alt="" /></span>
 												<span class="dropdown-menu-catalog__text">Модульные здания</span>
 											</a>
 											<ul class="dropdown-submenu my-ul">
@@ -457,7 +484,7 @@
 										</li>
 										<li>
 											<a href="catalog-category.html" class="dropdown-item">
-												<span class="dropdown-menu-catalog__icon"><img src="img/category5.svg" alt=""></span>
+												<span class="dropdown-menu-catalog__icon"><img src="img/category5.svg" alt="" /></span>
 												<span class="dropdown-menu-catalog__text">Переоборудование контейнеров</span>
 											</a>
 											<ul class="dropdown-submenu my-ul">
@@ -477,7 +504,7 @@
 										</li>
 										<li>
 											<a href="catalog-category.html" class="dropdown-item">
-												<span class="dropdown-menu-catalog__icon"><img src="img/category6.svg" alt=""></span>
+												<span class="dropdown-menu-catalog__icon"><img src="img/category6.svg" alt="" /></span>
 												<span class="dropdown-menu-catalog__text">Модульные станции</span>
 											</a>
 											<ul class="dropdown-submenu my-ul">
@@ -497,13 +524,13 @@
 										</li>
 										<li>
 											<a href="catalog-category.html" class="dropdown-item">
-												<span class="dropdown-menu-catalog__icon"><img src="img/category7.svg" alt=""></span>
+												<span class="dropdown-menu-catalog__icon"><img src="img/category7.svg" alt="" /></span>
 												<span class="dropdown-menu-catalog__text">Торговые павильоны</span>
 											</a>
 										</li>
 										<li>
 											<a href="catalog-category.html" class="dropdown-item">
-												<span class="dropdown-menu-catalog__icon"><img src="img/category8.svg" alt=""></span>
+												<span class="dropdown-menu-catalog__icon"><img src="img/category8.svg" alt="" /></span>
 												<span class="dropdown-menu-catalog__text">Быстровозводимые здания</span>
 											</a>
 										</li>
@@ -512,7 +539,7 @@
 							</div>
 
 							<a href="index.html" class="logo">
-								<img src="img/logo-sm.png" alt="">
+								<img src="img/logo-sm.png" alt="" />
 							</a>
 							<div class="header-box">
 								<div class="location-box header-box-phone">
@@ -525,9 +552,11 @@
 
 							<nav class="nav nav-menu">
 								<ul class="menu my-ul">
-									<li class="nav-item"><a href="projects.html" class="nav-link">проекты</a></li>
-									<li class="nav-item dropdown"><a href="services.html" class="nav-link dropdown-toggle"
-											data-bs-toggle="dropdown">услуги</a>
+									<li class="nav-item">
+										<a href="projects.html" class="nav-link">проекты</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a href="services.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">услуги</a>
 										<div class="dropdown-menu">
 											<ul class="dropdown-submenu my-ul">
 												<li>
@@ -540,10 +569,11 @@
 										</div>
 									</li>
 
-									<li class="nav-item"><a href="blog.html" class="nav-link">блог</a></li>
-									<li class="nav-item dropdown"><a href="about.html" class="nav-link dropdown-toggle"
-											data-bs-toggle="dropdown">о
-											нас</a>
+									<li class="nav-item">
+										<a href="blog.html" class="nav-link">блог</a>
+									</li>
+									<li class="nav-item dropdown">
+										<a href="about.html" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">о нас</a>
 										<div class="dropdown-menu">
 											<ul class="dropdown-submenu my-ul">
 												<li>
@@ -567,15 +597,14 @@
 											</ul>
 										</div>
 									</li>
-									<li class="nav-item"><a href="contacts.html" class="nav-link">контакты</a></li>
+									<li class="nav-item">
+										<a href="contacts.html" class="nav-link">контакты</a>
+									</li>
 								</ul>
-
 							</nav>
 
-
 							<a href="#" class="btn btn-accent btn-callback" data-bs-toggle="modal"
-								data-bs-target="#callbackModal">Получить
-								консультацию</a>
+								data-bs-target="#callbackModal">Получить консультацию</a>
 							<div class="btn-search">
 								<svg class="svg-icon svg-icon-search">
 									<use xlink:href="img/sprite.svg#search"></use>
@@ -595,9 +624,12 @@
 							<div class="col-12">
 								<form method="post" class="form-search">
 									<label>
-										<input type="search" class="search-field" placeholder="" value="" name="search" autocomplete="off">
+										<input type="search" class="search-field" placeholder="" value="" name="search"
+											autocomplete="off" />
 									</label>
-									<button class="btn btn-accent search-submit" type="submit"><span>Поиск</span></button>
+									<button class="btn btn-accent search-submit" type="submit">
+										<span>Поиск</span>
+									</button>
 								</form>
 							</div>
 						</div>
@@ -608,28 +640,28 @@
 						<div class="row">
 							<div class="col-12">
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt=""></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
+											alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа
-										CONTAINEX</span>
+										школа CONTAINEX</span>
 								</a>
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt=""></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
+											alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа
-										CONTAINEX</span>
+										школа CONTAINEX</span>
 								</a>
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt=""></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
+											alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа
-										CONTAINEX</span>
+										школа CONTAINEX</span>
 								</a>
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt=""></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
+											alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа
-										CONTAINEX</span>
+										школа CONTAINEX</span>
 								</a>
 							</div>
 						</div>
@@ -637,8 +669,6 @@
 				</div>
 			</div>
 		</div>
-
-
 	</header>
 
 	<div class="content-wrapper">
@@ -751,7 +781,8 @@
 								</div>
 							</div>
 
-							<a href="#" class="btn btn-green btn-order-project" data-bs-toggle="modal" data-bs-target="#orderModal">Заказать похожий
+							<a href="#" class="btn btn-green btn-order-project" data-bs-toggle="modal"
+								data-bs-target="#orderModal">Заказать похожий
 								проект</a>
 						</div>
 					</div>
