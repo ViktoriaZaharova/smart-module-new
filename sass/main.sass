@@ -1602,6 +1602,8 @@ a.contacts-box__link
 		margin: 0 -8px
 	.slide
 		padding: 8px
+	&-nav
+		margin: 0 0 25px
 
 .recommended-products-card
 	width: 100%
@@ -1651,6 +1653,7 @@ a.contacts-box__link
 		font-size: 14px
 	&__btn
 		width: 100%
+		padding: 12px 20px
 	&__hidden
 		position: absolute
 		left: 0
@@ -1826,15 +1829,18 @@ a.contacts-box__link
 				padding-left: 35px
 				background: none
 				counter-increment: item
+				position: relative
 				&:hover
 					&::before
 						color: #557497
 			> li
 				&::before
+					position: absolute
+					left: 0
 					counter-increment: li
 					content: counters(li, ".") "."
-					margin-left: -23px
-					margin-right: 8px
+					// margin-left: -23px
+					// margin-right: 8px
 					// font: bold 14px/26px 'EsqaderoFFCY4F', Arial, Helvetica, sans-serif
 					color: inherit
 					font-weight: bold
@@ -1850,10 +1856,14 @@ a.contacts-box__link
 			list-style: none
 			padding: 0
 			li
+				padding-left: 15px
 				&::before
 					content: "•"
-					margin-left: -23px
-					margin-right: 8px
+					position: absolute
+					left: 0
+					top: 0
+					// margin-left: -23px
+					// margin-right: 8px
 					color: inherit
 	&__toggle
 		color: #557497

@@ -214,7 +214,21 @@ $('.projects-slider-preview').slick({
 	vertical: true,
 	arrows: false,
 	focusOnSelect: true,
-	asNavFor: '.projects-slider-max'
+	asNavFor: '.projects-slider-max',
+	responsive: [{
+		breakpoint: 576,
+		settings: {
+			vertical: false,
+			slidesToShow: 3,
+		}
+	},
+	{
+		breakpoint: 480,
+		settings: {
+			vertical: false,
+			slidesToShow: 2,
+		}
+	}]
 });
 
 $('.projects-slider-max').slick({
@@ -230,6 +244,24 @@ $('.recommended-products-slider').slick({
 	appendArrows: '.recommended-products-slider-nav',
 	prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-left"></use></svg></button>',
 	nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-right"></use></svg></button>',
+	responsive: [{
+		breakpoint: 992,
+		settings: {
+			slidesToShow: 3,
+		}
+	},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+			}
+		},
+	{
+		breakpoint: 480,
+		settings: {
+			slidesToShow: 1,
+		}
+	}]
 });
 
 $('.recommended-products-image-slider').slick({
@@ -463,6 +495,29 @@ $('.additional').slick({
 	]
 
 });
+
+$(window).on('load resize', function () {
+	if ($(window).width() < 992) {
+		$('.tab-product-category__col:not(.slick-initialized)').slick({
+			infinite: true,
+			speed: 100,
+			slidesToShow: 1,
+			prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-left"></use></svg></button>',
+			nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-right"></use></svg></button>',
+			asNavFor: '.tab-product-category-content'
+		});
+		$('.tab-product-category-content:not(.slick-initialized)').slick({
+			fade: true,
+			arrows: false,
+			slidesToShow: 1,
+			swipe: false,
+		});
+	} else {
+		$(".tab-product-category__col.slick-initialized").slick("unslick");
+		$(".tab-product-category-content.slick-initialized").slick("unslick");
+	}
+});
+
 // amount
 $('.down').on("click", function () {
 	let $input = $(this).parent().find('input');

@@ -2356,6 +2356,9 @@ a.contacts-box__link:hover {
 .recommended-products-slider .slide {
   padding: 8px;
 }
+.recommended-products-slider-nav {
+  margin: 0 0 25px;
+}
 
 .recommended-products-card {
   width: 100%;
@@ -2432,6 +2435,7 @@ a.contacts-box__link:hover {
 }
 .recommended-products-card__btn {
   width: 100%;
+  padding: 12px 20px;
 }
 .recommended-products-card__hidden {
   position: absolute;
@@ -2679,15 +2683,16 @@ a.contacts-box__link:hover {
   padding-left: 35px;
   background: none;
   counter-increment: item;
+  position: relative;
 }
 .article-menu__body ol li:hover::before {
   color: #557497;
 }
 .article-menu__body ol > li::before {
+  position: absolute;
+  left: 0;
   counter-increment: li;
   content: counters(li, ".") ".";
-  margin-left: -23px;
-  margin-right: 8px;
   color: inherit;
   font-weight: bold;
   font-size: 14px;
@@ -2705,10 +2710,14 @@ a.contacts-box__link:hover {
   list-style: none;
   padding: 0;
 }
+.article-menu__body ul li {
+  padding-left: 15px;
+}
 .article-menu__body ul li::before {
   content: "•";
-  margin-left: -23px;
-  margin-right: 8px;
+  position: absolute;
+  left: 0;
+  top: 0;
   color: inherit;
 }
 .article-menu__toggle {
