@@ -2356,9 +2356,34 @@ a.contacts-box__link
 		height: 2px
 		width: 50px
 		background: #507298
+
 .sidebar-title
+	display: flex
+	align-items: center
 	h3
 		font-size: 22px
+
+.sidebar-close
+	position: relative
+	width: 20px
+	height: 20px
+	cursor: pointer
+	display: none
+	align-items: center
+	justify-content: center
+	&::before, &::after
+		content: ''
+		position: absolute
+		width: 2px
+		height: 100%
+		background: $accent
+		border-radius: 4px
+		top: 0
+		left: 10px
+	&::before
+		transform: rotate(45deg)
+	&:after
+		transform: rotate(135deg)
 
 .sidebar-body
 	width: 100%
@@ -2463,6 +2488,13 @@ a.contacts-box__link
 			opacity: 0
 		&.active
 			background: $accent
+
+.btn-filter
+	width: 100%
+	margin: 0 auto 20px
+	display: none
+	i
+		margin: 0 10px 0 0
 
 .btn-loader
 	margin: 10px auto 30px
@@ -2579,3 +2611,34 @@ a.contacts-box__link
 
 .timer_block
 	margin: 25px 0
+
+.calculate-total
+	width: 100%
+	padding: 60px
+	background: #3c3c3c
+	color: #fff
+	margin: 0 auto 65px
+	.box-text
+		margin: 50px auto 30px
+
+.calculate-total-box
+	display: flex
+	align-items: flex-start
+	font-size: 14px
+	&__icon
+		margin: 0 20px 0 0
+		max-width: 50px
+		min-width: 50px
+		height: 50px
+		@include d-flex
+		img
+			max-height: 100%
+	&__text
+		max-width: 170px
+	span
+		font-size: 20px
+		display: block
+		margin: 10px 0 0
+		sup
+			font-size: 14px
+	

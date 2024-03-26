@@ -3425,8 +3425,48 @@ a.contacts-box__link:hover {
   background: #507298;
 }
 
+.sidebar-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .sidebar-title h3 {
   font-size: 22px;
+}
+
+.sidebar-close {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.sidebar-close::before, .sidebar-close::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: #6989ad;
+  border-radius: 4px;
+  top: 0;
+  left: 10px;
+}
+.sidebar-close::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.sidebar-close:after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 
 .sidebar-body {
@@ -3566,6 +3606,15 @@ a.contacts-box__link:hover {
 }
 .product-pagination-image a.active {
   background: #6989ad;
+}
+
+.btn-filter {
+  width: 100%;
+  margin: 0 auto 20px;
+  display: none;
+}
+.btn-filter i {
+  margin: 0 10px 0 0;
 }
 
 .btn-loader {
@@ -3734,4 +3783,54 @@ a.contacts-box__link:hover {
 
 .timer_block {
   margin: 25px 0;
+}
+
+.calculate-total {
+  width: 100%;
+  padding: 60px;
+  background: #3c3c3c;
+  color: #fff;
+  margin: 0 auto 65px;
+}
+.calculate-total .box-text {
+  margin: 50px auto 30px;
+}
+
+.calculate-total-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 14px;
+}
+.calculate-total-box__icon {
+  margin: 0 20px 0 0;
+  max-width: 50px;
+  min-width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.calculate-total-box__icon img {
+  max-height: 100%;
+}
+.calculate-total-box__text {
+  max-width: 170px;
+}
+.calculate-total-box span {
+  font-size: 20px;
+  display: block;
+  margin: 10px 0 0;
+}
+.calculate-total-box span sup {
+  font-size: 14px;
 }

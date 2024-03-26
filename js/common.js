@@ -250,12 +250,12 @@ $('.recommended-products-slider').slick({
 			slidesToShow: 3,
 		}
 	},
-		{
-			breakpoint: 768,
-			settings: {
-				slidesToShow: 2,
-			}
-		},
+	{
+		breakpoint: 768,
+		settings: {
+			slidesToShow: 2,
+		}
+	},
 	{
 		breakpoint: 480,
 		settings: {
@@ -319,11 +319,22 @@ $(window).scroll(function () {
 	var headerHeight = $('header').height();
 	if ($(this).scrollTop() > headerHeight + 100) {
 		$('.header-fixed').addClass('active');
+		$('.sidebar-catalog').removeClass('no-active');
 	} else {
 		$('.header-fixed').removeClass('active');
+		$('.sidebar-catalog').addClass('no-active');
 	}
 });
 
+// sidebar
+$('.btn-filter').on('click', function (e) {
+	e.preventDefault();
+	$('.sidebar').fadeToggle();
+});
+
+$('.sidebar-close').on('click', function () {
+	$('.sidebar').fadeOut();
+});
 
 // btn search click
 $('.header-bottom .btn-search, .header-top .btn-search').on('click', function () {
