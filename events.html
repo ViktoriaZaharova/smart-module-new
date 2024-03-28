@@ -32,11 +32,16 @@
 				<div class="row">
 					<div class="col-12 d-flex">
 						<div class="header-top__wrapper">
+							<a href="#" class="btn-burger-mobile">
+								<span></span>
+								<span></span>
+								<span></span>
+							</a>
 							<a href="index.html" class="logo">
 								<img src="img/header-logo.png" alt="" />
 							</a>
-							<div class="header-box">
-								<div class="location-box header-box-phone">
+							<div class="header-box header-box-phone">
+								<div class="location-box">
 									<a href="#" class="btn-location" data-bs-toggle="modal"
 										data-bs-target="#locationModal">Санкт-Петербург</a>
 								</div>
@@ -48,7 +53,7 @@
 								<a href="mailto:spb1@smart-module.ru" class="mail"><i class="fa fa-envelope-o"
 										aria-hidden="true"></i>spb1@smart-module.ru</a>
 							</div>
-
+	
 							<ul class="list-social my-ul">
 								<li class="list-social__item">
 									<a href="https://vk.com/smart_module" target="_blank" class="list-social__link">
@@ -62,19 +67,78 @@
 									</a>
 								</li>
 							</ul>
+	
 							<a href="#" class="btn btn-accent btn-callback" data-bs-toggle="modal"
 								data-bs-target="#callbackModal">Получить консультацию</a>
+							<div class="btn-search d-flex d-md-none">
+								<svg class="svg-icon svg-icon-search">
+									<use xlink:href="img/sprite.svg#search"></use>
+								</svg>
+								<svg class="svg-icon svg-icon-close">
+									<use xlink:href="img/sprite.svg#close-icon"></use>
+								</svg>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
+		<div class="search-wrapper">
+			<div class="search-wrapper-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<form method="post" class="form-search">
+								<label>
+									<input type="search" class="search-field" placeholder="" value="" name="search" autocomplete="off" />
+								</label>
+								<button class="btn btn-accent search-submit" type="submit">
+									<span>Поиск</span>
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="search-wrapper-result">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<a href="product.html" class="search-wrapper-result-item">
+								<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+								<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
+									школа CONTAINEX</span>
+							</a>
+							<a href="product.html" class="search-wrapper-result-item">
+								<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+								<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
+									школа CONTAINEX</span>
+							</a>
+							<a href="product.html" class="search-wrapper-result-item">
+								<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+								<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
+									школа CONTAINEX</span>
+							</a>
+							<a href="product.html" class="search-wrapper-result-item">
+								<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+								<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
+									школа CONTAINEX</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
 		<div class="header-bottom">
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<nav class="nav nav-menu">
+							<div class="location-box d-flex d-md-none">
+								<a href="#" class="btn-location" data-bs-toggle="modal"
+									data-bs-target="#locationModal">Санкт-Петербург</a>
+							</div>
 							<ul class="menu my-ul">
 								<li class="dropdown nav-item">
 									<a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">каталог</a>
@@ -303,7 +367,13 @@
 									<a href="contacts.html" class="nav-link">контакты</a>
 								</li>
 							</ul>
-							<div class="btn-search">
+							<a href="tel:+78129071459" class="phone d-flex d-md-none"><i class="fa fa-phone" aria-hidden="true"></i>8
+								(812)
+								907-14-59</a>
+							<a href="#" class="btn btn-accent btn-callback d-flex d-md-none" data-bs-toggle="modal"
+								data-bs-target="#callbackModal">Получить
+								консультацию</a>
+							<div class="btn-search d-none d-md-flex">
 								<svg class="svg-icon svg-icon-search">
 									<use xlink:href="img/sprite.svg#search"></use>
 								</svg>
@@ -311,63 +381,15 @@
 									<use xlink:href="img/sprite.svg#close-icon"></use>
 								</svg>
 							</div>
+							<a href="mailto:spb1@smart-module.ru" class="mail d-block d-md-none"><i class="fa fa-envelope-o"
+									aria-hidden="true"></i>spb1@smart-module.ru</a>
 						</nav>
 					</div>
 				</div>
 			</div>
-			<div class="search-wrapper">
-				<div class="search-wrapper-content">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<form method="post" class="form-search">
-									<label>
-										<input type="search" class="search-field" placeholder="" value="" name="search"
-											autocomplete="off" />
-									</label>
-									<button class="btn btn-accent search-submit" type="submit">
-										<span>Поиск</span>
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="search-wrapper-result">
-					<div class="container">
-						<div class="row">
-							<div class="col-12">
-								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
-											alt="" /></span>
-									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа CONTAINEX</span>
-								</a>
-								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
-											alt="" /></span>
-									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа CONTAINEX</span>
-								</a>
-								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
-											alt="" /></span>
-									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа CONTAINEX</span>
-								</a>
-								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
-											alt="" /></span>
-									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
-										школа CONTAINEX</span>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+	
 		</div>
-
+	
 		<div class="header-fixed">
 			<div class="container">
 				<div class="row">
@@ -514,7 +536,7 @@
 									</ul>
 								</div>
 							</div>
-
+	
 							<a href="index.html" class="logo">
 								<img src="img/logo-sm.png" alt="" />
 							</a>
@@ -526,7 +548,7 @@
 								<a href="tel:+78129071459" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>8 (812)
 									907-14-59</a>
 							</div>
-
+	
 							<nav class="nav nav-menu">
 								<ul class="menu my-ul">
 									<li class="nav-item">
@@ -545,7 +567,7 @@
 											</ul>
 										</div>
 									</li>
-
+	
 									<li class="nav-item">
 										<a href="blog.html" class="nav-link">блог</a>
 									</li>
@@ -579,7 +601,7 @@
 									</li>
 								</ul>
 							</nav>
-
+	
 							<a href="#" class="btn btn-accent btn-callback" data-bs-toggle="modal"
 								data-bs-target="#callbackModal">Получить консультацию</a>
 							<div class="btn-search">
@@ -601,8 +623,7 @@
 							<div class="col-12">
 								<form method="post" class="form-search">
 									<label>
-										<input type="search" class="search-field" placeholder="" value="" name="search"
-											autocomplete="off" />
+										<input type="search" class="search-field" placeholder="" value="" name="search" autocomplete="off" />
 									</label>
 									<button class="btn btn-accent search-submit" type="submit">
 										<span>Поиск</span>
@@ -617,26 +638,22 @@
 						<div class="row">
 							<div class="col-12">
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
-											alt="" /></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
 										школа CONTAINEX</span>
 								</a>
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
-											alt="" /></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
 										школа CONTAINEX</span>
 								</a>
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
-											alt="" /></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
 										школа CONTAINEX</span>
 								</a>
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
-											alt="" /></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
 										школа CONTAINEX</span>
 								</a>

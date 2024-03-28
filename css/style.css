@@ -59,6 +59,10 @@ html, body {
   overflow-x: hidden;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -822,7 +826,8 @@ a.color-accent:hover svg {
   color: #7c7b7e;
 }
 .breadcrumb a:hover {
-  color: #6989ad;
+  color: #7c7b7e;
+  text-decoration: underline;
 }
 
 .breadcrumb-item {

@@ -319,10 +319,10 @@ $(window).scroll(function () {
 	var headerHeight = $('header').height();
 	if ($(this).scrollTop() > headerHeight + 100) {
 		$('.header-fixed').addClass('active');
-		$('.sidebar-catalog').removeClass('no-active');
+		// $('.sidebar-catalog').removeClass('no-active');
 	} else {
 		$('.header-fixed').removeClass('active');
-		$('.sidebar-catalog').addClass('no-active');
+		// $('.sidebar-catalog').addClass('no-active');
 	}
 });
 
@@ -330,10 +330,12 @@ $(window).scroll(function () {
 $('.btn-filter').on('click', function (e) {
 	e.preventDefault();
 	$('.sidebar').fadeToggle();
+	$('html').toggleClass('no-scroll');
 });
 
 $('.sidebar-close').on('click', function () {
 	$('.sidebar').fadeOut();
+	$('html').removeClass('no-scroll');
 });
 
 // btn search click

@@ -49,6 +49,9 @@ body
 html, body
 	overflow-x: hidden
 
+.no-scroll
+	overflow: hidden
+
 img
 	display: block
 	max-width: 100%
@@ -580,7 +583,8 @@ a.color-accent
 	a
 		color: #7c7b7e
 		&:hover
-			color: $accent
+			color: #7c7b7e
+			text-decoration: underline
 
 .breadcrumb-item
 	display: flex
