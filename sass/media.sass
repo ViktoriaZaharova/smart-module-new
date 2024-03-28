@@ -114,6 +114,9 @@
 	.calculate-total
 		padding: 30px
 
+	.page-technology
+		padding: 20px 0
+
 @media only screen and (max-width: 992px)
 	.screen-box-eee
 		background: aqua
@@ -365,6 +368,78 @@
 	.prices-catalog
 		padding: 60px 0
 
+	.back-to-map
+		position: relative
+		left: 0px
+		margin-bottom: 10px
+		width: 100%
+
+	.city-block
+		margin-top: 0px
+
+	#container
+		background: #FFFFFF
+		overflow-y: auto
+		height: auto !important
+		max-height: 300px
+
+	#container::-webkit-scrollbar-track
+		-webkit-box-shadow: inset 0 0 1px rgba(209, 209, 209, 0.3)
+		background-color: #FFFFFF
+
+	#container::-webkit-scrollbar
+		width: 4px
+		background-color: rgba(209, 209, 209, 0.3)
+
+	#container::-webkit-scrollbar-thumb
+		background-color: #4790C4
+
+	.all-city-block
+		margin-bottom: 0px
+		.h2
+			font-size: 16px
+			margin-bottom: 0px
+		li
+			width: 100%
+
+	.all-region-mobile span
+		font-size: 14px
+
+	.all-region-mobile span:hover
+		text-decoration: underline
+		color: #6989AD
+
+	.video-tab
+		padding: 20px
+		.slick-arrow
+			position: absolute
+			top: 50%
+			transform: translate(0,-50%)
+		.slick-prev
+			left: 15px
+		.slick-next
+			right: 15px
+			left: auto
+
+	.myprogress-bar
+		display: none
+
+	.video-tab__item
+		height: auto
+		padding: 0
+		div, span
+			display: none
+
+	.tabs__caption
+		font-size: 16px
+		margin: 0 auto 10px
+		li
+			padding: 7px 15px
+
+	.video-container-tab
+		min-height: auto
+
+	
 @media only screen and (max-width: 768px)
 	footer
 		padding: 30px 0 0
@@ -780,6 +855,12 @@
 	.calculate-total .box-text
 		margin: 30px auto 20px
 
+	#orderModal .modal-body
+		margin: 0 0 0 20px
+
+	.page-technology
+		padding: 20px 0
+
 @media only screen and (max-width: 576px)
 	.btn
 		padding: 12px 30px 11px
@@ -939,7 +1020,10 @@
 	.calculate-total-box span
 		font-size: 16px
 		sup
-			font-size: 12px	
+			font-size: 12px
+
+	#orderModal .modal-body
+		margin: 0
 
 @media only screen and (max-width: 480px)
 	.team-box
@@ -956,6 +1040,10 @@
 
 	.description-catalog-box
 		width: 50%
+
+	.video-tab__item
+		br
+			display: none
 
 @media only screen and (max-width: 420px)
 	h2
@@ -997,6 +1085,9 @@
 	.product-component-row .price-wrapper
 		width: 100%
 		margin: 0 auto 20px
+
+	#orderModal .modal-body
+		padding: 50px 15px
 
 @media only screen and (max-width: 370px)
 	.products-list__link

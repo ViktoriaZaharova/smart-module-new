@@ -118,7 +118,7 @@ footer
 
 // modal
 .modal-dialog
-	max-width: 824px
+	max-width: 1030px
 
 .modal-content
 	background: #fff
@@ -130,6 +130,7 @@ footer
 
 .modal-header
 	padding: 0
+	position: relative
 	border: none
 	border-radius: 0
 	flex-wrap: wrap
@@ -158,4 +159,120 @@ footer
 .modal-body
 	width: 100%
 	padding: 0
-	border: none	
+	border: none
+
+.modal-description
+	text-align: center
+	width: 100%
+	margin: 30px auto 0
+	font-size: 14px
+	line-height: 22px
+	color: #454545
+	max-width: 380px
+
+.modal-v2
+	.modal-dialog
+		max-width: 500px
+	.modal-title
+		text-transform: uppercase
+	.form-callback
+		max-width: 380px
+		margin: 0 auto
+
+.modal-backdrop.show
+	opacity: 0.6
+
+#orderModal
+	.modal-dialog
+		max-width: 880px
+	.modal-content
+		background: url('../img/discount-popup-image.jpeg') no-repeat center
+		background-size: cover
+		padding: 0
+	.modal-body
+		height: 100%
+		width: 294px
+		margin: 0 0 0 102px
+		background-color: rgba(61, 60, 60, 0.7)
+		padding: 65px 24px
+		text-align: center
+		color: #fff
+		box-sizing: border-box
+		max-width: 90%
+	.modal-header
+		margin: 0
+	.modal-title
+		margin: 0 auto 20px
+		max-width: 200px
+		line-height: normal
+	.consent
+		font-size: 9px
+		text-align: left
+		a
+			color: #fff
+
+.form-modal-search
+	position: relative
+	[type='submit']
+		position: absolute
+		right: 10px
+		top: 50%
+		transform: translate(0,-50%)
+		width: 20px
+		height: 20px
+		background: transparent
+		fill: #9C9C9C
+
+.back-to-map
+	color: #9C9C9C
+	font-size: 15px
+	cursor: pointer
+	display: none
+	align-items: center
+	justify-content: center
+	transition: .3s ease
+	position: absolute
+	left: 0
+	top: 7px
+	&::before
+		content: '\f177'
+		font-family: 'FontAwesome', sans-serif
+		@include d-flex
+		margin: 0 10px 0 0
+	&:hover
+		color: $accent
+
+#container
+	display: none
+	width: 100%
+	height: 400px
+	padding-top: 10px
+
+.city-block
+	display: none
+	max-height: 400px
+	height: 400px
+	overflow-y: auto
+	overflow-x: hidden
+	margin-top: 30px
+
+.all-city-block
+	float: left
+	width: 100%
+	margin-left: 0px
+
+	.h2
+		font-size: 18px
+		font-weight: bold
+		color: #333333
+		margin-bottom: 20px
+
+	li
+		float: left
+		width: 25%
+
+.datamaps-hoverover
+	pointer-events: none
+
+.datamap path
+	cursor: pointer

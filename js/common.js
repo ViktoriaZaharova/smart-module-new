@@ -552,6 +552,168 @@ $('.catalog-menu__list').click(function () {
 	$(this).find('.catalog-menu__link').toggleClass('active');
 });
 
+$('.video-container-tab1').slick({
+	slidesToShow: 1,
+	fade: true,
+	swipe: false,
+	arrows: false,
+	infinite: false,
+});
+
+$('.video-tab1').slick({
+	slidesToShow: 9,
+	arrows: false,
+	asNavFor: '.video-container-tab1',
+	focusOnSelect: true,
+	infinite: false,
+	swipe: false,
+	prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-right"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 7,
+				arrows: true,
+				swipe: true,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 5,
+				swipe: true,
+				arrows: true,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 3,
+				arrows: true,
+				swipe: true,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				arrows: true,
+				swipe: true,
+				infinite: true,
+			}
+		}
+	]
+});
+
+$('.video-tab1').on('afterChange', function (event, slick, currentSlide) {
+	// $('.video-conainer-tab-cont').removeClass('active');
+	// $('#video-tab-' + currentSlide + '').addClass('active');
+	// $('video').get(currentSlide).load();
+	// $('#video-' + currentSlide + '').trigger('play');
+	$('div.tabs__content.active').find('video').trigger('play');
+	$(this).find('.video-tab__item.slick-current').prevAll('.video-tab__item').addClass('chose');
+	$(this).find('.video-tab__item.slick-current').nextAll('.video-tab__item').removeClass('chose');
+});
+
+$('.video-container-tab2').slick({
+	slidesToShow: 1,
+	fade: true,
+	swipe: false,
+	arrows: false,
+	infinite: false,
+});
+
+$('.video-tab2').slick({
+	slidesToShow: 14,
+	arrows: false,
+	asNavFor: '.video-container-tab2',
+	focusOnSelect: true,
+	infinite: false,
+	swipe: false,
+	prevArrow: '<button type="button" class="slick-prev slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-left"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next slick-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#angle-right"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 1200,
+			settings: {
+				slidesToShow: 12,
+				arrows: true,
+				swipe: true,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 992,
+			settings: {
+				slidesToShow: 10,
+				arrows: true,
+				swipe: true,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 850,
+			settings: {
+				slidesToShow: 7,
+				swipe: true,
+				arrows: true,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 5,
+				swipe: true,
+				arrows: true,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 3,
+				swipe: true,
+				arrows: true,
+				infinite: true,
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				swipe: true,
+				arrows: true,
+				infinite: true,
+			}
+		}
+	]
+});
+
+$('.video-tab2').on('afterChange', function (event, slick, currentSlide) {
+	// $('.video-conainer-tab-cont').removeClass('active');
+	// $('#video-tab-' + currentSlide + '').addClass('active');
+	// $('video').get(currentSlide).load();
+	// $('#video-' + currentSlide + '').trigger('play');
+	$('div.tabs__content.active').find('video').trigger('play');
+	$(this).find('.video-tab__item.slick-current').prevAll('.video-tab__item').addClass('chose');
+	$(this).find('.video-tab__item.slick-current').nextAll('.video-tab__item').removeClass('chose');
+});
+
+
+$('ul.tabs__caption').on('click', 'li:not(.active)', function () {
+	$(this)
+		.addClass('active').siblings().removeClass('active')
+		.closest('div.tabs').find('div.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+	// $('div.tabs__content.active').find('.slick-slider').slick('setPosition');
+	$('div.tabs__content.active').find('video').trigger('play');
+});
+
+
 // product slider
 
 $(document).ready(function () {
@@ -709,10 +871,12 @@ $('#map-search').on('keyup', function () {
 			$('.city-block').html(html);
 		}
 	});
-	$('#select-city-fo-map .p-popup__title span').html('Выберите свой город');
-	$('#select-city-fo-map .back-to-map').css('display', 'block');
-
-})
+	// $('#container').css('display', 'none');
+	// $('.city-block').css('display', 'block');
+	// $('.city-block').html(html);
+	$('#select-city-fo-map .modal-title').html('Выберите свой город');
+	$('#select-city-fo-map .back-to-map').css('display', 'flex');
+});
 
 
 $(document).on('click', '.all-region-mobile span', function () {
@@ -727,8 +891,8 @@ $(document).on('click', '.all-region-mobile span', function () {
 			$('#container').css('display', 'none');
 			$('.city-block').css('display', 'block');
 			$('.city-block').html(html);
-			$('#select-city-fo-map .p-popup__title span').html('Выберите свой город');
-			$('#select-city-fo-map .back-to-map').css('display', 'block');
+			$('#select-city-fo-map .modal-title').html('Выберите свой город');
+			$('#select-city-fo-map .back-to-map').css('display', 'flex');
 		}
 	});
 
@@ -737,14 +901,15 @@ $(document).on('click', '.all-region-mobile span', function () {
 
 $('.back-to-map').on('click', function () {
 	$('.city-block').css('display', 'none');
-	$('#select-city-fo-map .p-popup__title span').html('Выберите свой регион на карте');
+	$('#select-city-fo-map .modal-title').html('Выберите свой регион на карте');
 	$('#container').css('display', 'block');
 	$('#select-city-fo-map .back-to-map').css('display', 'none');
 
-})
+});
+
 scale = 600;
 if ($(window).width() <= 768) {
-	$('#select-city-fo-map .p-popup__title span').html('Выберите свой регион');
+	$('#select-city-fo-map .modal-title').html('Выберите свой регион');
 	$('.back-to-map').html('К выбору региона');
 	$.ajax({
 		type: "POST",
@@ -818,8 +983,8 @@ function start_map() {
 								$('#container').css('display', 'none');
 								$('.city-block').css('display', 'block');
 								$('.city-block').html(html);
-								$('#select-city-fo-map .p-popup__title span').html('Выберите свой город');
-								$('#select-city-fo-map .back-to-map').css('display', 'block');
+								$('#select-city-fo-map .modal-title').html('Выберите свой город');
+								$('#select-city-fo-map .back-to-map').css('display', 'flex');
 							}
 						});
 					});
