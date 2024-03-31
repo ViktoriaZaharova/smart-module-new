@@ -13,9 +13,9 @@
 	<!-- add plugins css -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/slick.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-	<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="css/fancybox.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css">
@@ -23,6 +23,10 @@
 	<link rel="stylesheet" href="css/footer.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/map.js"></script>
+	<script src="js/datamaps.rus.js"></script>
 </head>
 
 <body>
@@ -54,7 +58,7 @@
 								<a href="mailto:spb1@smart-module.ru" class="mail"><i class="fa fa-envelope-o"
 										aria-hidden="true"></i>spb1@smart-module.ru</a>
 							</div>
-	
+
 							<ul class="list-social my-ul">
 								<li class="list-social__item">
 									<a href="https://vk.com/smart_module" target="_blank" class="list-social__link">
@@ -68,7 +72,7 @@
 									</a>
 								</li>
 							</ul>
-	
+
 							<a href="#" class="btn btn-accent btn-callback" data-bs-toggle="modal"
 								data-bs-target="#callbackModal">Получить консультацию</a>
 							<div class="btn-search d-flex d-md-none">
@@ -130,7 +134,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<div class="header-bottom">
 			<div class="container">
 				<div class="row">
@@ -388,9 +392,9 @@
 					</div>
 				</div>
 			</div>
-	
+
 		</div>
-	
+
 		<div class="header-fixed">
 			<div class="container">
 				<div class="row">
@@ -537,7 +541,7 @@
 									</ul>
 								</div>
 							</div>
-	
+
 							<a href="index.html" class="logo">
 								<img src="img/logo-sm.png" alt="" />
 							</a>
@@ -549,7 +553,7 @@
 								<a href="tel:+78129071459" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>8 (812)
 									907-14-59</a>
 							</div>
-	
+
 							<nav class="nav nav-menu">
 								<ul class="menu my-ul">
 									<li class="nav-item">
@@ -568,7 +572,7 @@
 											</ul>
 										</div>
 									</li>
-	
+
 									<li class="nav-item">
 										<a href="blog.html" class="nav-link">блог</a>
 									</li>
@@ -602,7 +606,7 @@
 									</li>
 								</ul>
 							</nav>
-	
+
 							<a href="#" class="btn btn-accent btn-callback" data-bs-toggle="modal"
 								data-bs-target="#callbackModal">Получить консультацию</a>
 							<div class="btn-search">
@@ -624,7 +628,8 @@
 							<div class="col-12">
 								<form method="post" class="form-search">
 									<label>
-										<input type="search" class="search-field" placeholder="" value="" name="search" autocomplete="off" />
+										<input type="search" class="search-field" placeholder="" value="" name="search"
+											autocomplete="off" />
 									</label>
 									<button class="btn btn-accent search-submit" type="submit">
 										<span>Поиск</span>
@@ -639,22 +644,26 @@
 						<div class="row">
 							<div class="col-12">
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
+											alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
 										школа CONTAINEX</span>
 								</a>
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
+											alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
 										школа CONTAINEX</span>
 								</a>
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
+											alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
 										школа CONTAINEX</span>
 								</a>
 								<a href="product.html" class="search-wrapper-result-item">
-									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg" alt="" /></span>
+									<span class="search-wrapper-result-item__img"><img src="img/search-result-img-min.jpg"
+											alt="" /></span>
 									<span class="search-wrapper-result-item__title"><span class="color-accent font-700">Модул</span>ьная
 										школа CONTAINEX</span>
 								</a>
@@ -892,139 +901,134 @@
 		</div>
 	</footer>
 
-		<!-- Модальное окно -->
-		<div class="modal fade" id="locationModal" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content" id="select-city-fo-map">
-					<div class="modal-header">
-						<div class="back-to-map">Назад к карте</div>
-						<div class="modal-title">Выберите свой регион на карте</div>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+	<!-- Модальное окно -->
+	<div class="modal fade" id="locationModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content" id="select-city-fo-map">
+				<div class="modal-header">
+					<div class="back-to-map">Назад к карте</div>
+					<div class="modal-title">Выберите свой регион на карте</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form-modal-search">
+						<label>
+							<input type="text" placeholder="Быстрый поиск города" name="search" id="map-search">
+						</label>
+						<button type="submit"><svg class="svg-icon svg-icon-search">
+								<use xlink:href="img/sprite.svg#search"></use>
+							</svg></button>
+					</form>
+					<div id="container">
+						<div class="city-block"></div>
 					</div>
-					<div class="modal-body">
-						<form method="post" class="form-modal-search">
-							<label>
-								<input type="text" placeholder="Быстрый поиск города" name="search" id="map-search">
-							</label>
-							<button type="submit"><svg class="svg-icon svg-icon-search">
-									<use xlink:href="img/sprite.svg#search"></use>
-								</svg></button>
-						</form>
-						<div id="container">
-							<div class="city-block"></div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-v2 fade" id="callbackModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Обратный звонок</div>
+					<div class="modal-description">
+						<p>Оставте заявку и наш оператор свяжется с Вами в течении 2х минут</p>
+					</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+				</div>
+				<div class="modal-body">
+					<form method="post" class="form-callback">
+						<div class="row">
+							<div class="col-12 mb-20">
+								<label>
+									<input type="text" placeholder="Ваше имя" name="name">
+								</label>
+							</div>
+							<div class="col-12 mb-20">
+								<label>
+									<input type="text" placeholder="Ваш телефон" name="phone" required="">
+								</label>
+							</div>
+							<div class="col-12 mb-20">
+								<button type="submit" class="btn btn-accent w-100">
+									Отправить
+								</button>
+							</div>
+							<div class="col-12">
+								<label class="label-checkbox">
+									<input type="checkbox" name="checkbox" checked="">
+									<span class="label-checkbox__custom"></span>
+									<span class="label-checkbox__text">Согласие на обработку персональных данных</span>
+								</label>
+							</div>
 						</div>
-					</div>
-		
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="modal modal-v2 fade" id="thanksModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="modal-title">Ваше сообщение успешно отправлено</div>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
 				</div>
 			</div>
 		</div>
-		
-		<div class="modal modal-v2 fade" id="callbackModal" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<div class="modal-title">Обратный звонок</div>
-						<div class="modal-description">
-							<p>Оставте заявку и наш оператор свяжется с Вами в течении 2х минут</p>
-						</div>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-					</div>
-					<div class="modal-body">
-						<form method="post" class="form-callback">
-							<div class="row">
-								<div class="col-12 mb-20">
-									<label>
-										<input type="text" placeholder="Ваше имя" name="name">
-									</label>
-								</div>
-								<div class="col-12 mb-20">
-									<label>
-										<input type="text" placeholder="Ваш телефон" name="phone" required="">
-									</label>
-								</div>
-								<div class="col-12 mb-20">
-									<button type="submit" class="btn btn-accent w-100">
-										Отправить
-									</button>
-								</div>
-								<div class="col-12">
-									<label class="label-checkbox">
-										<input type="checkbox" name="checkbox" checked="">
-										<span class="label-checkbox__custom"></span>
-										<span class="label-checkbox__text">Согласие на обработку персональных данных</span>
-									</label>
+	</div>
+
+	<div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+				</div>
+				<div class="modal-body">
+					<div class="modal-title">Оформление заказа</div>
+					<form method="post" class="form-callback">
+						<div class="row">
+							<div class="col-12 mb-20">
+								<label>
+									<input type="text" placeholder="Введите номер телефона" name="phone" required="">
+								</label>
+							</div>
+							<div class="col-12 mb-20">
+								<div class="consent">
+									<p>Заполняя форму вы соглашаетесь с условиями <a href="#" class="text-decoration d-inline"
+											target="_blank">политики конфиденциальности</a></p>
 								</div>
 							</div>
-						</form>
-					</div>
-		
-				</div>
-			</div>
-		</div>
-		
-		<div class="modal modal-v2 fade" id="thanksModal" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-						<div class="modal-title">Ваше сообщение успешно отправлено</div>
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-					</div>
-				</div>
-			</div>
-		</div>
-		
-		<div class="modal fade" id="orderModal" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-					<div class="modal-header">
-		
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-					</div>
-					<div class="modal-body">
-						<div class="modal-title">Оформление заказа</div>
-						<form method="post" class="form-callback">
-							<div class="row">
-								<div class="col-12 mb-20">
-									<label>
-										<input type="text" placeholder="Введите номер телефона" name="phone" required="">
-									</label>
-								</div>
-								<div class="col-12 mb-20">
-									<div class="consent">
-										<p>Заполняя форму вы соглашаетесь с условиями <a href="#" class="text-decoration d-inline"
-												target="_blank">политики конфиденциальности</a></p>
-									</div>
-								</div>
-								<div class="col-12">
-									<button type="submit" class="btn btn-accent w-100">
-										Оформить заказ
-									</button>
-								</div>
+							<div class="col-12">
+								<button type="submit" class="btn btn-accent w-100">
+									Оформить заказ
+								</button>
 							</div>
-						</form>
-					</div>
-		
+						</div>
+					</form>
 				</div>
+
 			</div>
 		</div>
+	</div>
 
 	<!-- add plugins js-->
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/slick.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
-	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+	<script src="js/fancybox.umd.js"></script>
 	<script src="js/jquery.matchHeight-min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-	<script src="js/map.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-		<script src="js/datamaps.rus.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/jquery.ui.touch-punch.min.js"></script>
+	<script src="js/common.js"></script>
 	<!-- add plugins js end-->
 
-	<script src="js/common.js"></script>
 
 </body>
 
