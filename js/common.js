@@ -436,6 +436,14 @@ $('.advantages-events-box__hidden .advantages-events-box, .advantages-events-box
 	$(this).parents('.advantages-events-box__hidden').removeClass('active');
 });
 
+$(document).mouseup(function (e) { // событие клика по веб-документу
+	var div = $(".advantages-events"); // тут указываем ID элемента
+	if (!div.is(e.target) // если клик был не по нашему блоку
+		&& div.has(e.target).length === 0) { // и не по его дочерним элементам
+		div.find('.advantages-events-box__hidden').removeClass('active'); // скрываем его
+	}
+});
+
 // tooltip
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
@@ -545,6 +553,10 @@ $('.up').on("click", function () {
 	$input.val(parseInt($input.val()) + 1);
 	$input.change();
 	return false;
+});
+
+$('.amount input').on('input', function () {
+	$(this).val($(this).val().replace(/[A-Za-zА-Яа-яЁё]/, ''))
 });
 
 // sidebar menu dropdown

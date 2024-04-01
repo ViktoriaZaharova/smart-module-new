@@ -9,7 +9,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.612874627083, 28.225705545835], {
 		hintContent: 'Модульное общежитие на 150 человек',
-		balloonContent: `<a href="/proekty/modulnoe-obshchezhitie-na-150-chelovek/"><img src="/upload/resize_cache/iblock/e6a/150_150_0/d4cvnx4101h47odj61wxi44a2pzsb8tn.jpg" alt="" /></a><br><table cellspacing="0" cellpadding="0">
+		balloonContent: `<a href="/proekty/modulnoe-obshchezhitie-na-150-chelovek/"><img src="/upload/resize_cache/iblock/e6a/150_150_0/d4cvnx4101h47odj61wxi44a2pzsb8tn.jpg" alt="" loading="lazy"/></a><br><table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 	<td>
@@ -501,7 +501,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([60.05181460078, 30.440524412619], {
 		hintContent: 'Блок контейнер для станции таксопарка',
-		balloonContent: `<a href="project-page.html"><img src="img/n13rf2kgegks8wrprtvsa3w1yovypskm.jpeg" alt="" /></a><br><table cellspacing="0" cellpadding="0">
+		balloonContent: `<a href="project-page.html"><img src="img/n13rf2kgegks8wrprtvsa3w1yovypskm.jpeg" alt="" loading="lazy"/></a><br><table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 	<td>
@@ -923,7 +923,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([60.132117763267, 30.852958190574], {
 		hintContent: 'Модульный штаб для компании ООО &quot;ПР-Лизинг&quot;',
-		balloonContent: `<a href="project-page.html"><img src="img/jxtvce4jdojvljd8pbntztejt8wjonzk.jpeg" alt="" /></a><br><table cellspacing="0" cellpadding="0">
+		balloonContent: `<a href="project-page.html"><img src="img/jxtvce4jdojvljd8pbntztejt8wjonzk.jpeg" alt="" loading="lazy"/></a><br><table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 	<td>
@@ -1339,7 +1339,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.708104322085, 30.716018439039], {
 		hintContent: 'Модульный штаб для госкорпорации «Росатом»',
-		balloonContent: `<a href="project-page.html"><img src="img/lbhxwgajzoko265jjg6vrht8ns6z7viz.jpeg" alt="" /></a><br><table cellspacing="0" cellpadding="0">
+		balloonContent: `<a href="project-page.html"><img src="img/lbhxwgajzoko265jjg6vrht8ns6z7viz.jpeg" alt="" loading="lazy"/></a><br><table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 	<td>
@@ -1836,7 +1836,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([60.091929690479, 30.192445409054], {
 		hintContent: 'Модульное здание КПП для АО &quot;Газстройпроект&quot;',
-		balloonContent: `<a href="project-page.html"><img src="img/3kzx4m287ueyrn863v9bjnixbst5p8yk.jpeg" alt="" /></a><br><table border="1" cellspacing="0" cellpadding="0">
+		balloonContent: `<a href="project-page.html"><img src="img/3kzx4m287ueyrn863v9bjnixbst5p8yk.jpeg" alt="" loading="lazy"/></a><br><table border="1" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 	<td>
@@ -2205,7 +2205,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.78600612537, 28.448031325621], {
 		hintContent: 'Модульные здания для АО ХК &quot;Новотранс&quot;',
-		balloonContent: `<a href="project-page.html"><img src="img/2259d47dd7d6cc3a1430b6749d5faeda.jpeg" alt="" /></a><br><table cellspacing="0" cellpadding="0">
+		balloonContent: `<a href="project-page.html"><img src="img/2259d47dd7d6cc3a1430b6749d5faeda.jpeg" alt="" loading="lazy"/></a><br><table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 	<td>
@@ -2568,7 +2568,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([43.127848554836, 131.99316581144], {
 		hintContent: 'Блок контейнер пожаротушения',
-		balloonContent: `<a href="project-page.html"><img src="img/112d3f28b1efef24aa69326c5b8604f9.jpeg" alt="" /></a><br><table cellspacing="0" cellpadding="0">
+		balloonContent: `<a href="project-page.html"><img src="img/112d3f28b1efef24aa69326c5b8604f9.jpeg" alt="" loading="lazy"/></a><br><table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 	<td>
@@ -2906,7 +2906,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.938322053001, 30.259678234221], {
 		hintContent: 'Блок контейнер павильон',
-		balloonContent: `<a href="project-page.html"><img src="img/a08e73e69c7560042d7c7a8e057fa526.jpeg" alt="" /></a><br><table border="1" cellspacing="0" cellpadding="0">
+		balloonContent: `<a href="project-page.html"><img src="img/a08e73e69c7560042d7c7a8e057fa526.jpeg" alt="" loading="lazy"/></a><br><table border="1" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 	<td>
@@ -3206,7 +3206,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([60.103237850834, 30.387706771955], {
 		hintContent: 'Блок контейнер с большими окнами',
-		balloonContent: `<a href="project-page.html"><img src="img/ab465bacb347c524cafa086cf1a1f1b8.jpeg" alt="" /></a><br><table cellspacing="0" cellpadding="0">
+		balloonContent: `<a href="project-page.html"><img src="img/ab465bacb347c524cafa086cf1a1f1b8.jpeg" alt="" loading="lazy"/></a><br><table cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 	<td>
@@ -3377,7 +3377,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([60.122626723687, 30.351160544192], {
 		hintContent: 'Металлическая бытовка в имитации бруса',
-		balloonContent: `<a href="project-page.html"><img src="img/c716671eb7f9942265a872362e653d96.jpeg" alt="" /></a><br><table border="1" cellspacing="0" cellpadding="0">
+		balloonContent: `<a href="project-page.html"><img src="img/c716671eb7f9942265a872362e653d96.jpeg" alt="" loading="lazy"/></a><br><table border="1" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
 	<td>
@@ -3534,7 +3534,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.880428238776, 30.518154874968], {
 		hintContent: 'Блок контейнер щитовая для ООО &quot;Ленмонтаж&quot;',
-		balloonContent: `<a href="project-page.html"><img src="img/bc708d207103a43d3ea01ca076a9e741.jpeg" alt="" /></a><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
+		balloonContent: `<a href="project-page.html"><img src="img/bc708d207103a43d3ea01ca076a9e741.jpeg" alt="" loading="lazy"/></a><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
 	}, {
 		iconLayout: 'default#image',
 		iconImageHref: 'img/mark.png',
@@ -3546,7 +3546,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([55.677650724781, 37.504730834961], {
 		hintContent: 'Переоборудование морского контейнера под кофейню',
-		balloonContent: `<a href="project-page.html"><img src="img/3593033a71ef3ec1ce5075e7f0a147da.jpeg" alt="" /></a><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
+		balloonContent: `<a href="project-page.html"><img src="img/3593033a71ef3ec1ce5075e7f0a147da.jpeg" alt="" loading="lazy"/></a><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
 	}, {
 		iconLayout: 'default#image',
 		iconImageHref: 'img/mark.png',
@@ -3558,7 +3558,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([55.435235779191, 37.711367713405], {
 		hintContent: 'Переоборудование морского контейнера под мастерскую',
-		balloonContent: `<a href="project-page.html"><img src="img/bc4ba160768042d84165a082b0f2374a.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/bc4ba160768042d84165a082b0f2374a.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -3711,7 +3711,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([], {
 		hintContent: 'Блок-контейнер санитарный для ООО «ХимСтройМонтаж»',
-		balloonContent: `<a href="project-page.html"><img src="img/38095c3a5053d09cb5487516c2d9f5de.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/38095c3a5053d09cb5487516c2d9f5de.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -4020,7 +4020,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([64.565776708111, 39.854209437715], {
 		hintContent: 'Бытовки из морских контейнеров для ООО &quot;Альянс-Строй&quot;',
-		balloonContent: `<a href="project-page.html"><img src="img/d196aa5a6e75ca216a46c2fccea353da.jpeg" alt="" /></a><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
+		balloonContent: `<a href="project-page.html"><img src="img/d196aa5a6e75ca216a46c2fccea353da.jpeg" alt="" loading="lazy"/></a><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
 	}, {
 		iconLayout: 'default#image',
 		iconImageHref: 'img/mark.png',
@@ -4032,7 +4032,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.864079088889, 30.163774180194], {
 		hintContent: 'Модульный офис продаж для БФА Девелопмент',
-		balloonContent: `<a href="project-page.html"><img src="img/64959bdf2eeff3fd682182ea44cec03d.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/64959bdf2eeff3fd682182ea44cec03d.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -4379,7 +4379,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.397105452071, 28.460457005228], {
 		hintContent: 'Блок контейнер операторская для ООО &quot;ХимСтройМонтаж&quot;',
-		balloonContent: `<a href="project-page.html"><img src="img/39d283aad5c94da9d2c65fa21bd271c1.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/39d283aad5c94da9d2c65fa21bd271c1.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -4698,7 +4698,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.397565557921, 28.460480109336], {
 		hintContent: 'Блок контейнер щитовая для ООО &quot;ХимСтройМонтаж&quot;',
-		balloonContent: `<a href="project-page.html"><img src="img/050b6e79e461c64e29a16384b817b1cb.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/050b6e79e461c64e29a16384b817b1cb.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -4969,7 +4969,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([60.754094599609, 28.787381870631], {
 		hintContent: 'Блок контейнеры для NESTE Oil',
-		balloonContent: `<a href="project-page.html"><img src="img/5ea4565da8e5e037fcd7c8cde75b63bd.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/5ea4565da8e5e037fcd7c8cde75b63bd.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -5243,7 +5243,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.850782096151, 30.94326198715], {
 		hintContent: 'Модульная раздевалка для «Норд Крафт»',
-		balloonContent: `<a href="project-page.html"><img src="img/128debee1d01371b1f9c3c320c0f016e.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/128debee1d01371b1f9c3c320c0f016e.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -5574,7 +5574,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([], {
 		hintContent: 'Блок-контейнер тип СЕВЕР для ООО &quot;РКМ&quot;',
-		balloonContent: `<a href="project-page.html"><img src="img/02553864ca168cb430233d45c049798c.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/02553864ca168cb430233d45c049798c.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -5758,7 +5758,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([55.983789995201, 37.429061304141], {
 		hintContent: 'Сборно-разборный блок контейнер для ООО &quot;ЕвроТрансКарго&quot; ',
-		balloonContent: `<a href="project-page.html"><img src="img/3734eb9ae93e8439c24bcb8b19edc9a4.jpeg" alt="" /></a><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
+		balloonContent: `<a href="project-page.html"><img src="img/3734eb9ae93e8439c24bcb8b19edc9a4.jpeg" alt="" loading="lazy"/></a><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
 	}, {
 		iconLayout: 'default#image',
 		iconImageHref: 'img/mark.png',
@@ -5770,7 +5770,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([], {
 		hintContent: 'Двухэтажный штаб строительства из сэндвич панелей',
-		balloonContent: `<a href="project-page.html"><img src="img/8ef4d22b339ed3c291bdb56006cb3c21.jpeg" alt="" /></a><br><br><a hhref="project-page.html" class="color-accent text-decoration">Подробнее</a>`
+		balloonContent: `<a href="project-page.html"><img src="img/8ef4d22b339ed3c291bdb56006cb3c21.jpeg" alt="" loading="lazy"/></a><br><br><a hhref="project-page.html" class="color-accent text-decoration">Подробнее</a>`
 	}, {
 		iconLayout: 'default#image',
 		iconImageHref: 'img/mark.png',
@@ -5782,7 +5782,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([55.67030150829, 109.3944203038], {
 		hintContent: 'Модульное здание из сэндвич панелей под офис для ООО &quot;Элит Спец Строй&quot;',
-		balloonContent: `<a href="project-page.html"><img src="img/9794ae331975b2365409d7d43a74b5e1.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/9794ae331975b2365409d7d43a74b5e1.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -6112,7 +6112,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.400417560176, 28.486895162514], {
 		hintContent: 'Блок контейнер - ЕВРО. Для ООО &quot;ХимСтройМонтаж&quot;',
-		balloonContent: `<a href="project-page.html"><img src="img/4888dbf2a29f8608ff1eaf59193be1e0.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/4888dbf2a29f8608ff1eaf59193be1e0.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -6375,7 +6375,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.401831153891, 28.479883620253], {
 		hintContent: 'Контейнер под электрощитовую',
-		balloonContent: `<a href="project-page.html"><img src="img/2ba04aa9257080f4e8f87c94ce4eeec7.jpeg" alt="" /></a><br><div class="col-12 producr-detail-card-info">
+		balloonContent: `<a href="project-page.html"><img src="img/2ba04aa9257080f4e8f87c94ce4eeec7.jpeg" alt="" loading="lazy"/></a><br><div class="col-12 producr-detail-card-info">
                 	<div class="card-info-table">
                         
                         <div class="card-info-table-item">
@@ -6560,7 +6560,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([55.756712949308, 37.942628215847], {
 		hintContent: 'Двухэтажное блочно модульное общежитие',
-		balloonContent: `<a href="project-page.html"><img src="img/de87e423bf29fef90088f0853f674ee7.jpeg" alt="" /></a><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
+		balloonContent: `<a href="project-page.html"><img src="img/de87e423bf29fef90088f0853f674ee7.jpeg" alt="" loading="lazy"/></a><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
 	}, {
 		iconLayout: 'default#image',
 		iconImageHref: 'img/mark.png',
@@ -6572,7 +6572,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([59.462264844157, 28.219681229274], {
 		hintContent: 'Модульное здание общежитие',
-		balloonContent: `<a href="project-page.html"><img src="img/051bafc9105a8e6f90573655e9addaf6.jpeg" alt="" /></a><br><b>Общая площадь:</b>1800  м<sup>2</sup><br>
+		balloonContent: `<a href="project-page.html"><img src="img/051bafc9105a8e6f90573655e9addaf6.jpeg" alt="" loading="lazy"/></a><br><b>Общая площадь:</b>1800  м<sup>2</sup><br>
 <br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
 	}, {
 		iconLayout: 'default#image',
@@ -6585,7 +6585,7 @@ function initYmaps(center, zoom) {
 
 	myPlacemark = new ymaps.Placemark([55.645053865933, 37.041470669714], {
 		hintContent: 'Двухэтажное  модульное здание',
-		balloonContent: `<a href="project-page.html"><img src="img/723bea97899cccbdfd5515d8231ac759.jpeg" alt="" /></a><br><b>Общая площадь:</b> 450 м<sup>2</sup><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
+		balloonContent: `<a href="project-page.html"><img src="img/723bea97899cccbdfd5515d8231ac759.jpeg" alt="" loading="lazy"/></a><br><b>Общая площадь:</b> 450 м<sup>2</sup><br><br><a href="project-page.html" class="color-accent text-decoration">Подробнее</a>`
 	}, {
 		iconLayout: 'default#image',
 		iconImageHref: 'img/mark.png',

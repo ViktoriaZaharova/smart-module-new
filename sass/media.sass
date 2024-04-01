@@ -305,6 +305,8 @@
 		padding: 0
 
 	.tab-product-category__col
+		position: relative
+		top: 0
 		.slick-arrow
 			position: absolute
 			top: 50%
@@ -315,9 +317,13 @@
 		.slick-next
 			right: 10px
 			left: auto
+		.slick-track
+			display: flex
+			align-items: stretch
 		.tab-product-category-item
 			display: flex
 			justify-content: center
+			height: auto
 			&.slick-current
 				background: #507298
 				color: #fff

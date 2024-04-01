@@ -3037,6 +3037,7 @@ a.contacts-box__link:hover {
 .tab-product-category {
   max-width: 320px;
   width: 100%;
+  position: relative;
 }
 .tab-product-category__col {
   border: solid 1px #e2e2e2;
@@ -3045,6 +3046,7 @@ a.contacts-box__link:hover {
   position: sticky;
   top: 75px;
   left: 0;
+  z-index: 2;
 }
 
 .tab-product-category-item {
