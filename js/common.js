@@ -11,7 +11,17 @@ $(window).on('load resize', function () {
 	if ($(window).width() < 768) {
 		$(".dropdown-menu-catalog .dropdown-item").one("click", false);
 	}
+	if ($(window).width() > 768) {
+		$('.dropdown').hover(function () {
+			$(this).find('.dropdown-menu')
+				.stop(true, true).delay(100).fadeIn(200);
+		}, function () {
+			$(this).find('.dropdown-menu')
+				.stop(true, true).delay(100).fadeOut(200);
+		});
+	}
 });
+
 
 function setPositionNav() {
 	if (window.innerWidth < 768) return;

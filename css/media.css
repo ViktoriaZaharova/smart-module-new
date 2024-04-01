@@ -1053,6 +1053,15 @@
   .advantages-company-col {
     margin: 0;
   }
+  .product-information-advantages-item {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    margin: 0 5px 5px 0;
+  }
+  .product-information-advantages-item:last-child {
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 576px) {
   .btn {
@@ -1345,5 +1354,10 @@
   }
   .table-wrapper .table-project-description tbody tr td {
     padding: 10px 8px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  header .dropdown-menu {
+    position: absolute;
   }
 }
