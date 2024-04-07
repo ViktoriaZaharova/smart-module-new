@@ -138,7 +138,8 @@
     top: 0px;
   }
   .clients {
-    margin: 60px 0 40px;
+    margin: 60px 0 0;
+    padding: 0 0 40px;
   }
   .clients h2 {
     margin: 0 0 30px;
@@ -485,6 +486,16 @@
   .video-container-tab {
     min-height: auto;
   }
+  .copyright, .link-developer {
+    margin: 0 auto;
+  }
+  footer .list-social {
+    width: 100%;
+    margin: 10px auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media only screen and (max-width: 768px) {
   footer {
@@ -513,9 +524,6 @@
   }
   .footer-menu:last-child {
     margin: 0;
-  }
-  .copyright, .link-document {
-    margin: 0 auto;
   }
   .clients-slider .slick-slide {
     margin: 0 20px;

@@ -122,7 +122,7 @@ footer .list-social {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  top: 9.5px;
+  top: 10px;
   left: 5.5px;
   display: none;
 }
@@ -148,6 +148,40 @@ footer .list-social {
   border-radius: 0.5px;
 }
 
+.link-developer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #999;
+}
+.link-developer a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 70px;
+  -webkit-filter: brightness(0) invert(1);
+          filter: brightness(0) invert(1);
+  margin: 0 0 0 10px;
+}
+.link-developer a:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
 .modal-dialog {
   max-width: 1030px;
 }
@@ -171,6 +205,12 @@ footer .list-social {
   margin: 0 0 20px;
 }
 .modal-header .btn-close {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+}
+
+.btn-close {
   position: absolute;
   padding: 0;
   margin: 0;
@@ -180,9 +220,11 @@ footer .list-social {
   right: 15px;
   width: 16px;
   height: 16px;
-  opacity: 0.7;
+  opacity: 1;
   cursor: pointer;
   color: #bcbcbc;
+  background: url("../img/close-popup-fb.png") no-repeat center;
+  background-size: 100%;
 }
 
 .modal-title {
@@ -276,6 +318,25 @@ footer .list-social {
   background: transparent;
   fill: #9C9C9C;
 }
+.form-modal-search input {
+  font-family: "AktivGroteskCorp";
+  opacity: 1;
+}
+.form-modal-search input::-webkit-input-placeholder {
+  color: #999;
+}
+.form-modal-search input::-moz-placeholder {
+  color: #999;
+}
+.form-modal-search input:-ms-input-placeholder {
+  color: #999;
+}
+.form-modal-search input::-ms-input-placeholder {
+  color: #999;
+}
+.form-modal-search input::placeholder {
+  color: #999;
+}
 
 .back-to-map {
   color: #9C9C9C;
@@ -291,8 +352,9 @@ footer .list-social {
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
   position: absolute;
-  left: 0;
-  top: 7px;
+  left: 30px;
+  top: 37px;
+  font-family: "AktivGroteskCorp";
 }
 .back-to-map::before {
   content: "\f177";
@@ -350,4 +412,8 @@ footer .list-social {
 
 .datamap path {
   cursor: pointer;
+}
+
+#locationModal .modal-header {
+  position: initial;
 }

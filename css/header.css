@@ -129,6 +129,9 @@ header.fixed .btn-search {
 .dropdown-burger {
   margin: 0 24px 0 0;
 }
+.dropdown-burger .dropdown-menu {
+  margin: 25px 0 0 !important;
+}
 
 .btn-burger-mobile {
   width: 24px;

@@ -490,7 +490,8 @@
 }
 
 .clients {
-  margin: 110px 0 88px;
+  margin: 110px 0 0;
+  padding: 0 0 90px;
 }
 .clients h2 {
   margin: 0 0 55px;
@@ -3454,7 +3455,7 @@ a.contacts-box__link:hover {
       -ms-flex-align: center;
           align-items: center;
 }
-.sidebar-title h3 {
+.sidebar-title h3, .sidebar-title .h3 {
   font-size: 22px;
 }
 

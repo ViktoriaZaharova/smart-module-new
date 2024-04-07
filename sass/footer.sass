@@ -94,7 +94,7 @@ footer
 				width: 4px
 				height: 4px
 				border-radius: 50%
-				top: 9.5px
+				top: 10px
 				left: 5.5px
 				display: none
 
@@ -116,6 +116,22 @@ footer
 		background: #b9b9b9
 		border-radius: 0.5px
 
+.link-developer
+	display: flex
+	align-items: center
+	justify-content: center
+	flex-wrap: wrap
+	color: #999
+	a
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 70px
+		filter: brightness(0) invert(1)
+		margin: 0 0 0 10px
+		&:hover
+			filter: none
+
 // modal
 .modal-dialog
 	max-width: 1030px
@@ -136,18 +152,25 @@ footer
 	flex-wrap: wrap
 	margin: 0 0 20px
 	.btn-close
-		position: absolute
 		padding: 0
 		margin: 0
-		border: none
-		border-radius: 0
-		top: 15px
-		right: 15px
-		width: 16px
-		height: 16px
-		opacity: .7
-		cursor: pointer
-		color: #bcbcbc
+		opacity: 1
+
+.btn-close
+	position: absolute
+	padding: 0
+	margin: 0
+	border: none
+	border-radius: 0
+	top: 15px
+	right: 15px
+	width: 16px
+	height: 16px
+	opacity: 1
+	cursor: pointer
+	color: #bcbcbc
+	background: url('../img/close-popup-fb.png') no-repeat center
+	background-size: 100%
 
 .modal-title
 	text-align: center
@@ -222,6 +245,12 @@ footer
 		height: 20px
 		background: transparent
 		fill: #9C9C9C
+	input
+		font-family: $font2
+		opacity: 1
+		&::placeholder
+			color: #999
+		
 
 .back-to-map
 	color: #9C9C9C
@@ -232,8 +261,9 @@ footer
 	justify-content: center
 	transition: .3s ease
 	position: absolute
-	left: 0
-	top: 7px
+	left: 30px
+	top: 37px
+	font-family: $font2
 	&::before
 		content: '\f177'
 		font-family: 'FontAwesome', sans-serif
@@ -276,3 +306,7 @@ footer
 
 .datamap path
 	cursor: pointer
+
+#locationModal
+	.modal-header
+		position: initial	

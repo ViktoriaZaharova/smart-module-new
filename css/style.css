@@ -5,6 +5,13 @@
   src: url("../fonts/Esqadero/EsqaderoRegular.eot");
   src: url("../fonts/Esqadero/EsqaderoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Esqadero/EsqaderoRegular.woff") format("woff"), url("../fonts/Esqadero/EsqaderoRegular.ttf") format("truetype");
 }
+@font-face {
+  font-family: "AktivGroteskCorp";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/AktivGroteskCorp/AktivGroteskCorp-Regular.eot");
+  src: url("../fonts/AktivGroteskCorp/AktivGroteskCorp-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/AktivGroteskCorp/AktivGroteskCorp-Regular.woff") format("woff"), url("../fonts/AktivGroteskCorp/AktivGroteskCorp-Regular.ttf") format("truetype");
+}
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
