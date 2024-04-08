@@ -835,7 +835,6 @@ a.contacts-box__link:hover {
 }
 
 .certificates-wrapper {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -844,11 +843,11 @@ a.contacts-box__link:hover {
           align-items: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: 0 -12px;
 }
 
 .certificate-box {
-  width: 20%;
-  max-width: 212px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -858,10 +857,9 @@ a.contacts-box__link:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 24px 20px 0;
 }
-.certificate-box:last-child {
-  margin: 0 0 20px;
+.certificate-box img {
+  width: 100%;
 }
 
 .requisites-box {
@@ -1318,14 +1316,13 @@ a.contacts-box__link:hover {
 }
 
 .team-box {
-  max-width: calc(25% - 12.5px);
   width: 100%;
+  height: 100%;
   background: #f9f9f9;
   padding: 15px 15px 25px;
   text-align: center;
   font-size: 12px;
   line-height: 1.33;
-  margin: 0 0 40px;
   font-weight: bold;
 }
 .team-box__img {
@@ -1560,7 +1557,7 @@ a.contacts-box__link:hover {
           align-items: center;
   padding: 25px;
 }
-.projects-card .block_title h3 {
+.projects-card .block_title h3, .projects-card .block_title .projects-card__link, .projects-card .block_title .h3 {
   text-align: center;
   padding: 0 24px;
   font-size: 30px;
@@ -1649,9 +1646,15 @@ a.contacts-box__link:hover {
 .projects-card.in .projects-card__images {
   display: none;
 }
-.projects-card.in h3 {
+.projects-card.in h3, .projects-card.in .projects-card__link, .projects-card.in .h3 {
   text-align: left;
   color: #6989ad;
+}
+.projects-card.in .block_title .h3 {
+  display: none;
+}
+.projects-card.in .block_title .projects-card__link {
+  display: block;
 }
 .projects-card.in .projects-card__btn {
   fill: #6989ad;
@@ -1660,6 +1663,10 @@ a.contacts-box__link:hover {
   display: block;
 }
 .projects-card.in .projects-card__btn .svg-icon-plus {
+  display: none;
+}
+
+.projects-card__link {
   display: none;
 }
 
@@ -2343,7 +2350,7 @@ a.contacts-box__link:hover {
 .events-row:nth-child(even) .events-row__content {
   margin: 0 auto;
 }
-.events-row .h2 {
+.events-row .h2, .events-row h2 {
   margin: 0 0 30px;
 }
 .events-row__content {
@@ -2560,6 +2567,10 @@ a.contacts-box__link:hover {
   margin: 0 0 20px;
 }
 
+.article-sidebar-popular {
+  margin: 0 0 30px;
+}
+
 .article-popular__link {
   color: #6989ad;
   display: -webkit-box;
@@ -2662,7 +2673,7 @@ a.contacts-box__link:hover {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 30px 30px 20px;
+  padding: 20px 30px 20px;
   width: 100%;
   cursor: pointer;
 }
@@ -2906,6 +2917,36 @@ a.contacts-box__link:hover {
   margin: 0 5px 0 0;
 }
 
+.exit_fs {
+  position: absolute;
+  right: 15%;
+  color: #000;
+  top: 7%;
+  opacity: 0.3;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.exit_fs::before {
+  content: "";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/close-popup-fb.png") no-repeat center;
+  background-size: 100%;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .product-information-advantages {
   width: 100%;
   display: -webkit-box;
@@ -2914,15 +2955,11 @@ a.contacts-box__link:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 .product-information-advantages-item {
-  width: 50px;
-  height: 50px;
-  min-width: 50px;
-  margin: 0 12px 12px 0;
+  max-width: 50px;
+  margin: 0 10px 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2959,7 +2996,7 @@ a.contacts-box__link:hover {
 
 .product-information-characteristics {
   width: 100%;
-  margin: 25px 0 20px;
+  margin: 15px 0 20px;
 }
 .product-information-characteristics li {
   border: solid 1px #dcdcdc;
@@ -3977,9 +4014,12 @@ a.contacts-box__link:hover {
   text-align: center;
   /* width: 150px; */
   font-size: 12px;
-  color: #6989ad;
+  color: #474747;
   height: 70px;
   padding-bottom: 6px;
+}
+.video-tab__item.slick-current, .video-tab__item.chose {
+  color: #6989ad;
 }
 .video-tab__item div {
   border-left: 1px solid #dcdcdc;
@@ -4077,5 +4117,5 @@ a.contacts-box__link:hover {
 }
 
 .page-technology {
-  padding: 20px 0;
+  padding: 20px 0 0;
 }

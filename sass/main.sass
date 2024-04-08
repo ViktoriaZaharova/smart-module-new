@@ -598,18 +598,21 @@ a.contacts-box__link
 
 // page certificates
 .certificates-wrapper
-	width: 100%
+	// width: 100%
 	display: flex
 	align-items: flex-start
 	flex-wrap: wrap
+	margin: 0 -12px
 
 .certificate-box
-	width: 20%
-	max-width: 212px
+	width: 100%
+	// width: 20%
+	// max-width: 212px
 	@include d-flex
-	margin: 0 24px 20px 0
-	&:last-child
-		margin: 0 0 20px
+	// margin: 0 0 20px 0
+	// padding: 0 12px
+	img
+		width: 100%	
 
 // page requisites
 .requisites-box
@@ -899,14 +902,15 @@ a.contacts-box__link
 	margin: 40px 0 0
 
 .team-box
-	max-width: calc(25% - 12.5px)
+	// max-width: calc(25% - 12.5px)
 	width: 100%
+	height: 100%
 	background: #f9f9f9
 	padding: 15px 15px 25px
 	text-align: center
 	font-size: 12px
 	line-height: 1.33
-	margin: 0 0 40px
+	// margin: 0 0 40px
 	font-weight: bold
 	&__img
 		width: 100%
@@ -1075,7 +1079,7 @@ a.contacts-box__link
 		display: flex
 		align-items: center
 		padding: 25px
-		h3
+		h3, .projects-card__link, .h3
 			text-align: center
 			padding: 0 24px
 			font-size: 30px
@@ -1122,9 +1126,14 @@ a.contacts-box__link
 		box-shadow: 0 0 13px 0 rgba(41, 41, 41, 0.2)
 		.projects-card__images
 			display: none
-		h3
+		h3, .projects-card__link, .h3
 			text-align: left
 			color: $accent
+		.block_title
+			.h3
+				display: none
+			.projects-card__link
+				display: block
 		.projects-card
 			&__btn
 				fill: $accent
@@ -1132,6 +1141,9 @@ a.contacts-box__link
 					display: block
 				.svg-icon-plus
 					display: none
+
+.projects-card__link
+	display: none
 
 .projects-card-box
 	width: 100%
@@ -1595,7 +1607,7 @@ a.contacts-box__link
 	&:nth-child(even)
 		.events-row__content
 			margin: 0 auto
-	.h2
+	.h2, h2
 		margin: 0 0 30px
 	&__content
 		max-width: 520px
@@ -1747,6 +1759,9 @@ a.contacts-box__link
 		font-weight: bold
 		margin: 0 0 20px
 
+.article-sidebar-popular
+	margin: 0 0 30px
+
 .article-popular
 	&__link
 		color: $accent
@@ -1806,7 +1821,7 @@ a.contacts-box__link
 		display: flex
 		align-items: center
 		flex-wrap: wrap
-		padding: 30px 30px 20px
+		padding: 20px 30px 20px
 		width: 100%
 		cursor: pointer
 		.h4
@@ -1996,17 +2011,38 @@ a.contacts-box__link
 			display: inline-block
 			margin: 0 5px 0 0
 
+.exit_fs
+	position: absolute
+	right: 15%
+	color: #000
+	top: 7%
+	opacity: 0.3
+	width: 20px
+	height: 20px
+	cursor: pointer
+	&::before
+		content: ''
+		@include d-flex
+		background: url('../img/close-popup-fb.png') no-repeat center
+		background-size: 100%
+		width: 100%
+		height: 100%
+		position: absolute
+		left: 0
+		top: 0
+		
+
 .product-information-advantages
 	width: 100%
 	display: flex
 	align-items: flex-start
-	flex-wrap: wrap
+	// flex-wrap: wrap
 
 .product-information-advantages-item
-	width: 50px
-	height: 50px
-	min-width: 50px
-	margin: 0 12px 12px 0
+	max-width: 50px
+	// height: 50px
+	// min-width: 50px
+	margin: 0 10px 10px 0
 	@include d-flex
 	transition: .3s ease
 	cursor: pointer
@@ -2028,7 +2064,7 @@ a.contacts-box__link
 
 .product-information-characteristics
 	width: 100%
-	margin: 25px 0 20px
+	margin: 15px 0 20px
 	li
 		border: solid 1px #dcdcdc
 		background-color: #e4e4e4
@@ -2748,9 +2784,12 @@ a.contacts-box__link
 	text-align: center
 	/* width: 150px; */
 	font-size: 12px
-	color: #6989ad
+	// color: #6989ad
+	color: #474747
 	height: 70px
 	padding-bottom: 6px
+	&.slick-current, &.chose
+		color: #6989ad
 
 	div
 		border-left: 1px solid #dcdcdc
@@ -2840,4 +2879,4 @@ a.contacts-box__link
 	border-bottom: 1px solid #507298
 
 .page-technology
-	padding: 20px 0
+	padding: 20px 0 0
