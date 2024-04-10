@@ -841,6 +841,31 @@ a.color-accent:hover svg {
       -ms-flex-align: center;
           align-items: center;
 }
+.breadcrumb-item a {
+  position: relative;
+  z-index: 1;
+}
+.breadcrumb-item a::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #7c7b7e;
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+  -moz-transition: 0.3s all;
+  font-weight: 100 !important;
+}
+.breadcrumb-item a:hover {
+  text-decoration: none;
+}
+.breadcrumb-item a:hover::after {
+  width: 100%;
+  left: 0;
+}
 
 .breadcrumb-item + .breadcrumb-item {
   padding-left: 5px;
@@ -989,6 +1014,9 @@ table {
   color: #383838;
 }
 .pagination .nav-item.active .company-border {
+  display: block;
+}
+.pagination .nav-item:hover .company-border {
   display: block;
 }
 .pagination .nav-link {

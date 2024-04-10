@@ -612,7 +612,7 @@ a.contacts-box__link
 	// margin: 0 0 20px 0
 	// padding: 0 12px
 	img
-		width: 100%	
+		width: 100%
 
 // page requisites
 .requisites-box
@@ -1557,24 +1557,29 @@ a.contacts-box__link
 	position: relative
 	z-index: 1
 	margin: 0 0 55px
-	padding: 30px
+	// padding: 30px
 	border: solid 1px #e5e5e5
 
 .advantages-events-box
-	font-size: 15px
+	font-size: 14px
 	width: 25%
 	text-align: center
 	color: #000
 	cursor: pointer
 	transition: .3s ease
+	padding: 30px 15px
 	&:hover
 		color: $accent
+		box-shadow: 0px 0 20px rgba(0,0,0,0.3)
+		color: #6989ad
 	&__icon
 		@include d-flex
 		margin: 0 auto 20px
 		height: 52px
 		img
 			max-height: 100%
+	&__body
+		padding: 20px 30px 20px 0		
 	&__hidden
 		position: absolute
 		left: 0
@@ -1586,12 +1591,16 @@ a.contacts-box__link
 		background: #fff
 		// display: flex 
 		align-items: flex-start
-		padding: 16px 30px
-		font-size: 15px
+		// padding: 16px 30px
+		font-size: 14px
 		.advantages-events-box
-			padding: 25px 0
-	.box-text
-		font-size: 15px
+			min-width: 206px
+			&:hover
+				box-shadow: none
+	&__text
+		font-size: 15px			
+	// .box-text
+	// 	font-size: 15px
 	&__close
 		width: 14px
 		height: 14px
@@ -1659,10 +1668,29 @@ a.contacts-box__link
 		position: relative
 		z-index: 2
 	&__info
+		width: 19px
+		min-width: 19px
+		height: 19px
+		@include d-flex
 		margin: 0 4px 0 0
+		background: url('../img/info.png') no-repeat center
+		background-size: 100%
 		&:hover
+			background: url('../img/icon-info-active.png') no-repeat center
+			background-size: 100%
 			+ .recommended-products-card__hidden
 				display: block !important
+	&__3d
+		width: 23px
+		height: 21px
+		min-width: 23px
+		@include d-flex
+		background: url('../img/3d.png') no-repeat center
+		background-size: 100%
+		&:hover
+			background: url('../img/3d_active.png') no-repeat center
+			background-size: 100%
+
 	&__img
 		width: 100%
 		height: 150px
@@ -2030,7 +2058,6 @@ a.contacts-box__link
 		position: absolute
 		left: 0
 		top: 0
-		
 
 .product-information-advantages
 	width: 100%
@@ -2344,6 +2371,8 @@ a.contacts-box__link
 		margin: 0 0 25px
 		border-bottom: 1px solid #f5f5f5
 		cursor: inherit
+		&:hover
+			box-shadow: none
 		&__icon
 			img
 				transition: 0.5s all
@@ -2625,6 +2654,9 @@ a.contacts-box__link
 		position: relative
 		z-index: 1
 		color: #383838
+		cursor: pointer
+		&:hover
+			color: $accent
 		&::before
 			content: '\f105'
 			font-family: 'FontAwesome', sans-serif

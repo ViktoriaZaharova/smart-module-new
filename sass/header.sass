@@ -108,7 +108,7 @@ header
 			&:first-child
 				transform: rotate(45deg)
 			&:last-child
-				transform: rotate(135deg)	
+				transform: rotate(135deg)
 			&:nth-child(2)
 				width: 0
 
@@ -120,14 +120,56 @@ header
 	margin: 13px 0 0
 	display: flex
 	align-items: center
+	position: relative
+	z-index: 1
+	&::after
+		display: block
+		width: 0%
+		height: 1px
+		background-color: #212121
+		content: ""
+		position: absolute
+		bottom: -2px
+		left: 50%
+		transition: 0.3s all
+		-webkit-transition: 0.3s all
+		-moz-transition: 0.3s all
+		font-size: 5px
+		font-weight: 100 !important
+	&:hover
+		color: inherit
+		&:after
+			box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2)
+			width: 100%
+			left: 0
 	i
 		@include d-flex
 
 .mail
 	font-size: 13px
 	color: #333
+	position: relative
+	z-index: 1
+	&::after
+		display: block
+		width: 0%
+		height: 1px
+		background-color: #212121
+		content: ""
+		position: absolute
+		bottom: -2px
+		left: 50%
+		transition: 0.3s all
+		-webkit-transition: 0.3s all
+		-moz-transition: 0.3s all
+		font-size: 5px
+		font-weight: 100 !important
 	&:hover
-		color: $accent
+		color: inherit
+		&:after
+			box-shadow: 1px 3px 4px 1px rgba(0, 0, 0, 0.2)
+			width: 100%
+			left: 0
 
 .header-box
 	color: #333
@@ -140,6 +182,9 @@ header
 			color: #6989ad
 			font-size: 14px
 			margin: 0 5px 0 0
+	.phone, .mail
+		&:hover
+			color: inherit
 	span
 		color: #666
 		font-size: 12px

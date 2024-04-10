@@ -2271,20 +2271,23 @@ a.contacts-box__link:hover {
   position: relative;
   z-index: 1;
   margin: 0 0 55px;
-  padding: 30px;
   border: solid 1px #e5e5e5;
 }
 
 .advantages-events-box {
-  font-size: 15px;
+  font-size: 14px;
   width: 25%;
   text-align: center;
   color: #000;
   cursor: pointer;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  padding: 30px 15px;
 }
 .advantages-events-box:hover {
+  color: #6989ad;
+  -webkit-box-shadow: 0px 0 20px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 0 20px rgba(0, 0, 0, 0.3);
   color: #6989ad;
 }
 .advantages-events-box__icon {
@@ -2303,6 +2306,9 @@ a.contacts-box__link:hover {
 .advantages-events-box__icon img {
   max-height: 100%;
 }
+.advantages-events-box__body {
+  padding: 20px 30px 20px 0;
+}
 .advantages-events-box__hidden {
   position: absolute;
   left: 0;
@@ -2316,13 +2322,16 @@ a.contacts-box__link:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 16px 30px;
-  font-size: 15px;
+  font-size: 14px;
 }
 .advantages-events-box__hidden .advantages-events-box {
-  padding: 25px 0;
+  min-width: 206px;
 }
-.advantages-events-box .box-text {
+.advantages-events-box__hidden .advantages-events-box:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.advantages-events-box__text {
   font-size: 15px;
 }
 .advantages-events-box__close {
@@ -2433,10 +2442,48 @@ a.contacts-box__link:hover {
   z-index: 2;
 }
 .recommended-products-card__info {
+  width: 19px;
+  min-width: 19px;
+  height: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 4px 0 0;
+  background: url("../img/info.png") no-repeat center;
+  background-size: 100%;
+}
+.recommended-products-card__info:hover {
+  background: url("../img/icon-info-active.png") no-repeat center;
+  background-size: 100%;
 }
 .recommended-products-card__info:hover + .recommended-products-card__hidden {
   display: block !important;
+}
+.recommended-products-card__3d {
+  width: 23px;
+  height: 21px;
+  min-width: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/3d.png") no-repeat center;
+  background-size: 100%;
+}
+.recommended-products-card__3d:hover {
+  background: url("../img/3d_active.png") no-repeat center;
+  background-size: 100%;
 }
 .recommended-products-card__img {
   width: 100%;
@@ -3397,6 +3444,10 @@ a.contacts-box__link:hover {
   border-bottom: 1px solid #f5f5f5;
   cursor: inherit;
 }
+.sidebar .advantages-events-box:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 .sidebar .advantages-events-box__icon img {
   -webkit-transition: 0.5s all;
   transition: 0.5s all;
@@ -3795,6 +3846,10 @@ a.contacts-box__link:hover {
   position: relative;
   z-index: 1;
   color: #383838;
+  cursor: pointer;
+}
+.catalog-menu__link:hover {
+  color: #6989ad;
 }
 .catalog-menu__link::before {
   content: "\f105";

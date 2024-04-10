@@ -980,14 +980,6 @@
   .product-component-row .price-wrapper {
     margin: 0 auto 0 0;
   }
-  .advantages-events {
-    margin: 0 0 20px;
-    padding: 20px 20px 0;
-  }
-  .advantages-events-box {
-    width: 50%;
-    margin: 0 0 20px;
-  }
   .manager-callback-content {
     width: 100%;
     padding: 0;
@@ -1031,6 +1023,14 @@
   .home-section .breadcrumb-wrapper {
     display: none;
   }
+  .advantages-events {
+    margin: 0 0 20px;
+  }
+  .advantages-events-box {
+    width: 50%;
+    margin: 0 0 20px;
+    padding: 20px 15px;
+  }
   .advantages-events-box__hidden {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1039,8 +1039,14 @@
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    padding: 20px;
   }
   .advantages-events-box__hidden .advantages-events-box {
+    padding: 0;
+    margin: 0 auto 20px;
+    min-width: auto;
+  }
+  .advantages-events-box__body {
     padding: 0;
   }
   .advantages-company-col {

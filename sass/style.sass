@@ -589,6 +589,27 @@ a.color-accent
 .breadcrumb-item
 	display: flex
 	align-items: center
+	a
+		position: relative
+		z-index: 1
+		&::after
+			content: ""
+			display: block
+			width: 0%
+			height: 1px
+			background-color: #7c7b7e
+			position: absolute
+			bottom: -1px
+			left: 50%
+			transition: 0.3s all
+			-webkit-transition: 0.3s all
+			-moz-transition: 0.3s all
+			font-weight: 100 !important
+		&:hover
+			text-decoration: none
+			&::after
+				width: 100%
+				left: 0
 
 .breadcrumb-item+.breadcrumb-item
 	padding-left: 5px
@@ -705,6 +726,9 @@ table
 				color: #383838
 			.company-border
 				display: block
+		&:hover
+			.company-border
+				display: block		
 	.nav-link
 		letter-spacing: 0.4px
 		color: #383838
@@ -723,6 +747,8 @@ table
 			color: #222
 		&:hover
 			color: #383838
+			
+
 	.company-border
 		left: 50%
 		top: 50%
