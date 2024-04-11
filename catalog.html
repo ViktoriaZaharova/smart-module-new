@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/fancybox.css" />
 	<link rel="stylesheet" href="css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/jquery-ui.css" />
-		<link rel="stylesheet" href="css/rangeslider.css" />
+	<link rel="stylesheet" href="css/rangeslider.css" />
 	<!-- add plugins css end -->
 
 	<link rel="stylesheet" href="css/style.css" />
@@ -58,7 +58,7 @@
 								<a href="mailto:spb1@smart-module.ru" class="mail"><i class="fa fa-envelope-o"
 										aria-hidden="true"></i>spb1@smart-module.ru</a>
 							</div>
-	
+
 							<ul class="list-social my-ul">
 								<li class="list-social__item">
 									<a href="https://vk.com/smart_module" target="_blank" class="list-social__link">
@@ -72,7 +72,7 @@
 									</a>
 								</li>
 							</ul>
-	
+
 							<a href="#" class="btn btn-accent btn-callback" data-bs-toggle="modal"
 								data-bs-target="#callbackModal">Получить консультацию</a>
 							<div class="btn-search d-flex d-md-none">
@@ -138,7 +138,7 @@
 				</div>
 			</div>
 		</div>
-	
+
 		<div class="header-bottom">
 			<div class="container">
 				<div class="row">
@@ -404,9 +404,9 @@
 					</div>
 				</div>
 			</div>
-	
+
 		</div>
-	
+
 		<div class="header-fixed">
 			<div class="container">
 				<div class="row">
@@ -561,7 +561,7 @@
 									</ul>
 								</div>
 							</div>
-	
+
 							<a href="index.html" class="logo">
 								<img src="img/logo-sm.png" alt="" loading="lazy" />
 							</a>
@@ -573,7 +573,7 @@
 								<a href="tel:+78129071459" class="phone"><i class="fa fa-phone" aria-hidden="true"></i>8 (812)
 									907-14-59</a>
 							</div>
-	
+
 							<nav class="nav nav-menu">
 								<ul class="menu my-ul">
 									<li class="nav-item">
@@ -592,7 +592,7 @@
 											</ul>
 										</div>
 									</li>
-	
+
 									<li class="nav-item">
 										<a href="blog.html" class="nav-link">блог</a>
 									</li>
@@ -629,7 +629,7 @@
 									</li>
 								</ul>
 							</nav>
-	
+
 							<a href="#" class="btn btn-accent btn-callback" data-bs-toggle="modal"
 								data-bs-target="#callbackModal">Получить консультацию</a>
 							<div class="btn-search">
@@ -651,7 +651,8 @@
 							<div class="col-12">
 								<form method="post" class="form-search">
 									<label>
-										<input type="search" class="search-field" placeholder="" value="" name="search" autocomplete="off" />
+										<input type="search" class="search-field" placeholder="" value="" name="search"
+											autocomplete="off" />
 									</label>
 									<button class="btn btn-accent search-submit" type="submit">
 										<span>Поиск</span>
@@ -724,16 +725,14 @@
 					</div>
 
 					<div class="col-12">
-						<div class="box-text mb-65">
-							<p>
-								Модульные здания относятся к категории мобильных конструкций
-								контейнерного типа, которые стоят сравнительно недорого и
-								быстро собираются. По условиям проживания и функциональности
-								они практически не уступают капитальным постройкам. Отсутствие
-								ограничений на транспортировку, сборку и разборку – главное
-								преимущество подобных зданий.
-							</p>
-						</div>
+						<p class="under_title_text">
+							Модульные здания относятся к категории мобильных конструкций
+							контейнерного типа, которые стоят сравнительно недорого и
+							быстро собираются. По условиям проживания и функциональности
+							они практически не уступают капитальным постройкам. Отсутствие
+							ограничений на транспортировку, сборку и разборку – главное
+							преимущество подобных зданий.
+						</p>
 					</div>
 				</div>
 
@@ -879,243 +878,181 @@
 								</div>
 							</div>
 
-							<div class="sidebar-body">
-								<div class="sidebar-card panel_heading">
-									<div class="block_title">
-										<div class="h4">Этажность</div>
+							<div class="sidebar-body" id="kombox-filter">
+								<div class="sidebar-card lvl1 kombox-column panel_heading">
+									<div class="block_title select-title" data-property-name="Этажность">
+										Этажность
 									</div>
-									<div class="block_hover">
-										<ul class="list-checkbox my-ul">
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span
-														class="label-checkbox__text">Двухэтажные<span class="val">(1)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span
-														class="label-checkbox__text">Одноэтажные<span class="val">(1)</span></span>
-												</label>
-											</li>
-										</ul>
+									<div class="block_hover kombox-combo">
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Двухэтажные<span
+													class="val kombox-cnt">(1)</span></span>
+										</label>
+										<label class="label-checkbox lvl2 kombox-disabled">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Одноэтажные<span
+													class="val kombox-cnt">(1)</span></span>
+										</label>
 									</div>
 								</div>
-								<div class="sidebar-card panel_heading">
-									<div class="block_title">
-										<div class="h4">Материал</div>
+								<div class="sidebar-card lvl1 kombox-column panel_heading">
+									<div class="block_title select-title" data-property-name="Материал">
+										Материал
 									</div>
-									<div class="block_hover">
-										<ul class="list-checkbox my-ul">
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Профлист<span
-															class="val">(15)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span
-														class="label-checkbox__text">Профнастил<span class="val">(11)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Сэндвич
-														панели<span class="val">(10)</span></span>
-												</label>
-											</li>
-										</ul>
+									<div class="block_hover kombox-combo">
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Профлист<span
+													class="val kombox-cnt">(15)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Профнастил<span
+													class="val kombox-cnt">(11)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Сэндвич
+												панели<span class="val kombox-cnt">(10)</span></span>
+										</label>
 									</div>
 								</div>
-								<div class="sidebar-card panel_heading">
-									<div class="block_title">
-										<div class="h4">Модификации</div>
+								<div class="sidebar-card lvl1 kombox-column panel_heading">
+									<div class="block_title select-title" data-property-name="Модификации">
+										Модификации
 									</div>
-									<div class="block_hover">
-										<ul class="list-checkbox my-ul">
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" checked />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Высокие
-														(50)<span class="val">(50)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Жилые<span
-															class="val">(9)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Зимние<span
-															class="val">(148)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" checked />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">С туалетом и
-														душем<span class="val">(143)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">С туалетом и
-														раковиной<span class="val">(63)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span
-														class="label-checkbox__text">Утепленные<span class="val">(149)</span></span>
-												</label>
-											</li>
-										</ul>
+									<div class="block_hover kombox-combo">
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" checked />
+											<span class="label-checkbox__custom"> </span>
+											<span class="label-checkbox__text">Высокие
+												(50)<span class="val kombox-cnt">(50)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Жилые<span
+													class="val kombox-cnt">(9)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Зимние<span
+													class="val kombox-cnt">(148)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" checked />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">С туалетом и
+												душем<span class="val kombox-cnt">(143)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">С туалетом и
+												раковиной<span class="val kombox-cnt">(63)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Утепленные<span
+													class="val kombox-cnt">(149)</span></span>
+										</label>
 									</div>
 								</div>
-								<div class="sidebar-card panel_heading">
-									<div class="block_title">
-										<div class="h4">Внутренняя отделка</div>
+
+								<div class="sidebar-card lvl1 kombox-column panel_heading">
+									<div class="block_title select-title" data-property-name="Внутренняя отделка">
+										Внутренняя отделка
 									</div>
-									<div class="block_hover">
-										<ul class="list-checkbox my-ul">
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Вагонка<span
-															class="val">(8)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">ДВП<span
-															class="val">(3)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">ЛДСП<span
-															class="val">(15)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">МДФ<span
-															class="val">(3)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">ОСБ<span
-															class="val">(2)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">ПВХ<span
-															class="val">(1)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Профлист<span
-															class="val">(1)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Фанера<span
-															class="val">(3)</span></span>
-												</label>
-											</li>
-										</ul>
+									<div class="block_hover kombox-combo">
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Вагонка<span
+													class="val kombox-cnt">(8)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">ДВП<span
+													class="val kombox-cnt">(3)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">ЛДСП<span
+													class="val kombox-cnt">(15)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">МДФ<span
+													class="val kombox-cnt">(3)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">ОСБ<span
+													class="val kombox-cnt">(2)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">ПВХ<span
+													class="val kombox-cnt">(1)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Профлист<span
+													class="val kombox-cnt">(1)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Фанера<span
+													class="val kombox-cnt">(3)</span></span>
+										</label>
 									</div>
 								</div>
-								<div class="sidebar-card panel_heading">
-									<div class="block_title">
-										<div class="h4">Количество комнат</div>
+								<div class="sidebar-card lvl1 kombox-column panel_heading">
+									<div class="block_title select-title" data-property-name="Количество комнат">
+										Количество комнат
 									</div>
-									<div class="block_hover">
-										<ul class="list-checkbox my-ul">
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span
-														class="label-checkbox__text">Двухкомнатные<span class="val">(3)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span
-														class="label-checkbox__text">Однокомнатные<span class="val">(3)</span></span>
-												</label>
-											</li>
-										</ul>
+									<div class="block_hover kombox-combo">
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Двухкомнатные<span
+													class="val kombox-cnt">(3)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Однокомнатные<span
+													class="val kombox-cnt">(3)</span></span>
+										</label>
 									</div>
 								</div>
-								<div class="sidebar-card panel_heading">
-									<div class="block_title">
-										<div class="h4">Тип</div>
+								<div class="sidebar-card lvl1 kombox-column panel_heading">
+									<div class="block_title select-title" data-property-name="Тип">
+										Тип
 									</div>
-									<div class="block_hover">
-										<ul class="list-checkbox my-ul">
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Мобильные<span
-															class="val">(36)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span
-														class="label-checkbox__text">Сборно-разборные<span class="val">(4)</span></span>
-												</label>
-											</li>
-										</ul>
+									<div class="block_hover kombox-combo">
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">Мобильные<span
+													class="val">(36)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span
+												class="label-checkbox__text">Сборно-разборные<span class="val">(4)</span></span>
+										</label>
 									</div>
 								</div>
-								<div class="sidebar-card panel_heading">
-									<div class="block_title">
-										<div class="h4">Размер</div>
+								<div class="sidebar-card lvl1 kombox-column panel_heading">
+									<div class="block_title select-title" data-property-name="Размер">
+										Размер
 									</div>
-									<div class="block_hover">
-										<ul class="list-checkbox my-ul">
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">20 футов<span
-															class="val">(4)</span></span>
-												</label>
-											</li>
-											<li>
-												<label class="label-checkbox">
-													<input type="checkbox" name="filter-checkbox" />
-													<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">30 футов<span
-															class="val">(1)</span></span>
-												</label>
-											</li>
-										</ul>
+									<div class="block_hover kombox-combo">
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">20 футов<span
+													class="val">(4)</span></span>
+										</label>
+										<label class="label-checkbox lvl2">
+											<input type="checkbox" name="filter-checkbox" />
+											<span class="label-checkbox__custom"> </span><span class="label-checkbox__text">30 футов<span
+													class="val">(1)</span></span>
+										</label>
 									</div>
 								</div>
 								<div class="sidebar-card sidebar-card__footer">
@@ -1293,8 +1230,8 @@
 								<div class="manager-callback-wrapper">
 									<div class="manager-callback-photo">
 										<span class="company-border"></span>
-										<img src="img/call-m1.png" alt="" class="img-default" loading="lazy"/>
-										<img src="img/call-m2.png" alt="" class="img-hover" loading="lazy"/>
+										<img src="img/call-m1.png" alt="" class="img-default" loading="lazy" />
+										<img src="img/call-m2.png" alt="" class="img-hover" loading="lazy" />
 									</div>
 									<div class="manager-callback-name">
 										<div class="manager-name">Максим Вячеславович</div>
@@ -2387,12 +2324,69 @@
 									</div>
 
 									<div class="col-12">
-										<button type="submit" class="btn btn-green">
+										<button type="button" class="btn btn-green btn-calculate-modal">
 											рассчитать
 										</button>
 									</div>
 								</div>
 							</form>
+							<div class="calculate-total">
+								<div class="row">
+									<div class="col-12 col-sm-6 col-lg-3 mb-30">
+										<div class="calculate-total-box">
+											<div class="calculate-total-box__icon"><img src="img/discount.svg" alt="" loading="lazy"></div>
+											<div class="calculate-total-box__text">
+												<p>Общая стоимость:
+												</p>
+												<span>443.652 руб.</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-lg-3 mb-30">
+										<div class="calculate-total-box">
+											<div class="calculate-total-box__icon"><img src="img/user.svg" alt="" loading="lazy"></div>
+											<div class="calculate-total-box__text">
+												<p>Вместимость (мест):
+												</p>
+												<span>18 рабочих
+													или
+													30 спальных</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-lg-3 mb-30">
+										<div class="calculate-total-box">
+											<div class="calculate-total-box__icon"><img src="img/date.svg" alt="" loading="lazy"></div>
+											<div class="calculate-total-box__text">
+												<p>Срок поставки:
+												</p>
+												<span>3 дня</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-12 col-sm-6 col-lg-3 mb-30">
+										<div class="calculate-total-box">
+											<div class="calculate-total-box__icon"><img src="img/size.svg" alt="" loading="lazy"></div>
+											<div class="calculate-total-box__text">
+												<p>Площадь:
+												</p>
+												<span>84 м<sup>2</sup></span>
+											</div>
+										</div>
+									</div>
+									<div class="col-12">
+										<div class="box-text text-center">
+											<p><strong>Отправьте расчет менеджерам и получите дополнительную скидку на модульные
+													здания</strong>
+											</p>
+										</div>
+										<a href="#" class="btn btn-accent m-auto" data-bs-toggle="modal" data-bs-target="#callbackModal">
+											<span>Получить расчет со скидкой</span>
+										</a>
+									</div>
+								</div>
+
+							</div>
 						</div>
 					</div>
 				</div>
@@ -2451,46 +2445,42 @@
 						</div>
 					</div>
 					<div class="col-12 col-lg-7 mb-50">
-						<div class="box-text">
-							<p>
-								Компания «Смарт модуль» – это компания, которая не стоит на
-								месте и постоянно отслеживает, новые технологии в производстве
-								и следует современным тенденциям отрасли. Вся наша продукция
-								сертифицирована, соответствует строительным, пожарным и
-								санитарным нормам, обладает высокой ликвидностью и
-								эксплуатационным ресурсом. Мы гарантируем оперативную доставку
-								и профессиональную сборку на объекте, без задержек на всех
-								этапах реализации. Цена на бытовки в городе Санкт-Петербург
-								компании «Смарт Модуль» зависит от конструктивных материалов и
-								выбранного варианта исполнения.
-							</p>
-							<p>
-								Бытовки - это оптимальное решение, для экономии времени и
-								финансовых затрат. Они обладают мобильностью, долговечностью,
-								а главное, скоростью реализации.
-							</p>
-						</div>
+						<p>
+							Компания «Смарт модуль» – это компания, которая не стоит на
+							месте и постоянно отслеживает, новые технологии в производстве
+							и следует современным тенденциям отрасли. Вся наша продукция
+							сертифицирована, соответствует строительным, пожарным и
+							санитарным нормам, обладает высокой ликвидностью и
+							эксплуатационным ресурсом. Мы гарантируем оперативную доставку
+							и профессиональную сборку на объекте, без задержек на всех
+							этапах реализации. Цена на бытовки в городе Санкт-Петербург
+							компании «Смарт Модуль» зависит от конструктивных материалов и
+							выбранного варианта исполнения.
+						</p>
+						<p>
+							Бытовки - это оптимальное решение, для экономии времени и
+							финансовых затрат. Они обладают мобильностью, долговечностью,
+							а главное, скоростью реализации.
+						</p>
 					</div>
 				</div>
 				<div class="row">
 					<div class="col-12">
-						<div class="box-text">
-							<p>
-								Наша компания с растущей клиентской базой постоянных
-								заказчиков и с собственными поставщиками материалов. Мы не
-								сотрудничаем с посредниками, выбираем прямые поставки с
-								заводов, предлагаем гибкую систему тарифов для комплектации
-								крупных объектов. Купить бытовку в Санкт-Петербурге и
-								определиться с наилучшим вариантом, помогут квалифицированные
-								сотрудники нашей компании.
-							</p>
+						<p>
+							Наша компания с растущей клиентской базой постоянных
+							заказчиков и с собственными поставщиками материалов. Мы не
+							сотрудничаем с посредниками, выбираем прямые поставки с
+							заводов, предлагаем гибкую систему тарифов для комплектации
+							крупных объектов. Купить бытовку в Санкт-Петербурге и
+							определиться с наилучшим вариантом, помогут квалифицированные
+							сотрудники нашей компании.
+						</p>
 
-							<p>
-								Инженерами были разработаны типовые проекты, также мы создаем
-								конструкции «под ключ», опираясь на ваши пожелания. У нас
-								доступны:
-							</p>
-						</div>
+						<p>
+							Инженерами были разработаны типовые проекты, также мы создаем
+							конструкции «под ключ», опираясь на ваши пожелания. У нас
+							доступны:
+						</p>
 						<div class="description-catalog-wrapper">
 							<a href="catalog.html" class="description-catalog-box">
 								<span class="description-catalog-box__icon"><img src="img/cat-min1.jpg" alt="" loading="lazy" /></span>
@@ -2514,83 +2504,64 @@
 							</a>
 						</div>
 
-						<div class="box-text">
-							<p>
-								Собственное производство позволяет гарантировать высокое
-								качество и большой период эксплуатации продукции. Железная
-								бытовка может использоваться на протяжении более 20 лет при
-								условии соблюдения правил эксплуатации. Кроме долговечности,
-								наши конструкции имеют ряд положительных свойств:
-							</p>
-						</div>
+						<p>
+							Собственное производство позволяет гарантировать высокое
+							качество и большой период эксплуатации продукции. Железная
+							бытовка может использоваться на протяжении более 20 лет при
+							условии соблюдения правил эксплуатации. Кроме долговечности,
+							наши конструкции имеют ряд положительных свойств:
+						</p>
 
 						<div class="recommendation-rent-box">
 							<div class="recommendation-rent-box__icon">
 								<img src="img/truck.png" alt="" loading="lazy" />
 							</div>
-							<div class="recommendation-rent-box__text">
-								<div class="box-text">
-									<p><strong>Мобильность.</strong></p>
-									<p>Доступна перевозка на обычном грузовом транспорте.</p>
-								</div>
-							</div>
+							<p><strong>Мобильность.</strong> Доступна перевозка на обычном грузовом транспорте.</p>
 						</div>
 						<div class="recommendation-rent-box">
 							<div class="recommendation-rent-box__icon">
 								<img src="img/toolbox.png" alt="" loading="lazy" />
 							</div>
-							<div class="recommendation-rent-box__text">
-								<div class="box-text">
-									<p><strong>Сборно-разборный каркас</strong></p>
-									<p>
-										Для транспортировки или долгосрочного хранения модуль
-										может быть разобран для сохранения полезной площади.
-										Процедура монтажа и демонтажа не влияет негативно на раму
-										и другие компоненты
-									</p>
-								</div>
-							</div>
+							<p><strong>Сборно-разборный каркас.</strong>
+								Для транспортировки или долгосрочного хранения модуль
+								может быть разобран для сохранения полезной площади.
+								Процедура монтажа и демонтажа не влияет негативно на раму
+								и другие компоненты
+							</p>
 						</div>
 						<div class="recommendation-rent-box">
 							<div class="recommendation-rent-box__icon">
 								<img src="img/money.png" alt="" loading="lazy" />
 							</div>
-							<div class="recommendation-rent-box__text">
-								<div class="box-text">
-									<p><strong>Низкая цена</strong></p>
-									<p>
-										В отличие от строений из кирпича, бетона или бруса,
-										металлические сооружения обходятся при продаже дешевле.
-									</p>
-								</div>
-							</div>
+							<p><strong>Низкая цена.</strong>
+								В отличие от строений из кирпича, бетона или бруса,
+								металлические сооружения обходятся при продаже дешевле.
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<section class="scope-application">
+		<section class="scope-application typography">
 			<div class="container">
 				<div class="row align-items-center">
 					<div class="col-12 col-lg-7 mb-30">
-						<h2 class="text-center">Сфера применения</h2>
-						<div class="box-text">
-							<p>
-								Временное жилье может потребоваться в любой области
-								деятельности, поэтому компания «Смарт Модуль» предлагает
-								модели для решения индивидуальных задач клиента. Изготовление
-								металлических бытовок может выполняться как для предприятий,
-								требующих размещения персонала, так и для частных лиц.
-							</p>
+						<h2 class="ar-title">Сфера применения</h2>
+						<p>
+							Временное жилье может потребоваться в любой области
+							деятельности, поэтому компания «Смарт Модуль» предлагает
+							модели для решения индивидуальных задач клиента. Изготовление
+							металлических бытовок может выполняться как для предприятий,
+							требующих размещения персонала, так и для частных лиц.
+						</p>
 
-							<p>
-								Блок-контейнеры используют в качестве временного жилья,
-								хозяйственного помещения, склада, модуля для оборудования и т.
-								д. Также доступно переоборудование постройки из жилой в
-								хозяйственную и наоборот.
-							</p>
-						</div>
+						<p>
+							Блок-контейнеры используют в качестве временного жилья,
+							хозяйственного помещения, склада, модуля для оборудования и т.
+							д. Также доступно переоборудование постройки из жилой в
+							хозяйственную и наоборот.
+						</p>
 					</div>
 					<div class="col-12 col-lg-5">
 						<div class="delivery-image">
@@ -2601,20 +2572,18 @@
 			</div>
 		</section>
 
-		<section class="prices-catalog">
+		<section class="prices-catalog typography">
 			<div class="container">
 				<div class="row">
-					<div class="col-12 text-center">
-						<h2>Стоимость металлических бытовок в Санкт-Петербурге</h2>
+					<div class="col-12">
+						<h2 class="ar-title">Стоимость металлических бытовок в Санкт-Петербурге</h2>
 					</div>
 					<div class="col-12">
-						<div class="box-text">
-							<p>
-								Цена на металлические бытовки с доставкой зависит от типа
-								конструкции, габаритов, комплектации и других параметров.
-								Наиболее доступным вариантом остается модель без отделки.
-							</p>
-						</div>
+						<p>
+							Цена на металлические бытовки с доставкой зависит от типа
+							конструкции, габаритов, комплектации и других параметров.
+							Наиболее доступным вариантом остается модель без отделки.
+						</p>
 					</div>
 					<div class="col-12">
 						<div class="company-block-advantages-info-wrapper callback-order-wrapper callback-order-wrapper-v2">
@@ -2847,8 +2816,8 @@
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/jquery.ui.touch-punch.min.js"></script>
-		<script src="js/rangeslider.min.js"></script>
-		<script src="js/spritespin.min.js"></script>
+	<script src="js/rangeslider.min.js"></script>
+	<script src="js/spritespin.min.js"></script>
 	<script src="js/common.js"></script>
 	<!-- add plugins js end-->
 </body>

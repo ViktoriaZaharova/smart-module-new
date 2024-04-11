@@ -357,6 +357,10 @@ h4, .h4
 		&:last-child
 			margin: 0
 
+.under_title_text
+	line-height: 1.5
+	margin-bottom: 3rem
+
 .mt-30
 	margin-top: 30px
 
@@ -558,6 +562,11 @@ a.color-accent
 		img
 			max-height: 100%
 
+.kombox-disabled
+	opacity: 0.4
+	&.kombox-checked
+		opacity: 1
+
 //checkbox my end
 
 .page
@@ -728,7 +737,7 @@ table
 				display: block
 		&:hover
 			.company-border
-				display: block		
+				display: block
 	.nav-link
 		letter-spacing: 0.4px
 		color: #383838
@@ -747,7 +756,6 @@ table
 			color: #222
 		&:hover
 			color: #383838
-			
 
 	.company-border
 		left: 50%
@@ -771,6 +779,11 @@ table
 		display: none
 	.block_title
 		cursor: pointer
+
+.select-title
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
 
 .js-tab-content
 	display: none

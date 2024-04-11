@@ -896,12 +896,84 @@
 		margin: 0
 
 	.product-information-advantages-item
-		// width: 30px
-		// height: 30px
-		// min-width: 30px
 		margin: 0 5px 5px 0
 		&:last-child
 			margin: 0
+
+	.mod-basket__item
+		padding: 15px 15px 40px 15px !important
+		display: block
+
+	.mod-basket__name,
+	.mod-basket__item .services-description
+		display: block
+		width: 100%
+		padding-bottom: 10px
+		text-align: center
+		max-width: none
+		max-height: none
+
+	.mod-basket__item .services-count .count
+		max-width: none
+		min-width: auto
+		width: 92px
+		display: inline-block
+		padding-bottom: 10px
+
+	.mod-basket__price,
+	.mod-basket__item .services-price
+		padding-bottom: 10px
+
+	.mod-basket__deletewp
+		height: 30px
+		top: auto
+		bottom: 0
+		left: 50%
+		margin-left: -6.5px
+
+	.mod-basket__wrapper
+		width: calc(100% - 58px) !important
+		height: 100%
+		overflow: auto
+
+	.mod-basket.active .mod-basket__wrapper
+		width: 100% !important
+
+	.mod-basket
+		right: calc((-100% + 58px))
+		max-height: 100%
+		height: calc(100% - 62px) !important
+		width: calc(100% - 58px) !important
+		margin-top: 32px
+		&__list
+			height: auto !important
+			overflow: auto
+			max-height: calc(100% - 150px) !important
+			.services-count
+				display: block
+				width: 100%
+				text-align: center
+		&__bottom
+			bottom: 10px
+			position: absolute
+			text-align: center
+		&__btnleft
+			width: 100%
+			float: none
+
+		&__btnright
+			width: 100%
+			float: none
+
+		&__sum
+			float: none
+
+		&__icon
+			top: 50%
+			margin-top: -29px
+		.amount
+			margin: 0 auto
+			justify-content: center
 
 @media only screen and (max-width: 576px)
 	.btn

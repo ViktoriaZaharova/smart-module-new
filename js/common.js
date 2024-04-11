@@ -374,19 +374,37 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 // accordeon
-function accordeon() {
-	var panel = $('.panel_heading');
-
-	if (panel.hasClass('in')) {
-		$('.in').find('.block_hover').slideDown();
-	}
+$(document).ready(function () {
+	// $('.panel_heading:first-child').addClass('in').find('.block_hover').fadeIn();
 
 	$('.panel_heading .block_title').on('click', function () {
 		$(this).parent().toggleClass('in').find('.block_hover').slideToggle();
+		$('.panel_heading .block_title').not(this).parent().removeClass('in').find('.block_hover').slideUp();
 	});
-}
 
-accordeon();
+});
+
+$('.sidebar-card input:checkbox').change(function () {
+	if ($(this).is(":checked")) {
+		$('.sidebar-card__footer').fadeIn();
+	} else {
+		$('.sidebar-card__footer').fadeOut();
+	}
+});
+
+$('#kombox-filter .kombox-combo input[type=checkbox]').change(function () {
+	var title = $(this).parents('.kombox-combo').siblings('.select-title');
+	var values = [];
+	$(this).parents('.kombox-combo').children('.lvl2').each(function (i, e) {
+		var slice_num = $(e).find('.kombox-cnt').text().length
+		values.push($(e).children('span').text().slice(0, -slice_num));
+	});
+	if (values.length > 0) {
+		title.text(values.join(', '));
+	} else {
+		title.text(title.data('property-name'));
+	}
+});
 
 $(".slider-range1").slider({
 	min: 0,
@@ -452,6 +470,11 @@ $(document).mouseup(function (e) { // событие клика по веб-до
 		&& div.has(e.target).length === 0) { // и не по его дочерним элементам
 		div.find('.advantages-events-box__hidden').removeClass('active'); // скрываем его
 	}
+});
+
+
+$('.btn-calculate-modal').on('click', function () {
+	$('.calculate-total').fadeIn();
 });
 
 // tooltip
@@ -525,6 +548,27 @@ $('.additional').slick({
 		}
 	]
 
+});
+
+$('.mod-basket__icon').on('click', function () {
+	if ($(this).parent().hasClass('active')) {
+		var modbaskwidth = $(this).parent().width();
+		$(this).parent().animate({
+			'right': '-' + modbaskwidth + 'px'
+		}, 1000);
+		$(this).parent().removeClass('active');
+		return false;
+	} else {
+		$(this).parent().animate({
+			'right': '0'
+		}, 1000);
+		$(this).parent().addClass('active');
+		return false;
+	}
+});
+$('.mod-basket__back').on('click', function () {
+	$('.mod-basket__icon').trigger('click');
+	return false;
 });
 
 $(window).on('load resize', function () {

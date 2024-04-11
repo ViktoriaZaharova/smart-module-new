@@ -1058,6 +1058,88 @@
   .product-information-advantages-item:last-child {
     margin: 0;
   }
+  .mod-basket__item {
+    padding: 15px 15px 40px 15px !important;
+    display: block;
+  }
+  .mod-basket__name,
+  .mod-basket__item .services-description {
+    display: block;
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+    max-width: none;
+    max-height: none;
+  }
+  .mod-basket__item .services-count .count {
+    max-width: none;
+    min-width: auto;
+    width: 92px;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  .mod-basket__price,
+  .mod-basket__item .services-price {
+    padding-bottom: 10px;
+  }
+  .mod-basket__deletewp {
+    height: 30px;
+    top: auto;
+    bottom: 0;
+    left: 50%;
+    margin-left: -6.5px;
+  }
+  .mod-basket__wrapper {
+    width: calc(100% - 58px) !important;
+    height: 100%;
+    overflow: auto;
+  }
+  .mod-basket.active .mod-basket__wrapper {
+    width: 100% !important;
+  }
+  .mod-basket {
+    right: calc(-100% + 58px);
+    max-height: 100%;
+    height: calc(100% - 62px) !important;
+    width: calc(100% - 58px) !important;
+    margin-top: 32px;
+  }
+  .mod-basket__list {
+    height: auto !important;
+    overflow: auto;
+    max-height: calc(100% - 150px) !important;
+  }
+  .mod-basket__list .services-count {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .mod-basket__bottom {
+    bottom: 10px;
+    position: absolute;
+    text-align: center;
+  }
+  .mod-basket__btnleft {
+    width: 100%;
+    float: none;
+  }
+  .mod-basket__btnright {
+    width: 100%;
+    float: none;
+  }
+  .mod-basket__sum {
+    float: none;
+  }
+  .mod-basket__icon {
+    top: 50%;
+    margin-top: -29px;
+  }
+  .mod-basket .amount {
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media only screen and (max-width: 576px) {
   .btn {
