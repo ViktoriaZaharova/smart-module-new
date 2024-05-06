@@ -1672,6 +1672,7 @@ a.contacts-box__link:hover {
 
 .projects-card-box {
   width: 100%;
+  height: 100%;
   position: relative;
   z-index: 1;
   overflow: hidden;
