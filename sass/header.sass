@@ -45,7 +45,7 @@ header
 				&:last-child
 					margin: 0
 	.btn-search
-		margin: 0	0 0 20px
+		margin: 0	0 0 15px
 
 .logo
 	max-width: 201px
@@ -71,8 +71,10 @@ header
 
 .btn-burger
 	fill: #000
-	width: 22px
-	height: 18px
+	// width: 22px
+	// height: 18px
+	width: 50px
+	height: 50px
 	display: flex
 	align-items: center
 	justify-content: center
@@ -85,8 +87,10 @@ header
 		margin: 25px 0 0 !important
 
 .btn-burger-mobile
-	width: 24px
-	height: 20px
+	// width: 24px
+	// height: 20px
+	width: 50px
+	height: 50px
 	display: none
 	align-items: center
 	justify-content: space-between
@@ -111,6 +115,49 @@ header
 				transform: rotate(135deg)
 			&:nth-child(2)
 				width: 0
+
+.ham
+	cursor: pointer
+	transition: transform 400ms
+	-moz-user-select: none
+	-webkit-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+.line_svg
+	fill: none
+	transition: stroke-dasharray 400ms, stroke-dashoffset 400ms
+	stroke: #000
+	stroke-width: 5.5
+	stroke-linecap: round
+
+.ham8
+	.top_svg
+		stroke-dasharray: 40 160
+
+	.middle_svg
+		stroke-dasharray: 40 142
+		transform-origin: 50%
+		transition: transform 400ms
+
+	.bottom_svg
+		stroke-dasharray: 40 85
+		transform-origin: 50%
+		transition: transform 400ms, stroke-dashoffset 400ms
+
+.btn-burger-mobile.click, .btn-burger.show
+	.hamRotate
+		transform: rotate(45deg)
+
+		&.ham8
+			.top_svg
+				stroke-dashoffset: -64px
+
+			.middle_svg
+				transform: rotate(90deg)
+
+			.bottom_svg
+				stroke-dashoffset: -64px
 
 .phone
 	font-size: 14px
