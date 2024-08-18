@@ -3348,7 +3348,16 @@ a.contacts-box__link:hover {
 }
 
 .additional.slick-vertical.slick-initialized.slick-slider {
+  max-height: 258px !important;
   height: 100%;
+}
+
+.additional .slick-list.draggable {
+  max-height: 257px !important;
+}
+
+.additional .slick-slide.slick-active {
+  height: 65px;
 }
 
 .spritespinBig {
